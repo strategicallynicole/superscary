@@ -1,0 +1,7 @@
+.bggradient {
+    @apply bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500;
+}
+.gradienttext {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-5xl font-black
+
+}
