@@ -50,7 +50,7 @@ GradientBackground.propTypes = {
 };
 
 GradientBackground.defaultProps = {
-  color: '#ffffff',
+  color: '#000000',
   fontSize: 16,
 };
 

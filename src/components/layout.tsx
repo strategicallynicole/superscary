@@ -22,9 +22,8 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           },
         },
         html: {
-          fontSize: `18px`,
-          WebkitTextSizeAdjust: `100%`,
-          backgoundImage: 
+    
+        //  backgoundImage: 
         },
         img: {
           borderStyle: `none`,

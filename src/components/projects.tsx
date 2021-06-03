@@ -6,20 +6,27 @@ import Content from "../elements/content"
 import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 import { StaticImage } from "gatsby-plugin-image"
+import React from 'react'
+import './letusguess.scss'
+import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
+import features from './data.js'
+import MeditatingMan from './Illustrations/Meditating'
+
 
 // @ts-ignore
 import ProjectsMDX from "../sections/projects.mdx"
 
-const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
+const Projects = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
+  
  <StaticImage
-      src="../images/trashfire.svg"
+      src="../images/shapes/circle.svg"
       alt="A dinosaur"
       placeholder="blurred"
       layout="absolute"
       width={200}
       height={200}
-    />don’t 
+    />
     <Divider
       bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
       sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
@@ -28,7 +35,10 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
       factor={factor}
     />
     <Content speed={0.4} offset={offset + 0.2} factor={factor}>
+     <h2 className="dincondensed underline tracking-wide 2xl:text-8xl xl:text-7xl text-4xl font-bold">Let Us Guess</h2>
       <Inner>
+          <MeditatingMan />
+
         <div
           sx={{
             display: `grid`,
@@ -43,7 +53,14 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
     </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>
       <UpDown>
-        <SVG icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
+        <StaticImage
+      src="../images/line.svg"
+      alt="A dinosaur"
+      placeholder="blurred"
+      layout="absolute"
+      width={200}
+      height={200}
+    />
         <SVG icon="upDown" width={8} color="icon_teal" left="70%" top="20%" />
         <SVG icon="triangle" width={8} stroke color="icon_orange" left="25%" top="5%" />
         <SVG icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />

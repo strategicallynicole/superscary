@@ -8,10 +8,10 @@ export default function RunningMan() {
       src="./running.svg"
       alt="Run Away Little Girl"
       placeholder="blurred"
-      layout="fixed"
-      width={400}
+      layout="fullWidth"
+      width={700}
       loading="lazy"
-      className="running-1 animate-enter object-cover"
+      className="object-cover running-1 animate-enter pb-28"
     />
   )
 }

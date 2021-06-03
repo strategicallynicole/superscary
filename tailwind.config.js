@@ -26,20 +26,22 @@ module.exports = {
             orange: '3px 5px 2px #A65512',
 
       },
-        filter: { 
+        filter: {
             none: `none`,
             grayscale: `grayscale(1)`,
             invert: `invert(1)`,
             sepia: `sepia(1)`,
         },
-        backdropFilter: { 
+        backdropFilter: {
             none: `none`,
             blur: `blur(20px)`,
         },
         extend: {
         backgroundImage: theme => ({
-         'waves': "url('/images/waves.svg')",
+         'waves': "url('../images/waves.svg')",
          'gradient': "linear-gradient(90deg, #8F6AFA 0%, #375CDC 47.03%, #0099EE 105%)",
+            'wallpaper': "url('../images/wallpaper.svg')",
+            'black-gradient': "linear-gradient(90deg, #292929 2.11%, #000000 104.85%)"
         }),
             colors: {
                 transparent: `transparent`,

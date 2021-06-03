@@ -80,20 +80,7 @@ options: {
       ],
     },
       },
-      {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        name: `views`,
-        path: `${__dirname}/src/views`,
-      },
-    },
-         {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `sections`,
-        path: `${__dirname}/src/sections/`,
-      },
-    },
+
     `gatsby-plugin-mdx`,
         /**
          *  Content Plugins
@@ -146,13 +133,7 @@ options: {
         path: `${__dirname}/src/assets/images`,
       },
     },
-        {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `views`,
-        path: `${__dirname}/src/views`,
-      },
-    },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import RunningMan from '../Illustrations/RunningMan';
-import Nav from '../Nav/SimpleNav';
 import GradientButton from '../Buttons/Gradient/gradientbutton'
 const Hero = (props) => {
     const [menu, setMenu] = useState(false);
@@ -8,12 +7,7 @@ const Hero = (props) => {
         <div className="relative pb-24 lg:pb-96 bg-black">
         
             <div className>
-                {/* Navigation */}
-                {/* Desktop */}
-      <Nav />
-                {/* Mobile */}
-                {/* Navigation */}
-                {/* Hero */}
+          
                 <div className="mx-auto container relative z-20 lg:px-0 px-4">
                     <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-24">
                         <div className="lg:w-1/2 lg:pt-0 pt-8">
@@ -31,7 +25,7 @@ const Hero = (props) => {
         padding={[10, 20]}
         borderRadius={10}
         borderWidth={3}
-        color="#ffffff"
+        color="#000000"
         fontSize={12}
       >
         test button
