@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from "gatsby"
-
+import { Link } from "gatsby";
+import one from "../../images/shapes/wave.svg";
+import two from "../../images/shapes/wave.svg";
+import three from "../../images/shapes/wave.svg";
+import four from "../../images/shapes/line.svg";
+import five from "../../images/shapes/line.svg";
 
 class Services extends Component {
     render() {
@@ -90,12 +94,11 @@ class Services extends Component {
 
                 {/* Shape Images */}
                 <div className="offer-shape">
-                    <img src="/images/shape/services-shape/1.png" alt="Image" />
-                    <img src="/images/shape/services-shape/2.png" alt="Image" />
-                    <img src="/images/shape/services-shape/3.png" alt="Image" />
-                    <img src="/images/shape/services-shape/4.png" alt="Image" />
-                    <img src="/images/shape/services-shape/5.png" alt="Image" />
-                    <img src="/images/shape/services-shape/6.png" alt="Image" />
+                    <img src={one} alt="Image" />
+                    <img src={two} alt="Image" />
+                    <img src={three} alt="Image" />
+                    <img src={four} alt="Image" />
+                    <img src={five} alt="Image" />
                 </div>
             </section>
         );

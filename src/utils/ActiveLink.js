@@ -1,5 +1,5 @@
 import { withRouter } from '@reach/router';
-import Link from 'gatsby';
+import { Link } from 'gatsby';
 import React, { Children } from 'react';
 import { Redirect } from "react-router-dom";
 

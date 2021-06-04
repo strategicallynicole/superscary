@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Layouts/Navbar';
 import PageBanner from '../../components/Common/PageBanner';
 import Footer from '../../components/Layouts/Footer';
-import Link from 'gatsby';
+import { Link } from 'gatsby';
 
 class Login extends Component {
     render() {
         return (
             <>
                 <Navbar />
-                <PageBanner 
-                    pageTitle="Login" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Login" 
-                /> 
+                <PageBanner
+                    pageTitle="Login"
+                    homePageUrl="/"
+                    homePageText="Home"
+                    activePageText="Login"
+                />
 
                 <section className="user-area-all-style log-in-area ptb-100">
                     <div className="container">
@@ -29,7 +29,7 @@ class Login extends Component {
                                         <div className="row">
                                             <div className="col-lg-4 col-md-4 col-sm-12">
                                                 <button className="default-btn mb-30" type="submit">
-                                                    <i className="bx bxl-google"></i> 
+                                                    <i className="bx bxl-google"></i>
                                                     Google
                                                 </button>
                                             </div>

@@ -108,8 +108,8 @@ export default function Structure({children}) {
         </Dialog>
       </Transition.Root>
 
-      {/* Static sidebar for desktop */}
-      <div className="hidden md:flex md:flex-shrink-0">
+    {/* Static sidebar for desktop */}
+    <div className="hidden md:flex md:flex-shrink-0">
         <div className="flex flex-col w-64">
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex flex-col flex-1 h-0 bg-gray-800">
@@ -123,7 +123,7 @@ export default function Structure({children}) {
               </div>
               <nav className="flex-1 px-2 mt-5 space-y-1 bg-gray-800">
                 {navigation.map((item) => (
-                  <a
+                   <a
                     key={item.name}
                     href={item.href}
                     className={classNames(
@@ -160,7 +160,7 @@ export default function Structure({children}) {
           </div>
         </div>
       </div>
-      <div className="hidden w-0 overflow-hidden md:flex-col md:flex-1 md:flex md:flex-shrink-0">
+      <div className="overflow-hidden md:flex-col md:flex-1 md:flex md:flex-shrink-0">
         <div className="pt-1 pl-1 md:hidden sm:pl-3 sm:pt-3">
           <button
             className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -171,9 +171,7 @@ export default function Structure({children}) {
           </button>
         </div>
         <main className="relative z-0 flex-1 overflow-y-auto focus:outline-none">
-          <div className="py-6">
            {children}
-          </div>
         </main>
       </div>
     </div>

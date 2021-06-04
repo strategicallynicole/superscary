@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Layouts/Navbar';
 import PageBanner from '../../components/Common/PageBanner';
 import Footer from '../../components/Layouts/Footer';
-import Link from 'gatsby';
+import { Link } from 'gatsby';
 
 class RecoverPassword extends Component {
     render() {
         return (
             <>
                 <Navbar />
-                <PageBanner 
-                    pageTitle="Recover Password" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Recover Password" 
-                /> 
+                <PageBanner
+                    pageTitle="Recover Password"
+                    homePageUrl="/"
+                    homePageText="Home"
+                    activePageText="Recover Password"
+                />
 
                 <section className="user-area-all-style recover-password-area ptb-100">
                     <div className="container">
@@ -36,7 +36,7 @@ class RecoverPassword extends Component {
                                                     <input className="form-control" type="text" name="name" placeholder="Enter Email Address" />
                                                 </div>
                                             </div>
-                                            
+
                                             <div className="col-lg-6 col-md-6 col-sm-6">
                                                 <Link href="/login">
                                                     <a className="now-log-in font-q">Log In</a>

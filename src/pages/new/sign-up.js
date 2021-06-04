@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Layouts/Navbar';
 import PageBanner from '../../components/Common/PageBanner';
 import Footer from '../../components/Layouts/Footer';
-import Link from 'gatsby';
+import { Link } from 'gatsby';
 
 class SignUp extends Component {
     render() {
         return (
             <>
                 <Navbar />
-                <PageBanner 
-                    pageTitle="Sign Up" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Sign Up" 
-                /> 
+                <PageBanner
+                    pageTitle="Sign Up"
+                    homePageUrl="/"
+                    homePageText="Home"
+                    activePageText="Sign Up"
+                />
 
                 <section className="user-area-all-style sign-up-area ptb-100">
                     <div className="container">
@@ -44,7 +44,7 @@ class SignUp extends Component {
                                                     <input className="form-control" type="text" name="name" placeholder="Enter Your Username" />
                                                 </div>
                                             </div>
-                                            
+
                                             <div className="col-md-12 col-sm-12">
                                                 <div className="form-group">
                                                     <input className="form-control" type="email" name="email" placeholder="Email Address" />
@@ -86,7 +86,7 @@ class SignUp extends Component {
                 </section>
 
 
-                
+
                 <Footer />
             </>
         );

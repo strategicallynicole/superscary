@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from '../../components/Layouts/Navbar';
 import MainBanner from '../../components/HomeFour/MainBanner';
 import PartnerSliderTwo from '../../components/Common/PartnerSliderTwo';
 import About from '../../components/HomeFour/About';
@@ -14,14 +13,18 @@ import Faq from '../../components/HomeFour/Faq';
 import Newsletter from '../../components/Common/Newsletter';
 import News from '../../components/HomeFour/News';
 import Footer from '../../components/Layouts/Footer';
-import "../../styles/style.css";
+import "../../styles/base.css";
+import Structure from "../../components/Structure/layout.js";
+import Background from '../../components/Parallax/Background';
+
 class Index4 extends Component {
     render() {
         return (
             <>
-                <div className="body-bg-color">
-                    <Navbar />
+    <Structure>
+            <Background>
                     <MainBanner />
+
                     <PartnerSliderTwo />
                     <About />
                     <Services />
@@ -35,8 +38,9 @@ class Index4 extends Component {
                     <Newsletter />
                     <News />
                     <Footer />
-                </div>
-            </>
+</Background>
+</Structure>
+</>
         );
     }
 }

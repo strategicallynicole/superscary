@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
 import './styles.scss';
 import cards from './data.js';
+import { StaticImage } from "gatsby-plugin-image"
+
 import Particles from '../Backgrounds/stars';
 import "../../styles/base.css"
 
@@ -10,14 +12,24 @@ function Stars() {
   return (
       <Particles>
         <Hero>
-          <div className="container">
-            <div className="row">
+          <div className="starscontainer">
+          <h1 className="text-4xl text-center text-white underline dincondensed text-bold">Choose One</h1>
+
+            <div className="starsrow">
               {cards.map((card, i) => (
-                <div className="column">
+                <div className="starscolumn">
                   <Card>
-                    <div className="card-title">{card.title}</div>
-                    <div className="card-body">{card.description}</div>
-                 {/* <Image ratio={card.imageRatio} src={card.image} />*/}
+                    <div className="starscard-title">{card.title}</div>
+                    <div className="starscard-body">{card.description}</div>
+                    <img
+      src={card.image}
+      alt="Run Away Little Girl"
+      placeholder="blurred"
+      layout="fullWidth"
+      width={700}
+      loading="lazy"
+      className="object-cover running-1 animate-enter pb-28"
+    />
                   </Card>
                 </div>
               ))}
@@ -52,7 +64,7 @@ function Card({ children }) {
   return (
     <animated.div
       ref={ref}
-      className="card"
+      className="starscard"
       onMouseEnter={() => setHovered(true)}
       onMouseMove={({ clientX, clientY }) => {
         // Get mouse x position within card
@@ -101,8 +113,8 @@ function Card({ children }) {
 
 function Hero({ children }) {
   return (
-    <div className="hero">
-      <div className="hero-body">{children}</div>
+    <div className="starshero">
+      <div className="starshero-body">{children}</div>
     </div>
   );
 }

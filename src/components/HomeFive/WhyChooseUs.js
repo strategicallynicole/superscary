@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+import Floaters from "../Parallax/floaters"
 
 class WhyChooseUs extends Component {
     render() {
         return (
+
             <section className="choose-ue-area ptb-100 bg-black-gradient">
+
                 <div className="container">
+<Floaters />
+
                     <div className="section-title">
-                        <span>Why Choose Us</span>
+                        <span>Let Us Guess..</span>
                         <h2>Our Platform Takes Away The Hard Process Of Creating Your Website</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi rem quo itaque minus dolorem ratione vero, quisquam reiciendis quia atque eos aspernatur.</p>
                     </div>

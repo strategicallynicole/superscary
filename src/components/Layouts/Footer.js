@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "gatsby"
-
+import { Link } from 'gatsby';
 
 class Footer extends Component {
     render() {
@@ -204,7 +203,7 @@ class Footer extends Component {
                         <img src="/images/shape/footer-shape-two.png" alt="Image" />
                     </div>
                 </footer>
-    
+
                 {/* Footer Bottom Area   */}
                 <footer className="footer-bottom-area">
                     <div className="container">

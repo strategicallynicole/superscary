@@ -16,14 +16,13 @@ import Footer from '../components/Layouts/Footer';
 import "../styles/animate.css";
 import Structure from "../components/Structure/layout.js";
 import Background from '../components/Parallax/Background';
-import Floaters from "../components/Parallax/floaters"
+import "../styles/bootstrap.min.css";
 class Index5 extends Component {
     render() {
         return (
             <>
             <Structure>
             <Background>
-
                 <MainBanner />
                 <Stars />
                 <WhyChooseUs />
@@ -34,12 +33,11 @@ class Index5 extends Component {
                 <Testimonials />
                 <PartnerSlider />
                 <About />
-
                 <Faq />
                 <News />
                 <Footer />
-                </Background>
-                </Structure>
+            </Background>
+            </Structure>
             </>
         );
     }
