@@ -7,23 +7,23 @@ template.
 
 This files table contents are outlined below>>>>>
 
-******************************************* 
+*******************************************
 ** - Default Area Style
 ** - Preloader Area Style
 ** - Go Top Area Style
-** - Page navigation Area Style  
+** - Page navigation Area Style
 ** - Video wave Style
 ** - Default Btn Area Style
 ** - Read More Area Style
-** - Section Title Area Style 
+** - Section Title Area Style
 ** - Preloader Area Style
-** - Keyframes Area Style 
+** - Keyframes Area Style
 ** - Nice Select Area Style
 ** --- HOME ONE STYLE --- **
 ** - Milford Nav Area Style
 ** - Main Banner Area Style
 ** - Features Area Style
-** - About Area Style 
+** - About Area Style
 ** - Choose Us Area Style
 ** - Offer Area Style
 ** - Business  Area Style
@@ -39,7 +39,7 @@ This files table contents are outlined below>>>>>
 ** - Pricing Area Style
 ** - Newsletter Area Style
 ** - Industries Serve Area Style
-** - Brand Area Serve Area Style 
+** - Brand Area Serve Area Style
 ** --- HOME THREE STYLE --- **
 ** - Main Banner Area Three Style
 ** - Team Area Three Style
@@ -65,12 +65,12 @@ This files table contents are outlined below>>>>>
 ** - Coming Soon Area Style
 ** - Sign In & Log In  Area Style
 ** - Ask Question Area Style
-** - Checkout Area Style 
+** - Checkout Area Style
 ** - Cart Area Style
 ** - Blog Details Area Style
 ** - Contact Info Area Style
 ** - Main Contact Area Style
-** - Contact Info Area Three Style 
+** - Contact Info Area Three Style
 ** - Service Details Area Style
 
 *******************************************
@@ -86,7 +86,7 @@ Default Style
 $body-font-family: 'Open Sans', sans-serif;
 $heading-font-family: 'Dosis', sans-serif;
 
-$main-color: #1dd3f8; 
+$main-color: #1dd3f8;
 $body-color: #4d4d4d;
 $heading-color: #212121;
 $white-color: #ffffff;
@@ -113,10 +113,10 @@ a {
 	}
 	&:focus {
 		text-decoration: none;
-	} 
+	}
 }
 button {
-    outline: 0 !important; 
+    outline: 0 !important;
 	box-shadow: none;
 	border: none;
 	background-color: transparent;
@@ -124,11 +124,7 @@ button {
         box-shadow: none;
     }
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    color: $heading-color;
-	font-family: $heading-font-family;
-	font-weight: 700;
-}
+
 h3 {
 	font-size: 22px;
 }
@@ -146,7 +142,7 @@ p {
 	&:last-child {
         margin-bottom: 0;
     }
-} 
+}
 img {
     max-width: 100%;
     height: auto;
@@ -180,7 +176,7 @@ img {
         box-shadow: unset;
     }
 }
-textarea {   
+textarea {
     &.form-control {
         height: auto;
     }
@@ -338,7 +334,7 @@ Go Top Style
 			}
 		}
 	}
-} 
+}
 
 /*
 Page-navigation Area Style
@@ -570,7 +566,7 @@ Read More Area Style
 
 	&:hover {
 		background-color: $main-color;
-		color: $white-color; 
+		color: $white-color;
 		border-color: $main-color;
 	}
 }
@@ -578,30 +574,7 @@ Read More Area Style
 /*
 Section Title Area Style
 ======================================================*/
-.section-title {
-	max-width: 625px;
-	margin: -9px auto 60px;
-	text-align: center;
-	position: relative;
 
-	span {
-		font-size: 14px;
-		color: $main-color;
-		display: inline-block;
-		margin-bottom: 5px;
-	}
-
-	h2 {
-		font-size: 40px;
-		margin-bottom: 10px;
-		position: relative;
-		display: block;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-}
 
 /*
 Preloader Area Style
@@ -650,15 +623,15 @@ Preloader Area Style
 }
 
 @-webkit-keyframes sk-stretchdelay {
-	0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+	0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
 	20% { -webkit-transform: scaleY(1.0) }
 }
 
 @keyframes sk-stretchdelay {
-	0%, 40%, 100% { 
+	0%, 40%, 100% {
 		transform: scaleY(0.4);
 		-webkit-transform: scaleY(0.4);
-	}  20% { 
+	}  20% {
 		transform: scaleY(1.0);
 		-webkit-transform: scaleY(1.0);
 	}
@@ -674,7 +647,7 @@ Keyframes Area Style
 	to {
 		transform: rotate(359deg);
 	}
-} 
+}
 
 @keyframes movebounceShort {
 	0% {
@@ -741,7 +714,7 @@ Keyframes Area Style
 		transform: translate(-40px, 72px) rotate(144deg);
 	}
 	100% {
-	  
+
 		transform: translate(0px, 0px) rotate(0deg);
 	}
 }
@@ -794,7 +767,7 @@ Nice Select Area Style
 
 /*
 Arduix Nav Area Style
-======================================================*/ 
+======================================================*/
 .navbar-area {
 	nav {
 		padding-top: 20px;
@@ -808,7 +781,7 @@ Arduix Nav Area Style
 				font-size: 25px;
 			}
 		}
-			
+
 		.navbar-nav {
 			.nav-item {
 				position: relative;
@@ -904,13 +877,13 @@ Arduix Nav Area Style
 							top: 0;
 							opacity: 0;
 							visibility: hidden;
-							
+
 							li {
 								a {
 									color: $black-color;
 									text-transform: capitalize;
 									font-size: 14px;
-									
+
 									&:hover, &:focus, &.active {
 										color: $main-color;
 									}
@@ -920,12 +893,12 @@ Arduix Nav Area Style
 									top: 0;
 									opacity: 0;
 									visibility: hidden;
-		
+
 									li {
 										a {
 											color: $black-color;
 											text-transform: capitalize;
-		
+
 											&:hover, &:focus, &.active {
 												color: $main-color;
 											}
@@ -935,12 +908,12 @@ Arduix Nav Area Style
 											top: 0;
 											opacity: 0;
 											visibility: hidden;
-				
+
 											li {
 												a {
 													color: $black-color;
 													text-transform: capitalize;
-				
+
 													&:hover, &:focus, &.active {
 														color: $main-color;
 													}
@@ -950,12 +923,12 @@ Arduix Nav Area Style
 													top: 0;
 													opacity: 0;
 													visibility: hidden;
-						
+
 													li {
 														a {
 															color: $black-color;
 															text-transform: capitalize;
-						
+
 															&:hover, &:focus, &.active {
 																color: $main-color;
 															}
@@ -965,12 +938,12 @@ Arduix Nav Area Style
 															top: 0;
 															opacity: 0;
 															visibility: hidden;
-								
+
 															li {
 																a {
 																	color: $black-color;
 																	text-transform: capitalize;
-								
+
 																	&:hover, &:focus, &.active {
 																		color: $main-color;
 																	}
@@ -980,12 +953,12 @@ Arduix Nav Area Style
 																	top: 0;
 																	opacity: 0;
 																	visibility: hidden;
-										
+
 																	li {
 																		a {
 																			color: $black-color;
 																			text-transform: capitalize;
-										
+
 																			&:hover, &:focus, &.active {
 																				color: $main-color;
 																			}
@@ -1103,7 +1076,7 @@ Arduix Nav Area Style
 				top: 1px;
 				margin-left: 5px;
 			}
-		}	
+		}
 	}
 
 	&.is-sticky {
@@ -1115,7 +1088,7 @@ Arduix Nav Area Style
 	}
 }
 
-// Navbar toggler 
+// Navbar toggler
 .navbar-toggler {
     border: none;
     background: #eee !important;
@@ -1147,7 +1120,7 @@ Arduix Nav Area Style
     }
     &.collapsed {
         .top-bar {
-            transform: rotate(0);      
+            transform: rotate(0);
             left: 0;
         }
         .middle-bar {
@@ -1162,7 +1135,7 @@ Arduix Nav Area Style
 
 /*
 Main Banner Area Style
-======================================================*/ 
+======================================================*/
 .main-banner-area {
 	background-image: linear-gradient(#00095e, #000638);
 	padding-top: 200px;
@@ -1283,11 +1256,11 @@ Main Banner Area Style
 			}
 		}
 	}
-} 
+}
 
 /*
 Features Area Style
-======================================================*/ 
+======================================================*/
 .single-features {
 	text-align: center;
 	padding: 30px;
@@ -1329,7 +1302,7 @@ Features Area Style
 		right: 0;
 		width: 40px;
 		margin: auto;
-		
+
 		span {
 			width: 40px;
 			height: 40px;
@@ -1400,7 +1373,7 @@ Features Area Style
 
 /*
 About Area Style
-======================================================*/ 
+======================================================*/
 .about-img {
 	text-align: center;
 }
@@ -1453,7 +1426,7 @@ About Area Style
 
 /*
 Choose Us Area Style
-======================================================*/ 
+======================================================*/
 .features-area {
 	position: relative;
 	z-index: 1;
@@ -1555,7 +1528,7 @@ Choose Us Area Style
 
 /*
 Offer Area Style
-======================================================*/ 
+======================================================*/
 .offer-area {
 	background-color: #f2fefe;
 	position: relative;
@@ -1606,92 +1579,6 @@ Offer Area Style
 		}
 	}
 }
-.single-offer {
-	position: relative;
-    padding-right: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 90px;
-	background-color: $white-color;
-	border-radius: $border-radius;
-	border: 1px dotted $main-color;
-	transition: $transition;
-	margin-bottom: 30px;
-
-	i {
-		position: absolute;
-		left: 30px;
-		top: 28px;
-		background-color: #eeeefe;
-		display: inline-block;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		text-align: center;
-		border-radius: 4px;
-		font-size: 25px;
-		color: #9898f0;
-	}
-	h3 {
-		margin-bottom: 10px;
-		a {
-			color: $heading-color;
-			&:hover {
-				color: $main-color;
-			}
-		}
-	}
-	&:hover {
-		transform: translateY(-5px);
-	}
-}
-.col-lg-4 {
-	&:nth-child(2) {
-		.single-offer {
-			border-color: #76b8f5;
-			i {
-				background-color: #e8f3fd;
-				color: #76b8f5;
-			}
-		}
-	}
-	&:nth-child(3) {
-		.single-offer {
-			border-color: #1ccdca;
-			i {
-				background-color: #e6fdfc;
-				color: #1ccdca;
-			}
-		}
-	}
-	&:nth-child(4) {
-		.single-offer {
-			border-color: #f9ca54;
-			i {
-				background-color: #fcf3dc;
-				color: #f9ca54;
-			}
-		}
-	}
-	&:nth-child(5) {
-		.single-offer {
-			border-color: #ff896b;
-			i {
-				background-color: #fde2db;
-				color: #ff896b;
-			}
-		}
-	}
-	&:nth-child(6) {
-		.single-offer {
-			border-color: #50d890;
-			i {
-				background-color: #e7fdf1;
-				color: #50d890;
-			}
-		}
-	}
-}
 
 .service-card {
 	background-color: $white-color;
@@ -1732,273 +1619,10 @@ Offer Area Style
 
 /*
 Business  Area Style
-======================================================*/ 
-.business-area {
-	.default-btn {
-		margin-top: 10px;
-	}
-}
-.business-content {
-	h2 {
-		font-size: 40px;
-		margin-top: -9px;
-		margin-bottom: 40px;
-	}
-}
-.single-business { 
-    padding-left: 70px;
-	transition: $transition;
-	margin-bottom: 30px;
-	position: relative;
-
-	i {
-		position: absolute;
-		left: 0;
-		top: 5px;
-		background-color: #eeeefe;
-		display: inline-block;
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		text-align: center;
-		border-radius: 0px 30px 30px 30px;
-		font-size: 25px;
-		color: #9898f0; 
-	}
-	h3 {
-		margin-bottom: 10px;
-	}
-	&:hover {
-		transform: translateY(-5px);
-	}
-}
-.single-counter {
-	background-color: #e2e2fc;
-	text-align: center;
-	padding: 50px;
-	border-radius: $border-radius;
-	margin-bottom: 30px;
-	transition: $transition;
-	h2 {
-		margin-bottom: 0;
-		span {
-			font-size: 50px;
-			color: #6b6bd4;
-			font-family: $heading-font-family;
-			font-weight: 700;
-			line-height: 1;
-		}
-		.target {
-			line-height: 1;
-			position: relative;
-			top: 7px;
-		}
-	}
-	p {
-		font-family: $heading-font-family;
-		font-size: 18px;
-		font-weight: 500;
-		margin: 10px 0 0;
-	}
-	&:hover {
-		animation: rubberBand 1s linear;
-	}
-}
-.counter-nth {
-	&:nth-child(2) {
-		.single-counter {
-			margin-top: 30px;
-			background-color: #cae5fe;
-			h2 {
-				span {
-					color: #3785ca;
-				}
-			}
-		}
-	}
-	&:nth-child(3) {
-		.single-counter {
-			background-color: #c0fedc;
-			margin-top: -30px;
-			margin-bottom: 0;
-			h2 {
-				span {
-					color: #23bc68;
-				}
-			}
-		}
-	}
-	&:nth-child(4) {
-		.single-counter {
-			background-color: #fbc7ba;
-			margin-bottom: 0;
-			h2 {
-				span {
-					color: #c05234;
-				}
-			}
-		}
-	}
-}
-
-/*
-Industries Area Style
-======================================================*/ 
-.industries-area {
-	.industries-content {
-		h3 {
-			margin-bottom: 15px;
-		}
-		p {
-			margin-bottom: 10px;
-		}
-		.default-btn {
-			margin-top: 15px;
-			display: inline-block;
-		}
-		.industries-item {
-			list-style-type: none;
-			margin: 15px 0 0;
-			padding: 0;
-
-			li {
-				font-size: 15px;
-				font-weight: 600;
-				color: $heading-color;
-				font-family: $heading-font-family;
-				margin-bottom: 15px;
-				box-shadow: $box-shadow;
-				background-color: $white-color;
-				position: relative;
-				padding-left: 40px;
-				padding-top: 12px;
-				padding-bottom: 12px;
-				padding-right: 12px;
-				i {
-					position: absolute;
-					top: 13px;
-					left: 17px;
-					color: $main-color;
-				}
-			}
-		}
-	}
-	.industries-list-tab {
-		.tabs {
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-
-			li {
-				position: relative;
-				background-color: $white-color;
-				box-shadow: $box-shadow;
-				border-radius: 60px 0 0 60px;
-				transition: $transition;
-				overflow: hidden;
-				z-index: 1;
-				margin-bottom: 20px;
-				&:last-child {
-					margin-bottom: 0;
-				}
-				span {
-					display: inline-block;
-					cursor: pointer;
-					padding: {
-						top: 30px;
-						left: 85px;
-						right: 30px;
-						bottom: 30px;
-					}
-				}
-				&::before {
-					content:  "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 0;
-					height: 100%;
-					background-color: $main-color;
-					z-index: -1;
-					border-radius: 60px 0 0 60px;
-					transition: $transition;
-				}
-				i {
-					position: absolute;
-					left: 30px;
-					top: 32px;
-					font-size: 40px;
-					color: $main-color;
-					line-height: 1;
-					transition: $transition;
-				}
-				h3 {
-					transition: $transition;
-					font-size: 20px;
-				}
-				p {
-					margin-bottom: 0;
-					display: block;
-					transition: $transition;
-					color: $body-color;
-				}
-				&:hover {
-					i {
-						color: $white-color;
-						transform: rotate(360deg);
-					}
-					h3 {
-						color: $white-color;
-					}
-					p {
-						color: $white-color;
-					}
-					a {
-						right: 20px;
-					}
-					&::before {
-						width: 100%;
-						border-radius: 60px 0 0 60px;
-					}
-				}
-				&.current {
-					i {
-						color: $white-color;
-						transform: rotate(360deg);
-					}
-					h3 {
-						color: $white-color;
-					}
-					p {
-						color: $white-color;
-					}
-					a {
-						right: 20px;
-					}
-					&::before {
-						width: 100%;
-						border-radius: 60px 0 0 60px;
-					}
-				}
-			}
-		}
-	}
-	.industries-img {
-		text-align: center;
-	}
-}
-.tab {
-	.tabs_item {
-		display: none;
-		&:first-child {
-			display: block;
-		}
-	}
-}
-
+======================================================*/
 /*
 Client Area Style
-======================================================*/ 
+======================================================*/
 .client-area {
 	background-color: #192064;
 	.section-title {
@@ -2090,7 +1714,7 @@ Client Area Style
 
 /*
 News Area Style
-======================================================*/ 
+======================================================*/
 .single-news {
 	margin-bottom: 30px;
 	.blog-img {
@@ -2439,7 +2063,7 @@ Banner Two Area Style
 		z-index: 1;
 		top: 0;
 		.circle-img {
-			top: -230px; 
+			top: -230px;
 			position: relative;
 			img {
 				animation: rotation 20s linear infinite;
@@ -2668,7 +2292,7 @@ Pricing Area Style
 			}
 		}
 	}
-	
+
 }
 
 /*
@@ -2716,7 +2340,7 @@ Newsletter Area Style
 		.form-control {
 			border-radius: 10px;
 			background-color: $white-color;
-	
+
 		}
 		.default-btn {
 			position: absolute;
@@ -2865,7 +2489,7 @@ Brand Area Serve Area Style
 			transition: $transition;
 		}
 	}
-	
+
 }
 
 
@@ -3110,7 +2734,7 @@ FAQ CSS
 			&:focus {
 				outline: 0;
 			}
-			
+
 			i {
 				position: absolute;
 				right: 25px;
@@ -3213,7 +2837,7 @@ $sub-content-color-home-four: #e7e7e7;
 	p {
 		color: $sub-content-color-home-four;
 	}
-} 
+}
 
 /*
 About Area Four Style
@@ -3251,7 +2875,7 @@ Business Area Four Style
 			color: $sub-content-color-home-four;
 		}
 	}
-} 
+}
 
 /*
 Offer Area Four Style
@@ -3343,7 +2967,7 @@ HOME FIVE STYLE
 
 /*
 Arduix SliderArea Style
-======================================================*/ 
+======================================================*/
 .slider-area {
 	.owl-next {
 		position: absolute;
@@ -3355,7 +2979,7 @@ Arduix SliderArea Style
 		opacity: 0;
 		transform: translateY(50%);
 		padding: 0 !important;
-		
+
 		i {
 			background-color: $main-color;
 			color: $white-color;
@@ -3393,7 +3017,7 @@ Arduix SliderArea Style
 			font-size: 26px;
 			border-radius: 4px;
 			&:hover {
-				background-color: $main-color !important; 
+				background-color: $main-color !important;
 			}
 		}
 	}
@@ -3407,9 +3031,9 @@ Arduix SliderArea Style
 	}
 	.owl-theme {
 		.owl-nav {
-			margin-top: 0 !important; 
+			margin-top: 0 !important;
 		}
-	} 
+	}
 	.owl-theme .owl-nav [class*=owl-]:hover {
 		background-color: transparent;
 	}
@@ -3471,7 +3095,7 @@ Arduix SliderArea Style
 					color: $white-color;
 				}
 			}
-		}   
+		}
 	}
 }
 .slider-area {
@@ -3537,11 +3161,11 @@ Arduix SliderArea Style
 	}
 }
 
-/*==================================================== 
+/*====================================================
 INNER PAGE STYLE
 ======================================================*/
 
-/* 
+/*
 Page Title Area Style
 =====================================================*/
 .page-title-area {
@@ -3603,7 +3227,7 @@ Page Title Area Style
 =====================================================*/
 .error-area {
 	padding: 50px 0;
-	height: 100vh;  
+	height: 100vh;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -3641,9 +3265,9 @@ Page Title Area Style
 			font-size: 19px;
         }
     }
-} 
+}
 
-/* 
+/*
 Coming Soon Area Style
 =====================================================*/
 .coming-soon-area {
@@ -3767,7 +3391,7 @@ Coming Soon Area Style
 			}
 		}
 	}
-} 
+}
 
 /*
 Sign In & Log In  Area Style
@@ -3980,7 +3604,7 @@ Blog Details Area Style
 				margin-bottom: -10px;
 				ul {
 					padding-left: 0;
-					margin-bottom: 0; 
+					margin-bottom: 0;
 					list-style-type: none;
 					li {
 						position: relative;
@@ -4183,7 +3807,7 @@ Blog Details Area Style
 					i {
 						margin-left: 0;
 						font-size: 20px;
-						position: relative; 
+						position: relative;
 						top: 4px;
 					}
 				}
@@ -4343,7 +3967,7 @@ Blog Details Area Style
 				color: $heading-color;
 				margin-bottom: 5px;
 			}
-			
+
 			input[type="datetime-local"] {
 				display: block;
 				width: 100%;
@@ -4359,7 +3983,7 @@ Blog Details Area Style
 			input[type="week"] {
 				display: block;
 				width: 100%;
-				background-color: #f7f7f7;  
+				background-color: #f7f7f7;
 				border: 1px solid #eeeeee;
 				padding: 0.625em 0.7375em;
 				outline: 0;
@@ -4467,7 +4091,7 @@ Blog Details Area Style
 			textarea {
 				display: block;
 				width: 100%;
-				background-color: #f7f7f7; 
+				background-color: #f7f7f7;
 				border: 1px solid #eeeeee;
 				padding: 0.625em 0.7375em;
 				outline: 0;
@@ -4533,13 +4157,13 @@ Blog Details Area Style
 					}
 					&:focus {
 						color: $white-color;
-						background-color: $main-color;  
+						background-color: $main-color;
 					}
 				}
 			}
 		}
 	}
-	
+
 	/*
 	Sidebar Widget Area Style
 	================================*/
@@ -4966,11 +4590,11 @@ Blog Details Area Style
 			display: block;
 			margin-bottom: 4px;
 		}
-	} 
+	}
 }
 
 /*
-Contact Info Area Style 
+Contact Info Area Style
 ================================*/
 .contact-info-area {
 	.single-contact-info {
@@ -5029,7 +4653,7 @@ Contact Info Area Style
 /*
 Main Contact Area Style
 =====================================================*/
-.main-contact-area { 
+.main-contact-area {
 	.contact-wrap {
 		.section-title {
 			text-align: center !important;
@@ -5051,7 +4675,7 @@ Main Contact Area Style
 			background-color: $white-color;
 			box-shadow: $box-shadow;
 			padding: 50px;
-			border-radius: $border-radius; 
+			border-radius: $border-radius;
 			#msgSubmit {
 				position: unset;
 				text-align: center;
@@ -5062,7 +4686,7 @@ Main Contact Area Style
 			}
 		}
 		.form-control {
-			border-radius: $border-radius !important; 
+			border-radius: $border-radius !important;
 		}
 	}
 }

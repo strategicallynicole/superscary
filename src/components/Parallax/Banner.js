@@ -34,7 +34,6 @@ class App extends React.Component {
               className="your-class"
               layers={[
                 {
-                  image: "./waves.svg",
                   amount: 0.3,
                   expanded: true
                 },

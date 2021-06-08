@@ -9,7 +9,7 @@ import Contact from "../components/contact"
 import  "../utils/siteConfig.js"
 import "../styles/base.css";
 import LetUsGuess from "../components/ContentBlocks/letusguess"
-import Stars from "../components/Heroes/stars"; 
+import Stars from "../components/Blocks/LetUsGuess/LetUsGuess";
 
 const Cara = () => (
   <Layout>
@@ -17,7 +17,7 @@ const Cara = () => (
       <Hero offset={0} factor={1} />
             <Stars offset={0} factor={1} />
 
-     
+
     </Structure>
   </Layout>
 )

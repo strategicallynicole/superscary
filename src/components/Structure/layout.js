@@ -4,6 +4,9 @@ import { Dialog, Transition } from '@headlessui/react'
 import navigation from './data.js';
 import Logo from "../Logo/logo.js"
 import "../../styles/base.css"
+import "../../styles/style.css"
+import "../../styles/bootstrap.min.css"
+
 import {
   CalendarIcon,
   ChartBarIcon,
@@ -22,7 +25,8 @@ export default function Structure({children}) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <div className="flex h-screen overflow-hidden bg-gray-100">
+    <div className="bg-cover bg-wallpaper">
+    <div className="flex h-screen overflow-hidden text-white bg-transparent">
       <Transition.Root show={sidebarOpen} as={Fragment}>
         <Dialog
           as="div"
@@ -71,13 +75,9 @@ export default function Structure({children}) {
                   </button>
                 </div>
               </Transition.Child>
-              <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
+              <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto bg-gray-800">
                 <div className="flex items-center flex-shrink-0 px-4">
-                  <img
-                    className="w-auto h-8"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    alt="Workflow"
-                  />
+                  <Logo type="standard" logotype="standard"/>
                 </div>
                 <nav className="px-2 mt-5 space-y-1">
                   {navigation.map((item) => (
@@ -112,16 +112,16 @@ export default function Structure({children}) {
     <div className="hidden md:flex md:flex-shrink-0">
         <div className="flex flex-col w-64">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex flex-col flex-1 h-0 bg-gray-800">
+          <div className="flex flex-col flex-1 h-0">
             <div className="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
               <div className="flex items-center flex-shrink-0 px-4">
                 <img
                   className="w-auto h-8"
-                  src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                  src=""
                   alt="Workflow"
                 />
               </div>
-              <nav className="flex-1 px-2 mt-5 space-y-1 bg-gray-800">
+              <nav className="flex-1 px-2 mt-5 space-y-1 ">
                 {navigation.map((item) => (
                    <a
                     key={item.name}
@@ -143,20 +143,7 @@ export default function Structure({children}) {
                 ))}
               </nav>
             </div>
-            <div className="flex flex-shrink-0 p-4 bg-gray-700">
-              <a href="#" className="flex-shrink-0 block w-full group">
-                <div className="flex items-center">
-                  <div>
-                    <img
-                      className="inline-block rounded-full h-9 w-9"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </div>
 
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -174,6 +161,7 @@ export default function Structure({children}) {
            {children}
         </main>
       </div>
+    </div>
     </div>
   )
 }

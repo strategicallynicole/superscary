@@ -1,27 +1,23 @@
 import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
-import './styles.scss';
+import './LetUsGuess.scss';
 import cards from './data.js';
 import { StaticImage } from "gatsby-plugin-image"
 
-import Particles from '../Backgrounds/stars';
-import "../../styles/base.css"
+import Particles from '../../Backgrounds/stars';
 
 function Stars() {
   return (
       <Particles>
         <Hero>
           <div className="starscontainer">
-          <h1 className="text-4xl text-center text-white underline dincondensed text-bold">Choose One</h1>
+          <h1 className="text-4xl text-center text-white underline dincondensed text-bold">Let Us Guess...</h1>
 
             <div className="starsrow">
               {cards.map((card, i) => (
                 <div className="starscolumn">
-                  <Card>
-                    <div className="starscard-title">{card.title}</div>
-                    <div className="starscard-body">{card.description}</div>
-                    <img
+                  <Card>        <img
       src={card.image}
       alt="Run Away Little Girl"
       placeholder="blurred"
@@ -30,6 +26,9 @@ function Stars() {
       loading="lazy"
       className="object-cover running-1 animate-enter pb-28"
     />
+                    <div className="starscard-title">{card.title}</div>
+                    <div className="starscard-body">{card.description}</div>
+
                   </Card>
                 </div>
               ))}

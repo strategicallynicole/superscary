@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Layouts/Navbar';
 import PageBanner from '../../components/Common/PageBanner';
 import PricingStyleOne from '../../components/Pricing/PricingStyleOne';
-import MakeYourBusiness from '../../components/Common/MakeYourBusiness';
+import MakeYourBusiness from '../../components/Blocks/Stats/Stats';
 import Footer from '../../components/Layouts/Footer';
 
 class Pricing extends Component {
@@ -10,12 +10,12 @@ class Pricing extends Component {
         return (
             <>
                 <Navbar />
-                <PageBanner 
-                    pageTitle="Pricing" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Pricing" 
-                /> 
+                <PageBanner
+                    pageTitle="Pricing"
+                    homePageUrl="/"
+                    homePageText="Home"
+                    activePageText="Pricing"
+                />
                 <PricingStyleOne />
                 <div className="bg-fafafa">
                     <MakeYourBusiness />

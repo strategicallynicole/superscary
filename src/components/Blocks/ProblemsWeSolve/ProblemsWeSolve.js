@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import Floaters from "../Parallax/floaters"
+import "./ProblemsWeSolve.scoped.scss";
+import SectionTitle from "../../Titles/SectionTitle";
+
+const subtitle="<div>What Makes Us The <span className='text-2xl text-center text-gradient grotesk text-bold'>Best</span></div>";
 
 class WhyChooseUs extends Component {
     render() {
         return (
 
-            <section className="choose-ue-area ptb-100 bg-black-gradient">
+            <section className="choose-ue-area ptb-100">
 
                 <div className="container">
-<Floaters />
-
-                    <div className="section-title">
-                        <span>Let Us Guess..</span>
-                        <h2>Our Platform Takes Away The Hard Process Of Creating Your Website</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi rem quo itaque minus dolorem ratione vero, quisquam reiciendis quia atque eos aspernatur.</p>
-                    </div>
+<SectionTitle subtitle="What is it like" title='Problems We Solve' body='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi rem quo itaque minus dolorem ratione vero, quisquam reiciendis quia atque eos aspernatur.'/>
 
                     <div className="row align-items-center">
                         <div className="col-lg-6">

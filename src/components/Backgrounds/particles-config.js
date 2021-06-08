@@ -3,14 +3,17 @@
 export default {
   particles: {
     number: {
-      value: 100,
+      value: 75,
       density: {
-        enable: false,
+        enable: true,
         value_area: 600
       }
     },
     color: {
-      value: '#ffffff'
+      value: '#FE943C',
+      value: '#EA4C89',
+      value: '#212121',
+
     },
     shape: {
       type: 'circle',
@@ -20,22 +23,22 @@ export default {
       }
     },
     opacity: {
-      value: 0.2,
-      random: false,
+      value: 0.9,
+      random: true,
       anim: {
-        enable: false,
-        speed: 1,
-        opacity_min: 0.1,
+        enable: true,
+        speed: .03,
+        opacity_min: 0.7,
         sync: false
       }
     },
     size: {
-      value: 3,
+      value: 8,
       random: true,
       anim: {
         enable: false,
-        speed: 40,
-        size_min: 0.1,
+        speed: 20,
+        size_min: 0.9,
         sync: false
       }
     },
@@ -48,14 +51,14 @@ export default {
     },
     move: {
       enable: true,
-      speed: 10,
+      speed: 4,
       direction: 'left',
       random: true,
-      straight: true,
+      straight: false,
       out_mode: 'out',
-      bounce: false,
+      bounce: true,
       attract: {
-        enable: false,
+        enable: true,
         rotateX: 600,
         rotateY: 1200
       }
@@ -65,8 +68,8 @@ export default {
     detect_on: 'canvas',
     events: {
       onhover: {
-        enable: false,
-        mode: 'grab'
+        enable: true,
+        mode: 'push'
       },
       onclick: {
         enable: true,
@@ -78,7 +81,7 @@ export default {
       grab: {
         distance: 200,
         line_linked: {
-          opacity: 1
+          opacity: 0
         }
       },
       bubble: {

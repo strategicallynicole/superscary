@@ -8,49 +8,49 @@
 @tailwind utilities;
 
 :root {
-  --azure-radiance: 
+  --azure-radiance:
 rgba(0, 153, 255, 1);
-  --licorice: 
+  --licorice:
 rgba(18, 18, 18, 1);
-  --haiti: 
+  --haiti:
 rgba(23, 16, 64, 1);
-  --log-cabin: 
+  --log-cabin:
 rgba(33, 33, 33, 1);
-  --mine-shaft-2: 
+  --mine-shaft-2:
 rgba(45, 47, 51, 1);
-  --mine-shaft: 
+  --mine-shaft:
 rgba(51, 51, 51, 1);
-  --blue: 
+  --blue:
 rgba(51, 102, 255, 1);
-  --ship-gray: 
+  --ship-gray:
 rgba(62, 62, 62, 1);
-  --purple-heart: 
+  --purple-heart:
 rgba(102, 51, 255, 1);
-  --rock-blue: 
+  --rock-blue:
 rgba(152, 180, 208, 1);
-  --rock-blue: 
+  --rock-blue:
 rgba(153, 180, 209, 1);
-  --star-dust: 
+  --star-dust:
 rgba(160, 160, 160, 1);
-  --regent-st-blue: 
+  --regent-st-blue:
 rgba(174, 215, 236, 1);
-  --biloba-flower: 
+  --biloba-flower:
 rgba(183, 163, 254, 1);
-  --botticelli: 
+  --botticelli:
 rgba(204, 217, 232, 1);
-  --link-water: 
+  --link-water:
 rgba(219, 225, 235, 1);
-  --mystic: 
+  --mystic:
 rgba(224, 232, 242, 1);
-  --athens-gray: 
+  --athens-gray:
 rgba(231, 237, 245, 1);
-  --wild-sand: 
+  --wild-sand:
 rgba(242, 244, 246, 1);
-  --white-lilac: 
+  --white-lilac:
 rgba(247, 249, 252, 1);
-  --neon-carrot: 
+  --neon-carrot:
 rgba(254, 148, 60, 1);
-  --white: 
+  --white:
 rgba(255, 255, 255, 1);
 
   --font-size-xxxxxs: 6px;
@@ -385,6 +385,15 @@ rgba(255, 255, 255, 1);
   font-weight: 400;
   font-style: normal;
 }
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: none; /* 2 */
+  border-color: transparent; /* 2 */
+}
+
 .border-1px-licorice {
   border-width: 1px;
   border-style: solid;

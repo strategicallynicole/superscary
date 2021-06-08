@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby"
-
+import "./Stats.scoped.scss";
 
 class MakeYourBusiness extends Component {
     render() {
         return (
-            <section className="business-area ptb-100">
+            <section className="px-10 business-area ptb-100">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="business-content">
-                                <h2>Make Your Business More Competitive And Enduring</h2>
+                                <h2>By The Numbers</h2>
                             </div>
 
                             <div className="single-business">
@@ -38,22 +38,22 @@ class MakeYourBusiness extends Component {
                             <div className="row">
                                 <div className="col-lg-6 col-sm-6 counter-nth">
                                     <div className="single-counter">
-                                        <h2><span className="target">95%</span></h2>
-                                        <p>Project Completed</p>
+                                        <h2><span className="target">318</span></h2>
+                                        <p>Brands Reborn</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6 col-sm-6 counter-nth">
                                     <div className="single-counter">
-                                        <h2><span className="target">90%</span></h2>
-                                        <p>Design</p>
+                                        <h2><span className="target">247</span></h2>
+                                        <p>Strategies Delivered</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6 col-sm-6 counter-nth">
                                     <div className="single-counter">
-                                        <h2><span className="target">85%</span></h2>
-                                        <p>Happy Clients</p>
+                                        <h2><span className="target">0</span></h2>
+                                        <p>Fucks Given</p>
                                     </div>
                                 </div>
 

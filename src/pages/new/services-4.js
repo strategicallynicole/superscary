@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Layouts/Navbar';
 import PageBanner from '../../components/Common/PageBanner';
 import ServicesStyleFour from '../../components/Services/ServicesStyleFour';
-import MakeYourBusiness from '../../components/Common/MakeYourBusiness';
+import MakeYourBusiness from '../../components/Blocks/Stats/Stats';
 import Footer from '../../components/Layouts/Footer';
 
 class Services4 extends Component {
@@ -10,12 +10,12 @@ class Services4 extends Component {
         return (
             <>
                 <Navbar />
-                <PageBanner 
-                    pageTitle="Services Style Four" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Services Style Four" 
-                /> 
+                <PageBanner
+                    pageTitle="Services Style Four"
+                    homePageUrl="/"
+                    homePageText="Home"
+                    activePageText="Services Style Four"
+                />
                 <ServicesStyleFour />
                 <MakeYourBusiness />
                 <Footer />

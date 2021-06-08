@@ -6,7 +6,7 @@ import About from '../../components/HomeTwo/About';
 import Services from '../../components/HomeTwo/Services';
 import Pricing from '../../components/HomeTwo/Pricing';
 import Newsletter from '../../components/Common/Newsletter';
-import MakeYourBusiness from '../../components/Common/MakeYourBusiness';
+import MakeYourBusiness from '../../components/Blocks/Stats/Stats';
 import Testimonials from '../../components/Common/Testimonials';
 import WhatWeOffer from '../../components/HomeTwo/WhatWeOffer';
 import News from '../../components/Common/News';
@@ -20,7 +20,7 @@ class Index2 extends Component {
                 <Navbar />
                 <MainBanner />
                 <Features />
-                <About /> 
+                <About />
                 <Services />
                 <Pricing />
                 <Newsletter />

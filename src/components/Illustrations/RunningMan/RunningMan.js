@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import "./index.scss"
+import "./RunningMan.scoped.scss"
 export default function RunningMan() {
   return (
 
@@ -9,7 +9,6 @@ export default function RunningMan() {
       alt="Run Away Little Girl"
       placeholder="blurred"
       layout="fullWidth"
-      width={700}
       loading="lazy"
       className="object-cover running-1 animate-enter pb-28"
     />

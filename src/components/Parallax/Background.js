@@ -28,7 +28,6 @@ export default function Background({children}) {
                   },
                 {
 
-                  image: "./waves.svg",
                   amount: 3,
                   expanded: true
                 },

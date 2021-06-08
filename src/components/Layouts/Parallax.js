@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-const wallpaper = require("../../images/wallpaper.png");
+/*const wallpaper = require("../../images/wallpaper.png");*/
 import { animated, useSpring } from 'react-spring';
 import { url } from 'vfile-message';
 
@@ -9,7 +9,7 @@ import { url } from 'vfile-message';
 // of the effect by playing around with the values and units.
 const calc = o => `translateY(${o * 0.1}px)`;
 
-const ParallaxContainer = ({children}, {wallpaper}) => {
+const ParallaxContainer = ({children}/*}, {wallpaper}*/) => {
   const ref = useRef();
   const [{ offset }, set] = useSpring(() => ({ offset: 0 }));
 

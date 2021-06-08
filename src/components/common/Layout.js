@@ -8,7 +8,8 @@ import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 
 // Styles
-import '../../styles/app.css'
+import '../../styles/style.scss'
+import '../../styles/base.css'
 /**
 * Main layout component
 *
@@ -76,7 +77,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <div className="viewport-bottom">
                     {/* The footer at the very bottom of the screen */}
                     <footer className="site-foot">
-                        <div className="site-foot-nav container">
+                        <div className="container site-foot-nav">
                             <div className="site-foot-nav-left">
                             </div>
                             <div className="site-foot-nav-right">

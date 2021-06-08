@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-
+border-radius: 20px;
   background: linear-gradient(90deg, #8F6AFA 0%, #375CDC 47.03%, #0099EE 105%)}
 
 .starshero-body {
@@ -47,7 +47,10 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  border-radius: 20px;
 }
+
+
 
 .starsrow {
   display: flex;

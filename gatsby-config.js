@@ -53,7 +53,7 @@ module.exports = {
     headline: 'hello',
     titleAlt: 'hello'
   },
-  
+
     plugins: [
          {
       resolve: 'gatsby-plugin-theme-ui',
@@ -85,7 +85,7 @@ options: {
         /**
          *  Content Plugins
          */
-      
+
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -102,7 +102,7 @@ options: {
                 name: `images`,
             },
         },
-  
+
         {
             resolve: `gatsby-source-ghost`,
             options:
@@ -158,7 +158,7 @@ options: {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-       icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
+       icon: `src/images/logos/symbol.png`, // This path is relative to the root of the site.
       },
     },
         {
