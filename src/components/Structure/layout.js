@@ -4,8 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import navigation from './data.js';
 import Logo from "../Logo/logo.js"
 import "../../styles/base.css"
-import "../../styles/style.css"
-import "../../styles/bootstrap.min.css"
+import "../../styles/style.scss"
 
 import {
   CalendarIcon,

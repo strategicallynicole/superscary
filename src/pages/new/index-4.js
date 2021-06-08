@@ -15,7 +15,7 @@ import News from '../../components/HomeFour/News';
 import Footer from '../../components/Layouts/Footer';
 import "../../styles/base.css";
 import Structure from "../../components/Structure/layout.js";
-import Background from '../../components/Parallax/Background';
+import Background from '../../components/Backgrounds/Waves';
 
 class Index4 extends Component {
     render() {

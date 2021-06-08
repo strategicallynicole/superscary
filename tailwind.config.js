@@ -2,6 +2,14 @@ module.exports = {
     purge: ["./public/"],
     darkMode: 'media',
     theme: {
+        borderColor: theme => ({
+            DEFAULT: theme('colors.indigo.500', 'currentColor'),
+           'indigo': theme('colors.indigo.500'),
+          }),
+        borderRadius: {
+           DEFAULT: '2.5rem',
+           '4xl': '2.5rem',
+          },
       fontSize: {
         'xs': '1rem',
         'sm': '1.15rem',
@@ -37,6 +45,14 @@ module.exports = {
             blur: `blur(20px)`,
         },
         extend: {
+            borderColor: theme => ({
+                DEFAULT: theme('colors.indigo.500', 'currentColor'),
+               'indigo': theme('colors.indigo.500'),
+              }),
+           borderRadius: {
+              DEFAULT: '2.5rem',
+              '4xl': '2.5rem',
+             },
         backgroundImage: theme => ({
          'waves': "url('../images/waves.svg')",
          'gradient': "linear-gradient(90deg, #8F6AFA 0%, #375CDC 47.03%, #0099EE 105%)",

@@ -5,7 +5,7 @@ import './LetUsGuess.scss';
 import cards from './data.js';
 import { StaticImage } from "gatsby-plugin-image"
 
-import Particles from '../../Backgrounds/stars';
+import Particles from '../../Backgrounds/Particles/Stars';
 
 function Stars() {
   return (

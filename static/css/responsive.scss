@@ -1371,37 +1371,8 @@
     .offer-area .offer-shape img:nth-child(2) {
         opacity: 0.3;
     }
-    .business-content h2 {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .business-area .default-btn {
-        margin-top: 0;
-    }
-    .counter-nth {
-        &:nth-child(1) {
-            .single-counter {
-                margin-top: 30px;
-            }
-        }
-        &:nth-child(2) {
-            .single-counter {
-                margin-top: 30px;
-            }
-        }
-        &:nth-child(3) {
-            .single-counter {
-                margin-top: 0px;
-                margin-bottom: 0;
-            }
-        }
-    }
-    .single-counter h2 span {
-        font-size: 40px;
-    }
-    .single-counter p {
-        font-size: 18px;
-    }
+
+
     .industries-area {
         .industries-list-tab {
             .tabs {

@@ -12,9 +12,8 @@ import Faq from '../components/HomeFive/Faq';
 import Stars from "../components/Blocks/LetUsGuess/LetUsGuess";
 import News from '../components/Common/News';
 import Footer from '../components/Layouts/Footer';
-import "../styles/animate.css";
 import Structure from "../components/Structure/layout.js";
-import Background from '../components/Parallax/Background';
+import Background from '../components/Backgrounds/Waves/Waves';
 class Index extends Component {
     render() {
         return (
