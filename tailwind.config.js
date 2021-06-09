@@ -5,6 +5,7 @@ module.exports = {
         borderColor: theme => ({
             DEFAULT: theme('colors.indigo.500', 'currentColor'),
            'indigo': theme('colors.indigo.500'),
+            'pink': theme('colors.pink.500'),
           }),
         borderRadius: {
            DEFAULT: '2.5rem',
@@ -162,6 +163,7 @@ module.exports = {
     },
     plugins: [
         require(`@tailwindcss/typography`),
+        require('tailwind-bootstrap-grid'),
         require(`@tailwindcss/forms`),
         require(`@tailwindcss/line-clamp`),
         require(`@tailwindcss/aspect-ratio`),

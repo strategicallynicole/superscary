@@ -1,9 +1,9 @@
 // copied from https://github.com/ghosh/uiGradients/blob/master/gradients.json
 
 const gradients = [
-  {
-    name: 'Berimbolo',
-    colors: ['#02111D', '#037BB5', '#02111D'],
+    {
+    name: 'Main',
+    colors: ['#8F6AFA', '#375CDC', '#0099EE'],
   },
   {
     name: 'Mango',

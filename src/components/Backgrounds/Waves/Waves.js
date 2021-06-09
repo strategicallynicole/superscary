@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
-import "./backgroundstyles.css";
+import "./Waves.scoped.scss";
 
 export default function Background({children}) {
     var state = {

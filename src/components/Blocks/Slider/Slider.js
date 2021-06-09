@@ -41,13 +41,13 @@ class MainBanner extends Component {
           <section className="slider-area">
           <div className="container pt-6 mx-auto">
                     <div className="w-full pb-6 md:w-1/4 md:pb-0 md:pr-6">
-                    <h1 className="text-white border-l-8 2xl:text-9xl xl:text-9xl text-9xl dincondensed">
+                    <h1 className="text-white underline 2xl:text-9xl xl:text-9xl text-9xl dincondensed">
                                                 Hi.
                                             </h1>
-                                            <h2 className="font-bold underline dincondensed white-text font-size-3xl ">
-                                                We Need To Talk.
+                                            <h2 className="font-bold dincondensed white-text font-size-3xl ">
+                                                We <span className="underline">Need</span> To Talk.
                                             </h2>
-                                            <p className="grotesk white-text font-size-xl">
+                                            <p className="no-underline grotesk white-text font-size-xl">
                                                 It's about your brand and creative again.
                                                 It's been... frightening.
                                             </p>

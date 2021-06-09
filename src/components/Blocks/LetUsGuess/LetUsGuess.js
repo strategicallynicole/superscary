@@ -6,12 +6,12 @@ import cards from './data.js';
 import { StaticImage } from "gatsby-plugin-image"
 
 import Particles from '../../Backgrounds/Particles/Stars';
-
 function Stars() {
   return (
+<div className="rounded bg-gradient">
       <Particles>
         <Hero>
-          <div className="starscontainer">
+          <div className="px-20 py-20 starscontainer">
           <h1 className="text-4xl text-center text-white underline dincondensed text-bold">Let Us Guess...</h1>
 
             <div className="starsrow">
@@ -19,7 +19,7 @@ function Stars() {
                 <div className="starscolumn">
                   <Card>        <img
       src={card.image}
-      alt="Run Away Little Girl"
+      alt={card.title}
       placeholder="blurred"
       layout="fullWidth"
       width={700}
@@ -36,6 +36,7 @@ function Stars() {
           </div>
         </Hero>
       </Particles>
+      </div>
   );
 }
 

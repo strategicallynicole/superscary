@@ -24,7 +24,7 @@
 
 
 .h1, .h2, h2, h1 {
-    @apply leading-loose underline dincondensed bold;
+    @apply leading-loose dincondensed bold;
 }
 
 p, .p, body, section {

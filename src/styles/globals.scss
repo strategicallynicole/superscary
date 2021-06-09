@@ -1,6 +1,7 @@
-@import "grid.scss";
-@import "responsive.scss";
-
+@import "./grid.scss";
+@import "./mixins.scss";
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+$shadow: #171040;
 $transition: .6s all ease-in-out;
 $main-color: #121212;
 $white-color: #fefefe;
@@ -11,7 +12,7 @@ $heading-font-family: "din-condensed";
 $gradient: linear-gradient(90deg, #6633FF 18.59%, #3366FF 68.36%, #0099FF 105%);
 $purple-gradient: linear-gradient(180deg, #32255B 0%, #2B2A36 100%);
 $black-gradient: linear-gradient(90deg, #292929 2.11%, #000000 104.85%);
-
+$white: #ffffff;
 $purple: #6633FF;
 $blue: #3366FF;
 $lightblue: #0099FF;

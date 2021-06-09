@@ -208,46 +208,7 @@
         opacity: 0.3;
     }
 
-    .industries-area {
-        .industries-list-tab {
-            .tabs {
-                li {
-                    a {
-                        padding-top: 20px;
-                        padding-left: 70px;
-                        padding-right: 20px;
-                        padding-bottom: 20px;
-                    }
-                    i {
-                        top: 35px;
-                    }
-                }
-            }
-        }
-    }
-    .industries-area {
-        .industries-content {
-            .industries-item {
-                margin-top: 0;
-            }
-        }
-        .mb {
-            margin-bottom: 25px;
-        }
-        .industries-list-tab {
-            .tabs {
-                margin: 0 0 25px;
-            }
-        }
-    }
-    .industries-img {
-        &.left-img {
-            margin-bottom: 30px;
-        }
-        &.right-img {
-            margin-top: 30px;
-        }
-    }
+
     .single-client {
         padding-top: 40px;
         padding-left: 20px;
@@ -290,17 +251,7 @@
             font-size: 25px;
         }
     }
-    .industries-serve-area {
-        padding-bottom: 40px;
-        .single-industries {
-            i {
-                top: 36px;
-            }
-        }
-        .industries-img {
-            margin-bottom: 30px;
-        }
-    }
+
     .pb-50 {
         padding-bottom: 0;
     }
@@ -469,9 +420,7 @@
     .contact-form.contact-form-mb {
         margin-bottom: 30px;
     }
-    .industries-area .industries-list-tab .tabs li a {
-        padding-right: 95px;
-    }
+
     .faq-contact-area {
         .section-title {
             margin-bottom: 20px;
@@ -1079,9 +1028,7 @@
             float: right;
         }
     }
-    .industries-area .industries-list-tab .tabs li a {
-        padding-right: 95px;
-    }
+
     .coming-soon-area  {
         .coming-soon-content {
             h1 {
@@ -1122,38 +1069,6 @@
     }
     .contact-info-area .single-contact-info {
         padding: 20px;
-    }
-    .industries-area {
-        .industries-list-tab {
-            .tabs {
-                li {
-                    display: inline-block;
-                    width: 45%;
-                    margin: 0 10px;
-                    margin-bottom: 10px;
-                    &:last-child {
-                        margin-bottom: 10px;
-                    }
-                    span {
-                        padding-right: 20px;
-                        padding-top: 20px;
-                        padding-left: 70px;
-                        padding-bottom: 20px;
-                    }
-
-                    h3 {
-                        font-size: 18px;
-                        margin-bottom: 3px;
-                    }
-
-                    i {
-                        font-size: 30px;
-                        top: 28px;
-                        left: 26px;
-                    }
-                }
-            }
-        }
     }
     .service-card {
         padding: 20px 15px;
@@ -1294,93 +1209,12 @@
         margin-bottom: 30px;
         text-align: center;
     }
-    .choose-ue-area {
-        .col-8 {
-            flex: 100%;
-            max-width: 100%;
-        }
-    }
-    .choose-title {
-        margin-bottom: 40px;
-        h2 {
-            font-size: 30px;
-        }
-    }
-    .choose-content ul {
-        li {
-            max-width: 47%;
-            display: inline-block;
-        }
-        .ml {
-            margin-left: 30px;
-        }
-        .ml-25 {
-            margin-left: 25%;
-        }
-    }
-    .choose-content {
-        ul {
-            li {
-                padding-left: 20px;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                padding-right: 20px;
-                span {
-                    position: unset;
-                     i {
-                        top: 60px;
-                        left: 70px;
-                     }
-                }
-            }
-        }
-    }
-    .choose-img {
-        text-align: center;
-    }
+
     .offer-area .offer-shape img:nth-child(2) {
         opacity: 0.3;
     }
 
-    .industries-area {
-        .industries-list-tab {
-            .tabs {
-                li {
-                    span {
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
-    }
-    .industries-area {
-        .industries-list-tab {
-            .tabs {
-                li {
-                    a {
-                        padding-top: 20px;
-                        padding-left: 70px;
-                        padding-right: 20px;
-                        padding-bottom: 20px;
-                    }
-                }
-            }
-        }
 
-        .industries-content {
-            h3 {
-                font-size: 25px;
-            }
-        }
-    }
-    .industries-img {
-        &.left-img {
-            margin-bottom: 30px;
-        }
-        &.right-img {
-            margin-top: 30px;
-        }
-    }
     .single-client {
         padding-top: 40px;
         padding-left: 20px;
@@ -1424,17 +1258,7 @@
             font-size: 25px;
         }
     }
-    .industries-serve-area {
-        padding-bottom: 40px;
-        .single-industries {
-            i {
-                top: 36px;
-            }
-        }
-        .industries-img {
-            margin-bottom: 30px;
-        }
-    }
+
     .faq-img {
         margin-top: 30px;
         text-align: center;
@@ -1451,9 +1275,7 @@
             }
         }
     }
-    .choose-content ul li:last-child {
-        margin-bottom: 30px;
-    }
+
     .main-banner-area-four {
         padding-bottom: 70px !important;
         .banner-text .banner-btn .default-btn.active {
@@ -1559,23 +1381,7 @@
     .contact-form.contact-form-mb {
         margin-bottom: 30px;
     }
-    .industries-area {
-        .industries-list-tab {
-            .tabs {
-                li {
-                    display: inline-block;
-                    width: 45%;
-                    margin: 0 15px;
-                    margin-bottom: 10px;
-                    &:last-child {
-                        margin-bottom: 10px;
-                    }
-                    a {
-                        padding-right: 115px;
-                    }
-                }
-            }
-        }
+
     }
     .news-details-area {
         .widget-area {
@@ -1656,7 +1462,7 @@
             }
         }
     }
-}
+
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
     .navbar-area {
@@ -1722,39 +1528,7 @@
             font-size: 18px;
         }
     }
-    .industries-area {
-        .industries-list-tab {
-            .tabs {
-                li {
-                    h3 {
-                        font-size: 18px;
-                    }
-                    p {
-                        font-size: 13px;
-                    }
-                    span {
-                        font-size: 13px;
-                        padding-top: 20px;
-                        padding-left: 65px;
-                        padding-right: 20px;
-                        padding-bottom: 20px;
-                    }
-                    a {
-                        padding-top: 20px;
-                        padding-left: 70px;
-                        padding-right: 20px;
-                        padding-bottom: 20px;
-                    }
-                    i {
-                        left: 22px;
-                        top: 30px;
-                        font-size: 30px;
-                    }
-                }
-            }
-        }
-    }
-    .main-banner-area-two {
+       .main-banner-area-two {
         padding-top: 170px;
         padding-bottom: 200px;
         .banner-img {
@@ -1929,20 +1703,7 @@
             font-size: 18px;
         }
     }
-    .single-industries {
-        padding-top: 25px;
-        padding-left: 80px;
-        padding-right: 25px;
-        padding-bottom: 25px;
 
-        h3 {
-            font-size: 18px;
-        }
-
-        i {
-            left: 25px;
-        }
-    }
     .service-sidebar-area {
         .service-details-title {
             font-size: 20px;

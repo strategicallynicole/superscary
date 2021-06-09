@@ -5901,7 +5901,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0, chalk@^4.1.0:
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
   integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
@@ -19999,6 +19999,14 @@ table@^6.0.4, table@^6.0.9:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
+
+tailwind-bootstrap-grid@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/tailwind-bootstrap-grid/-/tailwind-bootstrap-grid-4.0.0.tgz#37481216682d623d2ab76317897c9a6a599da4f6"
+  integrity sha512-NfmH7WszS3JMyArtp0JyZC9tBt85zNCtZM5womZRNVeo8iscX8akaLr25WfhA8Mo0JkY8ok0xlQ9ZcrWt4/Sjw==
+  dependencies:
+    chalk "^4.1.1"
+    joi "^17.4.0"
 
 tailwindcss@^2.1.2:
   version "2.1.2"

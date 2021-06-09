@@ -1,5 +1,5 @@
 
-
+@import "../../../styles/globals.scss";
 .starsinfo {
   position: relative;
   z-index: 1;
@@ -30,7 +30,7 @@
   align-items: stretch;
   justify-content: space-between;
 border-radius: 20px;
-  background: linear-gradient(90deg, #8F6AFA 0%, #375CDC 47.03%, #0099EE 105%)}
+  background: transparent;}
 
 .starshero-body {
   display: flex;
@@ -74,7 +74,7 @@ border-radius: 20px;
   background: linear-gradient(90deg, #292929 2.11%, #000000 104.85%);
   border-radius: 20px;
   color: #ffffff !important;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  @include shadow;
   transition: box-shadow 0.5s;
   will-change: transform;
 }

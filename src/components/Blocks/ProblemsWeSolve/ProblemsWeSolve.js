@@ -4,66 +4,98 @@ import SectionTitle from "../../Titles/SectionTitle";
 
 const subtitle="<div>What Makes Us The <span className='text-2xl text-center text-gradient grotesk text-bold'>Best</span></div>";
 
-class WhyChooseUs extends Component {
+class ProblemsWeSolve extends Component {
     render() {
         return (
 
-            <section className="choose-ue-area ptb-100">
+            <section className="problems-we-solve-area ptb-100">
 
                 <div className="container">
+
+
 <SectionTitle subtitle="What is it like" title='Problems We Solve' body='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi rem quo itaque minus dolorem ratione vero, quisquam reiciendis quia atque eos aspernatur.'/>
 
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className="choose-content">
-                                <ul>
-                                    <li>
-                                        <span>01 <i className="flaticon-technical-support"></i></span>
-                                        <h3>Safe Security</h3>
-                                        <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                                    </li>
-                                    <li className="ml">
+
+
+
+
+<div class="flex flex-wrap -mx-1 overflow-hidden sm:-mx-1 md:-mx-1 lg:-mx-1 xl:-mx-1">
+
+
+
+
+
+<div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 md:my-1 md:px-1 md:w-1/2 lg:my-1 lg:px-1 lg:w-1/2 xl:my-1 xl:px-1 xl:w-1/2">
+<div className="problems-we-solve-content">
+
+<ul>
+    <li className="rounded">
+        <span>01 <i className="flaticon-technical-support"></i></span>
+        <h3>Safe Security</h3>
+        <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </li>
+    <li className="rounded ml">
                                         <span>02 <i className="flaticon-shield"></i></span>
                                         <h3>Technical Support</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                     </li>
-                                    <li className="ml-25">
+
+                                    <li className="rounded ml-25">
                                         <span>03 <i className="flaticon-support"></i></span>
                                         <h3>Live Support</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                     </li>
-                                </ul>
-                            </div>
-                        </div>
+                                    </ul>
 
-                        <div className="col-lg-6">
-                            <div className="choose-content">
+</div>
+</div>
+  <div class="my-1 px-2 w-full overflow-hidden sm:my-1 sm:px-2 md:my-1 md:px-2 md:w-1/2 lg:my-1 lg:px-2 lg:w-1/2 xl:my-1 xl:px-2 xl:w-1/2">
+
+  <div className="problems-we-solve-content">
                                 <ul>
-                                    <li>
+
+
+                                    <li className="rounded">
                                         <span>04 <i className="flaticon-technical-support"></i></span>
                                         <h3>Free Try </h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                     </li>
 
-                                    <li className="ml">
+
+
+
+  <li className="rounded ml">
                                         <span>05 <i className="flaticon-shield"></i></span>
                                         <h3>Advanced Tchnology</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                     </li>
 
-                                    <li className="ml-25">
+
+
+  <li className="rounded ml-25">
                                         <span>06 <i className="flaticon-support"></i></span>
                                         <h3>Competitive Pricing</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                     </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+
+  </ul>
+</div>
+
+
+
+  </div>
+
+
+
+
+</div>
+           </div>
             </section>
         )
     }
 }
 
-export default WhyChooseUs;
+export default ProblemsWeSolve;

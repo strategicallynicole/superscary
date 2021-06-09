@@ -5,7 +5,7 @@ import About from '../components/HomeFive/About';
 import ProblemsWeSolve from '../components/Blocks/ProblemsWeSolve/ProblemsWeSolve';
 import Services from '../components/Blocks/Services/Services';
 import MakeYourBusiness from '../components/Blocks/Stats/Stats';
-import WhatWeOffer from '../components/HomeFive/WhatWeOffer';
+import Industries from '../components/Blocks/Industries/Industries';
 import CaseStudies from '../components/HomeFive/CaseStudies';
 import Testimonials from '../components/Common/Testimonials';
 import Faq from '../components/HomeFive/Faq';
@@ -25,7 +25,7 @@ class Index extends Component {
                 <ProblemsWeSolve />
                 <Services />
                 <MakeYourBusiness />
-                <WhatWeOffer />
+                <Industries />
                 <CaseStudies />
                 <Testimonials />
                 <PartnerSlider />

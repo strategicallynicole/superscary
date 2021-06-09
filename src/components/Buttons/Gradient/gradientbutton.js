@@ -146,13 +146,13 @@ GradientButton.propTypes = {
 
 GradientButton.defaultProps = {
   angle: 'right',
-  background: '#fff',
+  background: '#2b2b2b',
   borderRadius: 20,
   borderWidth: 2,
   disabled: false,
   gradient: null,
   padding: 10,
-  theme: 'Vanusa',
+  theme: 'Main',
   transition: {
     property: 'all',
     duration: 0.2,
