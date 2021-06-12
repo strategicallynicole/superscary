@@ -2,16 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
-
-import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
+import Structure from '../components/Structure/layout.js'
+import "../styles/ghost.scss";
+import "../styles/post.scoped.scss";
+import "./post.scoped.scss";
 
-/**
-* Single post view (/:slug)
-*
-* This file renders a single post and loads all the content.
-*
-*/
 const Post = ({ data, location }) => {
     const post = data.ghostPost
 
@@ -25,28 +21,42 @@ const Post = ({ data, location }) => {
             <Helmet>
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet>
-            <Layout>
-                <div className="container">
-                    <article className="content">
+<Structure>
+<section key={post.key} className="relative pt-12 fadedblackgradient">
+
+
+<div className="container px-4 py-20 mx-auto">
+<div className="flex flex-wrap justify-center -mx-4">
+
+    <article className="postcontent">
+        <div className="w-full mx-auto">
                         { post.feature_image ?
-                            <figure className="post-feature-image">
+                         <figure className="post-feature-image">
                                 <img src={ post.feature_image } alt={ post.title } />
                             </figure> : null }
-                        <section className="post-full-content">
-                            <h1 className="content-title">{post.title}</h1>
+                            </div>
+                       <div className="relative w-full mx-auto md:w-8/12">
 
-                            {/* The main post content */ }
-                            <section
+                          <h3
+                            key={post.key}
+                            className="mt-0 mb-2 text-3xl font-bold leading-normal"
+                          >
+                            {post.title}
+                          </h3>
+
+                           </div>
+<div
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                        </section>
                     </article>
-                </div>
-            </Layout>
+              </div> </div></section>
+            </Structure>
         </>
     )
 }
+
+
 
 Post.propTypes = {
     data: PropTypes.shape({
@@ -69,3 +79,5 @@ export const postQuery = graphql`
         }
     }
 `
+
+

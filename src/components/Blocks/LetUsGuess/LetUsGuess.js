@@ -80,7 +80,7 @@ function Card({ children }) {
             (window.scrollY || window.pageYOffset || document.body.scrollTop));
 
         // Set animated values based on mouse position and card dimensions
-        const dampen = 50; // Lower the number the less rotation
+        const dampen = 90; // Lower the number the less rotation
         const xys = [
           -(y - ref.current.clientHeight / 2) / dampen, // rotateX
           (x - ref.current.clientWidth / 2) / dampen, // rotateY

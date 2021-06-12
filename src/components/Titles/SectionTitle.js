@@ -11,11 +11,11 @@
      return (
         <>
         <div className="section-title">
-        <h4 className="text-2xl leading-loose text-center text-white grotesk text-bold"
+        <h4 className="text-center text-white text-tiny grotesk text-bold"
     dangerouslySetInnerHTML={{__html: subtitle}} />
 
                         <h2 className="text-4xl leading-loose text-center text-white underline dincondensed text-bold">{title}</h2>
-                        <p>{body}{children}</p>
+                        <p className="text-xs text-center text-white roboto">{body}{children}</p>
                     </div>
                    </>
 

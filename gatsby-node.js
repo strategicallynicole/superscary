@@ -15,7 +15,7 @@ exports.createPages = async ({ actions }, themeOptions) => {
 
   createPage({
     path: basePath,
-    component: require.resolve(`./src/templates/index.tsx`),
+    component: require.resolve(`./src/templates/index.js`),
   })
 }
 

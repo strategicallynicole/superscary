@@ -1,11 +1,12 @@
 @import "../../../styles/globals.scss";
 .particlesbackground {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(180deg, #32255B 0%, #2B2A36 100%);
+    width: 100%;
+    height: auto;
+    background: $black-gradient;
+    border-radius: 20px;
   }
 
-  $particleSize: 10vmin;
+  $particleSize: 5vmin;
   $animationDuration: 240s;
   $amount: 30;
   .particlesbackground span {

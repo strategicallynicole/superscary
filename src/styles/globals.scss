@@ -1,6 +1,5 @@
 @import "./grid.scss";
 @import "./mixins.scss";
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 $shadow: #171040;
 $transition: .6s all ease-in-out;
 $main-color: #121212;
@@ -16,6 +15,7 @@ $white: #ffffff;
 $purple: #6633FF;
 $blue: #3366FF;
 $lightblue: #0099FF;
+$gray: #B2B2B2;
 
 $body-font-family: 'Grotesk', sans-serif;
 $heading-font-family: 'din-condensed', sans-serif;

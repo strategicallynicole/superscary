@@ -1,109 +1,162 @@
+
 @import "../../../styles/globals.scss";
 
-.offer-area {
-	background-image: linear-gradient(180deg, #32255B 0%, #2B2A36 100%);
-    position: relative;
-	z-index: 1;
-	overflow: hidden;
-color: #ffffff;
-border-radius: 20px;
-}
-
-.single-offer {
+.features-area {
 	position: relative;
-    padding-right: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 90px;
-	border-radius: $border-radius;
-	border: 1px solid;
-	transition: $transition;
+	z-index: 1;
+}
+.choose-title {
+	margin-top: -9px;
 	margin-bottom: 30px;
-    color: #ffffff;
-
-	i {
-		position: absolute;
-		left: 30px;
-		top: 28px;
+	span {
+		font-size: 14px;
+		color: #ffffff;
 		display: inline-block;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		text-align: center;
-		border-radius: 4px;
-		font-size: 25px;
-		color: #9898f0;
+		margin-bottom: 8px;
 	}
-	h3 {
-		margin-bottom: 10px;
-		a {
+	h2 {
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+}
+.problems-we-solve-content {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		li {
+			position: relative;
+			padding-left: 120px;
+			padding-right: 30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background: $black-gradient;
+			margin-bottom: 30px;
+			transition: $transition;
+            border-color: #ffffff 1px solid;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			span {
+				width: 70px;
+				height: 70px;
+				line-height: 70px;
+				text-align: center;
+				position: relative;
+				border: 1px solid #ffffff;
+				border-radius: 50%;
+				font-size: 30px;
+				font-weight: 600;
+				color: $white;
+				animation: border-transform 10s linear infinite alternate forwards;
+				transition: $transition;
+				background: $gradient;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 25px;
+				display: inline-block;
+				position: absolute;
+                top: 35px;
+    			left: 30px;
+				i {
+					position: absolute;
+					top: 50px;
+					left: 30px;
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					background-color: $white-color;
+					border-radius: 50%;
+					display: inline-block;
+					font-size: 25px;
+					color: #dcddfa;
+				}
+			}
+			h3 {
+				margin-bottom: 10px;
+			}
+            &:nth-child(1) {
+				span {
+                    background: $gradient;
+					i {
+						color: $white;
+					}
+				}
+			}
+			&:nth-child(2) {
+				span {
+                    background: $gradient;
+					i {
+						color: $white;
+					}
+				}
+			}
+			&:nth-child(2) {
+				span {
+                    background: $gradient;
+					i {
+						color: #000000;
+					}
+				}
+			}
 			&:hover {
-			}
-		}
-	}
-	&:hover {
-		transform: translateY(-5px);
-	}
-}
-.col-lg-4 {
-    &:nth-child(1) {
-
-		.single-offer {
-			border-color: $blue;
-            border-width: 1px;
-            border-style: solid;
-			i {
-				background: $black-gradient;
-				color: #ffffff;;
-			}
-		}
-	}
-	&:nth-child(2) {
-
-		.single-offer {
-			border-color: $purple;
-            border-width: 1px;
-            border-style: solid;
-			i {
-				background: $black-gradient;
-				color: #ffffff;;
-			}
-		}
-	}
-	&:nth-child(3) {
-		.single-offer {
-			border-color: $lightblue;
-			i {
-				background: $black-gradient;
-				color: #ffffff;;
-			}
-		}
-	}
-	&:nth-child(4) {
-		.single-offer {
-            border-color: $blue;
-			i {
-				background: $black-gradient;
-				color: #ffffff;;
-			}
-		}
-	}
-	&:nth-child(5) {
-		.single-offer {
-			border-color: $purple;
-			i {
-				background: $black-gradient;
-				color: #ffffff;;
-			}
-		}
-	}
-	&:nth-child(6) {
-		.single-offer {
-            border-color: $lightblue;
-			i {
-				background: $black-gradient;
-				color: #ffffff;;
+				transform: translateY(-5px);
 			}
 		}
 	}
 }
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+}
+@media only screen and (min-width: 1824px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .problems-we-solve-content ul li:last-child {
+        margin-bottom: 30px;
+    }
+    .problems-we-solve-area {
+        .col-8 {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+    .choose-title {
+        margin-bottom: 40px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .problems-we-solve-content ul {
+        li {
+            max-width: 47%;
+            display: inline-block;
+        }
+        .ml {
+            margin-left: 30px;
+        }
+        .ml-25 {
+            margin-left: 25%;
+        }
+    }
+    .problems-we-solve-content {
+        ul {
+            li {
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+                span {
+                    position: unset;
+                     i {
+                        top: 60px;
+                        left: 70px;
+                     }
+                }
+            }
+        }
+    }
+    .choose-img {
+        text-align: center;
+    }}
+

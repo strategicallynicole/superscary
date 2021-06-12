@@ -1,18 +1,17 @@
 import React from "react";
-import "./particle.scss";
+import "./blurry.scss";
 
-const Blurry = () => (
-  <div
+const Blurry = ({children}) => (
+    <div
     style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
+      position: "relative",
+
       width: "100%",
       height: "100%",
     }}
   >
+<div className="particlesbackground">    {children}
 
-<div className="particlesbackground">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -32,6 +31,7 @@ const Blurry = () => (
                 <span></span>
                 <span></span>
                 <span></span>
+
                 </div>
                 </div>
 

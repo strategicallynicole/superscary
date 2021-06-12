@@ -46,13 +46,14 @@
 
 			li {
 				position: relative;
-				background-color: $white-color;
-				box-shadow: $box-shadow;
-				border-radius: 60px 0 0 60px;
+				background: $black-gradient;
+@apply shadow;
+				border-radius: 60px 20px 20px 60px;
 				transition: $transition;
 				overflow: hidden;
 				z-index: 1;
 				margin-bottom: 20px;
+                border: 2px solid $purple;
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -73,7 +74,7 @@
 					left: 0;
 					width: 0;
 					height: 100%;
-					background-color: $main-color;
+					background: $gradient;
 					z-index: -1;
 					border-radius: 60px 0 0 60px;
 					transition: $transition;
@@ -89,7 +90,6 @@
 				}
 				h3 {
 					transition: $transition;
-					font-size: 20px;
 				}
 				p {
 					margin-bottom: 0;
@@ -98,6 +98,8 @@
 					color: $body-color;
 				}
 				&:hover {
+                    background: $gradient;
+
 					i {
 						color: $white-color;
 						transform: rotate(360deg);
@@ -113,25 +115,33 @@
 					}
 					&::before {
 						width: 100%;
+                        background: $gradient;
 						border-radius: 60px 0 0 60px;
 					}
 				}
 				&.current {
+                    border: 2px solid $purple;
+                    background: $gradient;
+                    color: $white;
 					i {
-						color: $white-color;
 						transform: rotate(360deg);
+                        color: $white;
+
 					}
 					h3 {
-						color: $white-color;
+                        color: $white;
+
 					}
 					p {
-						color: $white-color;
+                        color: $white;
+
 					}
 					a {
 						right: 20px;
 					}
 					&::before {
 						width: 100%;
+                        background: $gradient;
 						border-radius: 60px 0 0 60px;
 					}
 				}
@@ -232,7 +242,6 @@
                     }
 
                     h3 {
-                        font-size: 18px;
                         margin-bottom: 3px;
                     }
 
@@ -254,7 +263,6 @@
             .tabs {
                 li {
                     span {
-                        font-size: 13px;
                     }
                 }
             }
@@ -276,7 +284,6 @@
 
         .industries-content {
             h3 {
-                font-size: 25px;
             }
         }
     }
@@ -325,7 +332,6 @@
         padding-bottom: 25px;
 
         h3 {
-            font-size: 18px;
         }
 
         i {
@@ -337,13 +343,10 @@
             .tabs {
                 li {
                     h3 {
-                        font-size: 18px;
                     }
                     p {
-                        font-size: 13px;
                     }
                     span {
-                        font-size: 13px;
                         padding-top: 20px;
                         padding-left: 65px;
                         padding-right: 20px;
@@ -358,7 +361,6 @@
                     i {
                         left: 22px;
                         top: 30px;
-                        font-size: 30px;
                     }
                 }
             }

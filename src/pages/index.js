@@ -1,40 +1,34 @@
 import React, { Component } from 'react';
 import MainBanner from '../components/Blocks/Slider';
-import PartnerSlider from '../components/Common/PartnerSlider';
+import Clients from '../components/Clients/composer.js';
 import About from '../components/HomeFive/About';
-import ProblemsWeSolve from '../components/Blocks/ProblemsWeSolve/ProblemsWeSolve';
 import Services from '../components/Blocks/Services/Services';
-import MakeYourBusiness from '../components/Blocks/Stats/Stats';
+import Stats from '../components/Blocks/Stats/Stats';
 import Industries from '../components/Blocks/Industries/Industries';
-import CaseStudies from '../components/HomeFive/CaseStudies';
-import Testimonials from '../components/Common/Testimonials';
 import Faq from '../components/HomeFive/Faq';
 import Stars from "../components/Blocks/LetUsGuess/LetUsGuess";
 import News from '../components/Common/News';
 import Footer from '../components/Layouts/Footer';
-import Structure from "../components/Structure/layout.js";
 import Background from '../components/Backgrounds/Waves/Waves';
+import CTA from '../components/CTA/CTAwithPic';
+import HomePage from '../templates/index';
 class Index extends Component {
     render() {
         return (
             <>
-            <Structure>
+            <HomePage>
             <Background>
                 <MainBanner />
                 <Stars />
-                <ProblemsWeSolve />
                 <Services />
-                <MakeYourBusiness />
+                <Stats />
                 <Industries />
-                <CaseStudies />
-                <Testimonials />
-                <PartnerSlider />
-                <About />
-                <Faq />
+                <Clients />
                 <News />
+                <CTA />
                 <Footer />
             </Background>
-            </Structure>
+            </HomePage>
             </>
         );
     }

@@ -8,3 +8,24 @@
 .textgradient {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500;
 }
+
+.blackgradient {
+    background: linear-gradient(90deg, rgba(41, 41, 41, 1) 2.11%, rgba(0, 0, 0, 1) 104.85%);
+}
+
+.fadedblackgradient {
+    background: linear-gradient(90deg, rgba(41, 41, 41, 1) 2.11%, rgba(0, 0, 0, 1) 104.85%);
+}
+
+.grayscale {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: all 200ms ease-in-out;
+}
+
+.grayscale:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	filter: grayscale(0);
+}

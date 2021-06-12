@@ -76,7 +76,7 @@ export default function Structure({children}) {
               </Transition.Child>
               <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto bg-gray-800">
                 <div className="flex items-center flex-shrink-0 px-4">
-                  <Logo type="standard" logotype="standard"/>
+                  <Logo logotype="standard"/>
                 </div>
                 <nav className="px-2 mt-5 space-y-1">
                   {navigation.map((item) => (

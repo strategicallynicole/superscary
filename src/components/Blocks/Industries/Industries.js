@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import {Link} from 'gatsby';
 import "./Industries.scoped.scss";
+import SectionTitle from '../../Titles/SectionTitle';
+import GradientBG from "../../Backgrounds/Gradient/GradientBG";
+import Button from "../../Buttons/Simple/index";
+import Flashy from "../../Buttons/Flashy/index";
 class Industries extends Component {
 
     openTabSection = (evt, tabNmae) => {
@@ -21,14 +25,13 @@ class Industries extends Component {
 
     render() {
         return (
-            <section className="industries-area pb-100">
-			    <div className="container">
-                    <div className="section-title">
-                        <span>What We Offer</span>
-                        <h2>Industries We Serve</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos ea obcaecati et similique incidunt animi, sed, quos officiis placeat. Id ipsa molestias.</p>
-                    </div>
+            <section className="industries-area pb-100 ">
 
+			    <div className="container px-20 py-20 ">
+                   <SectionTitle subheading="Where We Specialize"
+                   title="Industries We Serve"
+                   body="We consider ourselves to be 'industry-agnostic,' but we specialize in B2B (though we have had MANY B2C clients).  We have a penchant for technical sales, insurance, franchisor branding, distributors, SaaS, medical, and manufacturing.  But, only because we’ve had clusters of clients in each of those areas.  As long as the nature of the challenge is branding, marketing, sales, or business, we’re specialized there.  This requires a lot more work on our part, but we know your industry like our own by the end of our process."
+/>
 
 
 
@@ -42,9 +45,9 @@ class Industries extends Component {
                     <div className="tab industries-list-tab">
 
 
-                    <div class="flex flex-wrap -mx-1 overflow-hidden sm:-mx-1 md:-mx-1 lg:-mx-1 xl:-mx-1">
+                    <div class="flex flex-wrap -mx-2 overflow-hidden sm:-mx-2 md:-mx-2 lg:-mx-2 xl:-mx-2">
 
-<div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/3 md:my-1 md:px-1 md:w-1/3 lg:my-1 lg:px-1 lg:w-1/3 xl:my-1 xl:px-1 xl:w-1/3">
+<div class="my-1 px-1 w-full overflow-hidden sm:my-2 sm:px-1 sm:w-1/2 md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/2 xl:my-2 xl:px-2 xl:w-1/2">
 
 
 
@@ -58,8 +61,8 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-machine-learning"></i>
-                                            <h3>Heavy Industry</h3>
-                                            <p>All kind of industry</p>
+                                            <h3 className="text-2xl text-white underline dincondensed bold">Heavy Industry</h3>
+                                            <p className="text-white text-md grotesk">All kind of industry</p>
                                         </span>
                                     </li>
 
@@ -68,7 +71,7 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-artificial-intelligence"></i>
-                                            <h3>Transportation</h3>
+                                            <h3 className="text-2xl text-white underline dincondensed bold">Transportation</h3>
                                             <p>All kind of industry</p>
                                         </span>
                                     </li>
@@ -78,7 +81,7 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-health"></i>
-                                            <h3>Health Care</h3>
+                                            <h3 className="text-2xl text-white underline dincondensed bold">Health Care</h3>
                                             <p>All kind of industry</p>
                                         </span>
                                     </li>
@@ -88,18 +91,18 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-automation"></i>
-                                            <h3>Manufacturing</h3>
+                                            <h3 className="text-2xl text-white underline dincondensed bold">Manufacturing</h3>
                                             <p>All kind of industry</p>
                                         </span>
                                     </li>
                                 </ul>
                             </div>
 
-<div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/3 md:my-1 md:px-1 md:w-1/3 lg:my-1 lg:px-1 lg:w-1/3 xl:my-1 xl:px-1 xl:w-1/3">
+                            <div class="my-1 px-1 w-full overflow-hidden sm:my-2 sm:px-1 sm:w-1/2 md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/2 xl:my-2 xl:px-2 xl:w-1/2">
                                 <div className="tab_content">
                                     {/* Tab item #1 */}
                                     <div id="tab1" className="tabs_item">
-                                                <div className="industries-img left-img">
+                                                <div className="industries-img">
                                                     <img src="/images/offer1.png" alt="Image" />
                                                 </div>
 
@@ -108,41 +111,12 @@ class Industries extends Component {
                                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est atque recusandae esse alias reprehenderit.</p>
                                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea doloribus molestias illo ad aperiam quo natus voluptatum, eos laboriosam vel deserunt?</p>
 
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Opportunities
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Creating
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Industries
-                                                                </li>
-                                                            </ul>
-
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Security
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Highest
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Priority
-                                                                </li>
-                                                            </ul>
 
 
-                                                    <div className="text-center">
+<Flashy>Text</Flashy>
+
                                                         <Link href="/index-5/#">
-                                                            <a className="default-btn">Discover More</a>
-                                                        </Link>
+<Button styleName="gradientbutton" className="px-20 text-4xl rounded shadow py-50 button gradientbutton border-rounded">test</Button>                                                        </Link>
                                                     </div>
                                                 </div>
                                     </div>
@@ -150,39 +124,10 @@ class Industries extends Component {
                                     {/* Tab item #2 */}
                                     <div id="tab2" className="tabs_item">
                                                 <div className="industries-content">
-                                                    <h3>Transportation</h3>
+                                                    <h3 className="text-lg text-white grotesk">Transportation</h3>
                                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est atque recusandae esse alias reprehenderit.</p>
                                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea doloribus molestias illo ad aperiam quo natus voluptatum, eos laboriosam vel deserunt? Ab rerum eaque aperiam sequi dolore minus itaque eos!</p>
 
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Security
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Highest
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Priority
-                                                                </li>
-                                                            </ul>
-
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Opportunities
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Creating
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Industries
-                                                                </li>
-                                                            </ul>
 
                                                     <div className="text-center">
                                                         <Link href="/index-5/#">
@@ -207,35 +152,7 @@ class Industries extends Component {
                                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est atque recusandae esse alias reprehenderit.</p>
                                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea doloribus molestias illo ad aperiam quo natus voluptatum, eos laboriosam vel deserunt? Ab rerum eaque aperiam sequi dolore minus itaque eos!</p>
 
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Creating
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Consectetur
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Adipisicing
-                                                                </li>
-                                                            </ul>
 
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Artificial
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Industry
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Opportunities
-                                                                </li>
-                                                            </ul>
 
                                                     <div className="text-center">
                                                         <Link href="/index-5/#">
@@ -262,42 +179,9 @@ class Industries extends Component {
                                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea doloribus molestias illo ad aperiam quo natus voluptatum, eos laboriosam vel deserunt? Ab rerum eaque aperiam sequi dolore minus itaque eos!</p>
 
 
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Opportunities
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Creating
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Industries
-                                                                </li>
-                                                            </ul>
+                                                                                                                 </div>
 
-                                                            <ul className="industries-item">
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Security
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Highest
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-checked"></i>
-                                                                    Priority
-                                                                </li>
-                                                            </ul>
-                                                        </div>
 
-                                                    <div className="text-center">
-                                                        <Link href="/index-5/#">
-                                                            <a className="default-btn">Discover More</a>
-                                                        </Link>
-                                                    </div>
 </div>
 
                                     {/* Tab item #4 */}
@@ -305,15 +189,8 @@ class Industries extends Component {
 </div> {/* tab content closer */}
 </div>                                    {/* column closer */}
 
-
-                                    {/* opened */}
-
-
-<div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/3 md:my-1 md:px-1 md:w-1/3 lg:my-1 lg:px-1 lg:w-1/3 xl:my-1 xl:px-1 xl:w-1/3">
-                                                <div className="industries-img right-img">
-                                                    <img src="/images/offer4.png" alt="Image" />
-                                                </div>
 </div>
+                                    {/* opened */}
 
 
 
@@ -332,8 +209,6 @@ class Industries extends Component {
 
 
                                     </div>
-                            </div>
-                        </div>
             </section>
         );
     }

@@ -7,19 +7,19 @@ class LogoComponent extends React.Component {
     super(props)
     const { type } = this.props
 
-    const logotype = this.props.type
+    const { logotype } = this.props.type
   }
 
   render() {
-    switch (logotype) {
+    switch ({ logotype }) {
       case 'standard':
         return (
         <>
           <StaticImage
-            src="../../images/logos/horizontal/white.webp"
+            src="../../images/logos/logo/horizontal/white@1x.webp"
             alt="White Logo"
             placeholder="blurred"
-            layout="fixed"
+            layout="fullWidth"
             width={100}
             height={25}
           />
@@ -28,10 +28,10 @@ class LogoComponent extends React.Component {
         return (
         <>
           <StaticImage
-            src="../../images/logos/horizontal/black.webp"
+            src='../../images/logos/logo/horizontal/black.webp'
             alt="Black Logo"
             placeholder="blurred"
-            layout="fixed"
+            layout="fullWidth"
             width={100}
             height={25}
           />
@@ -41,10 +41,10 @@ class LogoComponent extends React.Component {
         return (
         <>
           <StaticImage
-            src="../../images/logos/stacked/white.webp"
+            src='../../images/logos/logo/stacked/white.webp'
             alt="White Logor"
             placeholder="blurred"
-            layout="fixed"
+            layout="fullWidth"
             width={25}
             height={100}
           />
@@ -53,10 +53,10 @@ class LogoComponent extends React.Component {
         return (
           <>
             <StaticImage
-              src="../../images/logos/stacked/black.webp"
+              src='../../images/logos/logo/stacked/black.webp'
               alt="BlackLogo"
               placeholder="blurred"
-              layout="fixed"
+              layout="fullWidth"
               width={25}
               height={100}
             />
@@ -66,10 +66,10 @@ class LogoComponent extends React.Component {
         return (
           <>
             <StaticImage
-              src="../../images/logos/symbol.svg"
+              src='../../images/logos/symbol.svg'
               alt="Symbol"
               placeholder="blurred"
-              layout="fixed"
+              layout="fullWidth"
               width={52}
               height={52}
             />
@@ -79,10 +79,10 @@ class LogoComponent extends React.Component {
         return (
           <>
             <StaticImage
-              src="../../images/logos/abbreviation.webp"
+              src='../../images/logos/logo/abbreviation.webp'
               alt="Abbreviation"
               placeholder="blurred"
-              layout="fixed"
+              layout="fullWidth"
               width={100}
               height={25}
             />

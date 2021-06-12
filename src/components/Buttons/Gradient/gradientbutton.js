@@ -11,8 +11,8 @@ const GradientBackground = styled.button`
   position: relative;
   display: flex;
   box-sizing: border-box;
+  border: 1px solid #ffffff;
   padding: ${props => props.borderWidth}px;
-  border: 0;
   outline: 0;
   background-image: linear-gradient(
     ${ifProp(
