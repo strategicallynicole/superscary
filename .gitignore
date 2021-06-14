@@ -71,10 +71,6 @@ typings/
 .vscode
 
 # Docs Custom
-.cache/
-public
-yarn-error.log
-.netlify/
+
 
 # Local Netlify folder
-.netlify
