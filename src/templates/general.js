@@ -7,6 +7,7 @@ import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 import Structure from "../components/Structure/layout.js";
 
+
 /**
 * Single post view (/:slug)
 *
@@ -16,10 +17,9 @@ import Structure from "../components/Structure/layout.js";
 const General = ({ children }) => {
     return (
         <>
-            <Helmet>
-                <link href="./fonts/FlatIcon/flaticon.css" rel="stylesheet" />
-            </Helmet>
+        
             <Structure>
+            
                           {children}
             </Structure>
             </> )

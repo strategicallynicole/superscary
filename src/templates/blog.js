@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import { Layout, PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
-
+import Background from '../components/Backgrounds/Waves/Waves';
 /**
 * Main index page (home page)
 *
@@ -18,8 +18,11 @@ const Index = ({ data, location, pageContext }) => {
 
     return (
         <>
+              <HomePage>
             <MetaData location={location} />
             <Layout isHome={true}>
+                        <Background>
+
                 <div className="container">
                     <section className="post-feed">
                         {posts.map(({ node }) => (
@@ -29,7 +32,10 @@ const Index = ({ data, location, pageContext }) => {
                     </section>
                     <Pagination pageContext={pageContext} />
                 </div>
+                </Background>
             </Layout>
+                          </HomePage>
+
         </>
     )
 }

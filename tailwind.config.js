@@ -62,8 +62,8 @@ module.exports = {
         backgroundImage: theme => ({
          'waves': "url('../images/waves.svg')",
          'gradient': "linear-gradient(90deg, #8F6AFA 0%, #375CDC 47.03%, #0099EE 105%)",
-            'wallpaper': "url('../images/wallpaper.svg')",
-            'black-gradient': "linear-gradient(90deg, #292929 2.11%, #000000 104.85%)"
+         'wallpaper': "url('../images/wallpaper.svg')",
+         'black-gradient': "linear-gradient(90deg, #292929 2.11%, #000000 104.85%)"
         }),
             colors: {
                 transparent: `transparent`,

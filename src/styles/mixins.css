@@ -14,7 +14,7 @@
 }
 
 .fadedblackgradient {
-    background: linear-gradient(90deg, rgba(41, 41, 41, 1) 2.11%, rgba(0, 0, 0, 1) 104.85%);
+    background: linear-gradient(90deg, rgba(41, 41, 41, .8) 2.11%, rgba(0, 0, 0, .8) 104.85%);
 }
 
 .grayscale {

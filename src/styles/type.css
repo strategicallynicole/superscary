@@ -9,6 +9,9 @@
 .bold {
     font-weight: 700;
 }
+.prose ul > li::before {
+    @apply bg-gradient;
+                    }
 .white-text {
     color: #ffffff;
 }
@@ -21,8 +24,20 @@
 .dincondensed {
     font-family: 'DIN Condensed';
 }
+.prose blockquote {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff !important;
 
-
+  }
+.prose h3 {
+    color: #ffffff !important;
+}
+  .prose blockquote::first-letter {
+    initial-letter: 4;
+    -webkit-initial-letter: 4;
+  }
 .h1, .h2, h2, h1 {
     @apply leading-loose dincondensed bold;
 }
@@ -64,3 +79,4 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .line-height-small {
     line-height: .75em;
 }
+

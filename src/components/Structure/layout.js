@@ -16,6 +16,10 @@ import {
   UsersIcon,
   XIcon
 } from '@heroicons/react/outline';
+
+import Background from '../Backgrounds/Waves/Waves';
+import CTA from '../CTA/CTAwithPic';
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -76,7 +80,7 @@ export default function Structure({children}) {
               </Transition.Child>
               <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto bg-gray-800">
                 <div className="flex items-center flex-shrink-0 px-4">
-                  <Logo logotype="standard"/>
+                  <Logo type="standard"/>
                 </div>
                 <nav className="px-2 mt-5 space-y-1">
                   {navigation.map((item) => (
@@ -146,8 +150,8 @@ export default function Structure({children}) {
           </div>
         </div>
       </div>
-      <div className="overflow-hidden md:flex-col md:flex-1 md:flex md:flex-shrink-0">
-        <div className="pt-1 pl-1 md:hidden sm:pl-3 sm:pt-3">
+      <div className="overflow-y-auto md:flex-col md:flex-1 md:flex md:flex-shrink-0">
+        <div className="pt-1 pl-1 md:hidden sm:pl-2 sm:pt-3">
           <button
             className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             onClick={() => setSidebarOpen(true)}

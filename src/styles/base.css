@@ -1,10 +1,12 @@
+
+
 @import './mixins.css';
 @import './layers.css';
 @import './type.css';
 @import "./animate.css";
 @import "./bits.css";
-
 @import url("https://use.typekit.net/aek5xfr.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

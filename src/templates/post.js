@@ -7,6 +7,7 @@ import Structure from '../components/Structure/layout.js'
 import "../styles/ghost.scss";
 import "../styles/post.scoped.scss";
 import "./post.scoped.scss";
+import CaseStudySqueeze from "../components/CTA/CaseStudySqueeze";
 
 const Post = ({ data, location }) => {
     const post = data.ghostPost
@@ -22,35 +23,110 @@ const Post = ({ data, location }) => {
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet>
 <Structure>
-<section key={post.key} className="relative pt-12 fadedblackgradient">
 
 
-<div className="container px-4 py-20 mx-auto">
-<div className="flex flex-wrap justify-center -mx-4">
+<section key={post.key} className="relative fadedblackgradient">
 
-    <article className="postcontent">
-        <div className="w-full mx-auto">
-                        { post.feature_image ?
+
+
+{ post.feature_image ?
                          <figure className="post-feature-image">
-                                <img src={ post.feature_image } alt={ post.title } />
+                                <img className="w-full rounded-lg" src={ post.feature_image } alt={ post.title } />
+                                <figcaption>{ post.title } </figcaption>
+
                             </figure> : null }
-                            </div>
-                       <div className="relative w-full mx-auto md:w-8/12">
 
-                          <h3
-                            key={post.key}
-                            className="mt-0 mb-2 text-3xl font-bold leading-normal"
-                          >
-                            {post.title}
-                          </h3>
 
-                           </div>
+
+<div className="relative px-16 overflow-hidden sm:pl-1">
+        <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+          <div className="relative h-full mx-auto text-lg max-w-prose" aria-hidden="true">
+            <svg
+              className="absolute transform translate-x-32 top-12 left-full"
+              width={404}
+              height={384}
+              fill="none"
+              viewBox="0 0 404 384"
+            >
+              <defs>
+                <pattern
+                  id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
+                  x={0}
+                  y={0}
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width={404} height={384} fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+            </svg>
+            <svg
+              className="absolute transform -translate-x-32 -translate-y-1/2 top-1/2 right-full"
+              width={404}
+              height={384}
+              fill="none"
+              viewBox="0 0 404 384"
+            >
+              <defs>
+                <pattern
+                  id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                  x={0}
+                  y={0}
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width={404} height={384} fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+            </svg>
+            <svg
+              className="absolute transform translate-x-32 bottom-12 left-full"
+              width={404}
+              height={384}
+              fill="none"
+              viewBox="0 0 404 384"
+            >
+              <defs>
+                <pattern
+                  id="d3eb07ae-5182-43e6-857d-35c643af9034"
+                  x={0}
+                  y={0}
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect x={0} y={0} width={4} height={4} className="text-gray-100" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width={404} height={384} fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+            </svg>
+          </div>
+        </div>
+        <div className="relative px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto text-lg max-w-prose">
+          <span className="block mt-2 text-3xl font-extrabold leading-8 tracking-tight text-center text-white sm:text-4xl">
+{post.subtitle}              </span>
+              <h1 key={post.key} className="block mt-0 mb-2 text-3xl font-semibold leading-normal tracking-wide text-center text-white underline uppercase dincondensed">
+                     {post.title}</h1>
+
+            <div className="mx-auto mt-6 prose prose-lg text-white">
+
 <div
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                    </article>
-              </div> </div></section>
+          </div>
+
+</div>
+<CaseStudySqueeze />
+
+</div></div>
+
+</section>
             </Structure>
         </>
     )
