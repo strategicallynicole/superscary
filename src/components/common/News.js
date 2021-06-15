@@ -22,7 +22,7 @@ import SectionTitle from "../Titles/SectionTitle";
 const News = () => {
     const data = useStaticQuery(graphql`
     {
-      allGhostPost(limit: 4, skip: 0, sort: {fields: created_at, order: DESC}) {
+      allGhostPost(limit: 4, skip: 10, sort: {fields: created_at, order: DESC}) {
         edges {
           node {
             html

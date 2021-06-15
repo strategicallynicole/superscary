@@ -159,7 +159,7 @@ export default function Structure({children}) {
           </div>
         </div>
       </div>
-      <div className="overflow-y-auto md:flex-col md:flex-1 md:flex md:flex-shrink-0">
+      <div className="overflow-x-hidden overflow-y-auto md:flex-col md:flex-1 md:flex md:flex-shrink-0">
         <div className="pt-1 pl-1 md:hidden sm:pl-2 sm:pt-3">
           <button
             className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"

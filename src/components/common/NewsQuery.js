@@ -17,7 +17,7 @@ const NewsQuery = () => (
   <StaticQuery
     query={graphql`
       {
-        allGhostPost(limit: 5, skip: 0, sort: {fields: created_at, order: DESC}) {
+        allGhostPost(limit: 6, skip: 0, sort: {fields: created_at, order: DESC}) {
           edges {
             node {
               html
@@ -45,7 +45,7 @@ const NewsQuery = () => (
         }
       }
     `}
-    render={data => <pre>{JSON.stringify(data, null, 5)}</pre>}
+    render={data => <pre>{JSON.stringify(data, null, 6)}</pre>}
   ></StaticQuery>
 )
 
