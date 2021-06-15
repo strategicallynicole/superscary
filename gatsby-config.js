@@ -288,4 +288,8 @@ options: {
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
     ],
+    flags: {
+  FAST_DEV: true,
+  LMDB_STORE: true,
+}
 }

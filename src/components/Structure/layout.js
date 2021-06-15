@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 14:13:38
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react';
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
@@ -28,7 +40,7 @@ export default function Structure({children}) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <div className="bg-cover bg-wallpaper">
+    <div className="overflow-x-hidden bg-cover bg-wallpaper">
     <div className="flex h-screen overflow-hidden text-white bg-transparent">
       <Transition.Root show={sidebarOpen} as={Fragment}>
         <Dialog

@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 14:05:30
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
@@ -9,7 +21,7 @@ const PostCard = ({ post }) => {
     const readingTime = readingTimeHelper(post)
 
     return (
-        <Link to={url} className="post-card">
+        <Link to={url} className="px-5 py-5 post-card glass">
             <header className="post-card-header">
                 {post.feature_image &&
                     <div className="post-card-image" style={{

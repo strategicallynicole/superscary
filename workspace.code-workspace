@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../seerist-gatsby"
+		},
+		{
+			"path": "../oakwave5"
+		},
+		{
+			"path": "../oakwave"
+		},
+		{
+			"path": "../oakwavereborn"
+		},
+		{
+			"path": "../abstract"
+		}
+	],
+	"settings": {}
+}

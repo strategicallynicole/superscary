@@ -1,158 +1,80 @@
-import React, { Component } from 'react';
-import { Link } from "gatsby"
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 13:19:22
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
+import React from "react";
+import { Tags } from '@tryghost/helpers-gatsby';
+import NewsQuery from './NewsQuery';
+import { MetaData } from './meta'
+import { PostCard } from './'
+import { useStaticQuery, graphql } from "gatsby"
+import SectionTitle from "../Titles/SectionTitle";
 
 
-class News extends Component {
-    render() {
-        return (
-            <section className="news-area pt-100 pb-70">
-                <div className="container">
-                    <div className="section-title">
-                        <span>Latest News</span>
-                        <h2>Our Recent News </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ipsum fugit temporibus possimus itaque accusamus voluptatibus dignissimos nobis eaque.</p>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-news">
-                                <div className="blog-img">
-                                    <Link href="/news-details">
-                                        <a>
-                                            <img src="/images/blog/blog1.png" alt="Image" />
-                                        </a>
-                                    </Link>
-
-                                    <div className="dates">
-                                        <span>20 February</span>
-                                    </div>
-                                </div>
-
-                                <div className="news-content-wrap">
-                                    <ul>
-                                        <li>
-                                            <Link href="/#"> 
-                                                <a>
-                                                    <i className="flaticon-user"></i> Admin
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <i className="flaticon-conversation"></i> 2 Comments
-                                        </li>
-                                    </ul>
-
-                                    <Link href="/news-details">
-                                        <a>
-                                            <h3>Is Machine Learning Right For You</h3>
-                                        </a>
-                                    </Link>
-
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis minima in.</p>
-                                    
-                                    <Link href="/news-details">
-                                        <a className="read-more">
-                                            Read More <i className="bx bx-plus"></i>
-                                        </a>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6">
-                            <div className="single-news">
-                                <div className="blog-img">
-                                    <Link href="/news-details">
-                                        <a>
-                                            <img src="/images/blog/blog2.png" alt="Image" />
-                                        </a>
-                                    </Link>
-
-                                    <div className="dates">
-                                        <span>21 February</span>
-                                    </div>
-                                </div>
-
-                                <div className="news-content-wrap">
-                                    <ul>
-                                        <li>
-                                            <Link href="/#"> 
-                                                <a>
-                                                    <i className="flaticon-user"></i> Admin
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <i className="flaticon-conversation"></i> 3 Comments
-                                        </li>
-                                    </ul>
-
-                                    <Link href="/news-details">
-                                        <a>
-                                            <h3>The State Of Artificial Intelligence</h3>
-                                        </a>
-                                    </Link>
-
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis minima in.</p>
-                                    
-                                    <Link href="/news-details">
-                                        <a className="read-more">
-                                            Read More <i className="bx bx-plus"></i>
-                                        </a>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                            <div className="single-news">
-                                <div className="blog-img">
-                                    <Link href="/news-details">
-                                        <a>
-                                            <img src="/images/blog/blog3.png" alt="Image" />
-                                        </a>
-                                    </Link>
-
-                                    <div className="dates">
-                                        <span>22 February</span>
-                                    </div>
-                                </div>
-
-                                <div className="news-content-wrap">
-                                    <ul>
-                                        <li>
-                                            <Link href="/#"> 
-                                                <a>
-                                                    <i className="flaticon-user"></i> Admin
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <i className="flaticon-conversation"></i> 4 Comments
-                                        </li>
-                                    </ul>
-
-                                    <Link href="/news-details">
-                                        <a>
-                                            <h3>Our Company Machine Learning </h3>
-                                        </a>
-                                    </Link>
-
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis minima in.</p>
-
-                                    <Link href="/news-details">
-                                        <a className="read-more">
-                                            Read More <i className="bx bx-plus"></i>
-                                        </a>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
+const News = () => {
+    const data = useStaticQuery(graphql`
+    {
+      allGhostPost(limit: 4, skip: 0, sort: {fields: created_at, order: DESC}) {
+        edges {
+          node {
+            html
+            title
+            excerpt
+            feature_image
+            meta_description
+            meta_title
+            featured
+            ghostId
+            plaintext
+            published_at
+            created_at
+            reading_time
+            slug
+            tags {
+              name
+              slug
+              url
+            }
+            primary_author {
+                profile_image
+                url
+                name
+              }
+            url
+            id
+          }
+        }
+      }
     }
-}
+  `)
+    const posts = data.allGhostPost.edges
 
+    return (
+        <>
+        <div className="mt-20 mb-20">
+            &nbsp;
+        </div>
+        <section className="mt-20">
+    <div className="relative px-4 pb-20 bg-transparent sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+
+      <div className="relative mx-auto max-w-7xl">
+        <div className="text-center">
+        <SectionTitle title="Our Opinion" subtitle="The Greatest Folks Ever" body="This is who we work with." />
+        </div>
+
+        {posts.map(({ node }) => (
+                            <PostCard key={node.id} post={node} />
+                            ))}
+        </div>
+    </div>
+    </section> </> )
+}
 export default News;

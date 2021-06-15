@@ -6,7 +6,6 @@ import { MetaData } from '../components/common/meta'
 import Structure from '../components/Structure/layout.js'
 import "../styles/ghost.scss";
 import "../styles/post.scoped.scss";
-import "./post.scoped.scss";
 import CaseStudySqueeze from "../components/CTA/CaseStudySqueeze";
 
 const Post = ({ data, location }) => {
