@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 16:48:33
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -5,7 +17,7 @@ import styled, { css } from 'styled-components';
 import { color, fontSize, borderRadius } from 'styled-system';
 import { prop, ifProp } from 'styled-tools';
 
-import { getLinearGradient, getPadding } from './processor';
+import { getLinearGradient, getPadding } from './processor.js';
 
 const GradientBackground = styled.button`
   position: relative;

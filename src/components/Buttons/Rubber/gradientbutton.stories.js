@@ -12,7 +12,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import styled from 'styled-components';
 
-import RubberButton from './gradient.js.js.js';
+import RubberButton from './gradient.js';
 
 const Container = styled.div`
   display: flex;

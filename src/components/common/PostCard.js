@@ -17,8 +17,8 @@ import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 const PostCard = ({ post }) => {
-    const url = `/${post.slug}/`
-    const readingTime = readingTimeHelper(post)
+    const url = `/${post.slug}/`;
+    const readingTime = readingTimeHelper(post);
 
     return (
         <Link to={url} className="px-5 py-5 post-card glass">

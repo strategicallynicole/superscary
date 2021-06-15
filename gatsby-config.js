@@ -91,6 +91,10 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
 
       options: {
+        sassOptions: {
+          includePaths: ['src']
+        },
+        useResolveUrlLoader: true,
         implementation: require('node-sass'),
         postCssPlugins: [
           require('postcss-preset-env'),
@@ -303,7 +307,7 @@ module.exports = {
     'gatsby-plugin-offline'
   ],
   flags: {
-    FAST_DEV: true,
-    LMDB_STORE: true
+    FAST_DEV: false,
+    LMDB_STORE: false
   }
 }

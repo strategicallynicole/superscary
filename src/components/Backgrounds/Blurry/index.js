@@ -1,5 +1,17 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 15:43:21
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from "react";
-import "./blurry.scss";
+import "./blurry.scoped.scss";
 
 const Blurry = ({children}) => (
     <div

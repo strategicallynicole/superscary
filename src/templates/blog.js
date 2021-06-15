@@ -1,10 +1,21 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 16:56:38
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Structure/layout'
 import { PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
-import Background from '../components/Backgrounds/Waves/Waves';
 /**
 * Main index page (home page)
 *
@@ -22,12 +33,11 @@ import Background from '../components/Backgrounds/Waves/Waves';
 * in /utils/siteConfig.js under `postsPerPage`.
 *
 */
-const Index = ({ data, location, pageContext }) => {
+const Blog = ({ data, location, pageContext }) => {
     const posts = data.allGhostPost.edges
 
     return (
         <>
-        <Background>
             <MetaData location={location} />
             <Layout isHome={true}>
                 <div className="container">
@@ -40,7 +50,6 @@ const Index = ({ data, location, pageContext }) => {
                     <Pagination pageContext={pageContext} />
                 </div>
             </Layout>
-            </Background>
 
         </>
     )
@@ -56,7 +65,7 @@ Index.propTypes = {
     pageContext: PropTypes.object,
 }
 
-export default Index
+export default Blog
 
 // This page query loads all posts sorted descending by published date
 // The `limit` and `skip` values are used for pagination

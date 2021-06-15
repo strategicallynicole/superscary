@@ -10,27 +10,18 @@
     * - Author          :
     * - Modification    :
 **/
-import React from 'react';
-import { Fragment, useState } from 'react'
+
+import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import navigation from './data.js';
+import navigation from './data.js'
 import Logo from "../Logo/logo.js"
 import "../../styles/base.css"
-import "../../styles/style.scss"
 
 import {
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
   MenuIcon,
-  UsersIcon,
   XIcon
-} from '@heroicons/react/outline';
+} from '@heroicons/react/outline'
 
-import Background from '../Backgrounds/Waves/Waves';
-import CTA from '../CTA/CTAwithPic';
 import Footer from '../Footers/Simple/links.js';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

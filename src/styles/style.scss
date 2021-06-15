@@ -51,8 +51,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-.bg-fafafa {
-}
+
 .form-control {
     height: 50px;
     color: $heading-color;
@@ -2531,6 +2530,8 @@ Page Title Area Style
 				background-image: linear-gradient(to bottom right, #ff416c, #fa4612);
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
+                background-clip: text;
+
 			}
 		}
         z-index: 1;

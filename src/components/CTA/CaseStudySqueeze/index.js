@@ -1,12 +1,26 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 17:02:29
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from "react";
 import "../../../styles/globals.scss";
 import "./casestudysqueeze.scoped.scss";
 import HubspotForm from 'react-hubspot-form';
-
+import Particles from '../../Backgrounds/Particles/Stars';
 export default function CaseStudySqueeze() {
     return (
         <>
+        <section>
       <div className="gradientbgdiv">
+          <Particles>
         <div className="max-w-full px-4 py-8 mx-auto sm:px-3 lg:py-8 lg:px-4 lg:flex lg:items-center">
           <div className="px-5 lg:w-0 lg:flex-1">
             <h2 className="text-4xl font-extrabold leading-tight text-white underline dincondensed sm:text-4xl" id="newsletter-headline">
@@ -35,8 +49,10 @@ Case Studies
 
 
         </div>
+        </Particles>
 
           </div>
+          </section>
       </>
     )
   }
