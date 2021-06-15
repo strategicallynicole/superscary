@@ -5,12 +5,12 @@ import Features from '../../components/HomeTwo/Features';
 import About from '../../components/HomeTwo/About';
 import Services from '../../components/HomeTwo/Services';
 import Pricing from '../../components/HomeTwo/Pricing';
-import Newsletter from '../../components/Common/Newsletter';
+import Newsletter from '../../components/common/Newsletter';
 import MakeYourBusiness from '../../components/Blocks/Stats/Stats';
-import Testimonials from '../../components/Common/Testimonials';
+import Testimonials from '../../components/common/Testimonials';
 import WhatWeOffer from '../../components/HomeTwo/WhatWeOffer';
-import News from '../../components/Common/News';
-import Partner from '../../components/Common/Partner';
+import News from '../../components/common/News';
+import Partner from '../../components/common/Partner';
 import Footer from '../../components/Layouts/Footer';
 
 class Index2 extends Component {

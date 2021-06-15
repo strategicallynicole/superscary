@@ -6,8 +6,8 @@ import WhyChooseUs from '../../components/HomeOne/WhyChooseUs'
 import Services from '../../components/HomeOne/Services'
 import MakeYourBusiness from '../../components/Blocks/Stats/Stats'
 import WhatWeOffer from '../../components/HomeOne/WhatWeOffer'
-import Testimonials from '../../components/Common/Testimonials'
-import News from '../../components/Common/News'
+import Testimonials from '../../components/common/Testimonials'
+import News from '../../components/common/News'
 import Footer from '../../components/Layouts/Footer'
 
 const Index = () => {

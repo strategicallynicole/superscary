@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../../components/Layouts/Navbar';
-import PageBanner from '../../components/Common/PageBanner';
+import PageBanner from '../../components/common/PageBanner';
 import ServicesStyleThree from '../../components/Services/ServicesStyleThree';
 import Footer from '../../components/Layouts/Footer';
 
@@ -9,12 +9,12 @@ class Services3 extends Component {
         return (
             <>
                 <Navbar />
-                <PageBanner 
-                    pageTitle="Services Style Three" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Services Style Three" 
-                /> 
+                <PageBanner
+                    pageTitle="Services Style Three"
+                    homePageUrl="/"
+                    homePageText="Home"
+                    activePageText="Services Style Three"
+                />
                 <ServicesStyleThree />
                 <Footer />
             </>

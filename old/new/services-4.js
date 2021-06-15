@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../../components/Layouts/Navbar';
-import PageBanner from '../../components/Common/PageBanner';
+import PageBanner from '../../components/common/PageBanner';
 import ServicesStyleFour from '../../components/Services/ServicesStyleFour';
 import MakeYourBusiness from '../../components/Blocks/Stats/Stats';
 import Footer from '../../components/Layouts/Footer';

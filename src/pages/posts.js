@@ -7,7 +7,7 @@ import Stats from '../components/Blocks/Stats/Stats';
 import Industries from '../components/Blocks/Industries/Industries';
 import Faq from '../components/HomeFive/Faq';
 import Stars from "../components/Blocks/LetUsGuess/LetUsGuess";
-import News from '../components/Common/News';
+import News from '../components/common/News';
 import Footer from '../components/Layouts/Footer';
 import Background from '../components/Backgrounds/Waves/Waves';
 import CTA from '../components/CTA/CTAwithPic';
