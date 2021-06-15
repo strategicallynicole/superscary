@@ -1,7 +1,7 @@
 const path = require(`path`)
-const themeOptions = require('./src/utils/siteConfig')
+const themeOptions = require('./src/utils/siteConfig.js')
 
-const config = require(`./src/utils/siteConfig`)
+const config = require(`./src/utils/siteConfig.js`)
 const generateRSSFeed = require(`./src/utils/rss/generate-feed`)
 
 let ghostConfig
@@ -55,6 +55,13 @@ module.exports = {
   },
 
     plugins: [
+        {
+  resolve: `gatsby-source-ghost`,
+  options: {
+    apiUrl: `https://blog.oakwave.com`,
+    contentApiKey: `2c90a741e13ea16e4390cdb820`
+  }
+},
          {
       resolve: 'gatsby-plugin-theme-ui',
       options: {
@@ -74,6 +81,7 @@ module.exports = {
 options: {
       postCssPlugins: [
         require(`postcss-import`),
+        require(`@postcss-plugins/console`),
         require("tailwindcss"),
         require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
         require(`autoprefixer`),

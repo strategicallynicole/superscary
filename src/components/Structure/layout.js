@@ -19,7 +19,7 @@ import {
 
 import Background from '../Backgrounds/Waves/Waves';
 import CTA from '../CTA/CTAwithPic';
-
+import Footer from '../Footers/Simple/links.js';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -78,9 +78,9 @@ export default function Structure({children}) {
                   </button>
                 </div>
               </Transition.Child>
-              <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto bg-gray-800">
+              <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto glass">
                 <div className="flex items-center flex-shrink-0 px-4">
-                  <Logo type="standard"/>
+                  <Logo type="standard"  />
                 </div>
                 <nav className="px-2 mt-5 space-y-1">
                   {navigation.map((item) => (
@@ -117,12 +117,9 @@ export default function Structure({children}) {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex flex-col flex-1 h-0">
             <div className="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
-              <div className="flex items-center flex-shrink-0 px-4">
-                <img
-                  className="w-auto h-8"
-                  src=""
-                  alt="Workflow"
-                />
+              <div className="flex items-center flex-shrink-0 px-4 align-items-center center-content">
+                            <div className="flex-1 logoholder">     <Logo type="standard" /></div>
+
               </div>
               <nav className="flex-1 px-2 mt-5 space-y-1 ">
                 {navigation.map((item) => (
@@ -163,8 +160,11 @@ export default function Structure({children}) {
         <main className="relative z-0 flex-1 overflow-y-auto focus:outline-none">
            {children}
         </main>
+
       </div>
     </div>
+                       <Footer />
+
     </div>
   )
 }

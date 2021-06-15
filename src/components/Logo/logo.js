@@ -10,14 +10,12 @@ function LogoComponent(props){
         case 'standard':
             return (
             <>
-
               <StaticImage
                 src="../../images/logos/logo/horizontal/white@1x.webp"
                 alt="White Logo"
                 placeholder="blurred"
-                layout="fullWidth"
-                width={100}
-                height={25}
+                layout="constrained"
+                width={150}
               />
             </> );
           case 'darkversion':
@@ -28,8 +26,8 @@ function LogoComponent(props){
                 alt="Black Logo"
                 placeholder="blurred"
                 layout="fullWidth"
-                width={100}
-                height={25}
+             layout="constrained"
+                width={150}
               />
             </>);
 
@@ -41,8 +39,8 @@ function LogoComponent(props){
                 alt="White Logor"
                 placeholder="blurred"
                 layout="fullWidth"
-                width={25}
-                height={100}
+         layout="constrained"
+                width={150}
               />
             </>);
           case 'stackeddark':
@@ -52,9 +50,8 @@ function LogoComponent(props){
                   src='../../images/logos/logo/stacked/black.webp'
                   alt="BlackLogo"
                   placeholder="blurred"
-                  layout="fullWidth"
-                  width={25}
-                  height={100}
+             layout="constrained"
+                width={150}
                 />
               </>
             );
@@ -65,9 +62,8 @@ function LogoComponent(props){
                   src='../../images/logos/symbol.svg'
                   alt="Symbol"
                   placeholder="blurred"
-                  layout="fullWidth"
+                  layout="constrained"
                   width={52}
-                  height={52}
                 />
               </>
             );
@@ -78,9 +74,8 @@ function LogoComponent(props){
                   src='../../images/logos/logo/abbreviation.webp'
                   alt="Abbreviation"
                   placeholder="blurred"
-                  layout="fullWidth"
-                  width={100}
-                  height={25}
+          layout="constrained"
+                width={150}
                 />
               </>
             );
@@ -91,9 +86,8 @@ function LogoComponent(props){
                   src="../../images/logos/horizontal/white.webp"
                   alt="Placeholder"
                   placeholder="blurred"
-                  layout="fullWidth"
-                  width={100}
-                  height={25}
+        layout="constrained"
+                width={150}
                 />
               </>
             );

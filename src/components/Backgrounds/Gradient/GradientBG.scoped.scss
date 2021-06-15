@@ -1,1 +1,15 @@
 
+
+.gradientbgdiv {
+    background-color: transparent;
+	background-image: linear-gradient(90deg, #8F6AFA 18.59%, #375CDC 68.36%, #0099EE 105%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    height: auto;
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    height: auto;
+    border-radius: 20px;
+
+}

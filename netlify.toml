@@ -1,5 +1,5 @@
 [build]
-  command = "NODE_VERSION=13 NODE_ENV=production gatsby build"
+  command = "NODE_VERSION=14.16.0 NODE_ENV=production gatsby build"
   publish = "public/"
 
 [template]
