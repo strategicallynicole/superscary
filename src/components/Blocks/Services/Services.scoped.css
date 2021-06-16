@@ -457,7 +457,6 @@
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: linear-gradient(90deg, #292929 2.11%, #000000 104.85%);
   margin-bottom: 30px;
   transition: all 0.6s ease;
   border-color: #ffffff 1px solid;
@@ -504,19 +503,16 @@
   margin-bottom: 10px;
 }
 .problems-we-solve-content ul li:nth-child(1) span {
-  background: linear-gradient(90deg, #6633FF 18.59%, #3366FF 68.36%, #0099FF 105%);
 }
 .problems-we-solve-content ul li:nth-child(1) span i {
   color: #ffffff;
 }
 .problems-we-solve-content ul li:nth-child(2) span {
-  background: linear-gradient(90deg, #6633FF 18.59%, #3366FF 68.36%, #0099FF 105%);
 }
 .problems-we-solve-content ul li:nth-child(2) span i {
   color: #ffffff;
 }
 .problems-we-solve-content ul li:nth-child(2) span {
-  background: linear-gradient(90deg, #6633FF 18.59%, #3366FF 68.36%, #0099FF 105%);
 }
 .problems-we-solve-content ul li:nth-child(2) span i {
   color: #000000;

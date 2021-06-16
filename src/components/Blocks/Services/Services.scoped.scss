@@ -30,9 +30,9 @@
 			padding-right: 30px;
 			padding-top: 30px;
 			padding-bottom: 30px;
-			background: $black-gradient;
 			margin-bottom: 30px;
 			transition: $transition;
+            @include glass;
             border-color: #ffffff 1px solid;
 			&:last-child {
 				margin-bottom: 0;

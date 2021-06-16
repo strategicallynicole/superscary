@@ -17,10 +17,10 @@ import Particles from '../../Backgrounds/Particles/Stars';
 export default function CaseStudySqueeze() {
     return (
         <>
-        <section>
+        <section className="max-w-full px-4 py-8">
       <div className="gradientbgdiv">
           <Particles>
-        <div className="max-w-full px-4 py-8 mx-auto sm:px-3 lg:py-8 lg:px-4 lg:flex lg:items-center">
+        <div className="z-10 max-w-full px-4 py-8 mx-auto sm:px-3 lg:py-8 lg:px-4 lg:flex lg:items-center">
           <div className="px-5 lg:w-0 lg:flex-1">
             <h2 className="text-4xl font-extrabold leading-tight text-white underline dincondensed sm:text-4xl" id="newsletter-headline">
 Case Studies
@@ -35,7 +35,7 @@ Case Studies
           </div>
 
 
-          <div className="px-5 mt-10 lg:w-0 lg:flex-1">
+          <div className="max-w-full px-5 mt-10 lg:w-0 lg:flex-1">
 
  <HubspotForm
     portalId='8988772'

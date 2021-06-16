@@ -18,7 +18,26 @@ $shadow-color: #171040;
 
 
 
+@mixin gradientglass {
+    background: linear-gradient(90deg, rgba(102, 51, 255, .7) 18.59%, rgba(51, 102, 255, .7) 68.36%, rgba(0, 153, 255, .7) 105%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
+    }
+
+
+@mixin glass {
+    background: rgba( 0, 0, 0, 0.70 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    }
 
 
 @keyframes gradient {

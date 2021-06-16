@@ -93,13 +93,13 @@ module.exports = {
           includePaths: ['./src']
         },
         useResolveUrlLoader: true,
-        implementation: require('dart-sass'),
+        implementation: require('sass'),
         postCssPlugins: [
-            require('postcss-preset-env'),
-            require('postcss-import'),
-            require('tailwindcss'),
-            require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
-            require('autoprefixer')
+          require('postcss-preset-env'),
+          require('postcss-import'),
+          require('tailwindcss'),
+          require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
+          require('autoprefixer')
         ]
       }
     },

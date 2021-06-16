@@ -13,7 +13,7 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby"
 import "./Stats.scoped.css";
-import RubberButton from "../../Buttons/Rubber";
+import GlassyButton from "../../Buttons/Glass";
 class Stats extends Component {
     render() {
         return (
@@ -40,15 +40,7 @@ class Stats extends Component {
                             </div>
                             <Link href="/about-2">
 
-                            <RubberButton
-      theme={'Main'}
-      padding={[15, 50]}
-      fontSize={'16'}
-      content={'content'}
-      color={'#ffffff'}
-      borderWidth={5}
-      borderRadius={20}
-    >Help</RubberButton>               </Link>
+                           <GlassyButton />      </Link>
 
 
 
