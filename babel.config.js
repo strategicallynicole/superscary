@@ -11,10 +11,15 @@
     * - Modification    :
 **/
 module.exports = (api) => {
-    api.cache(false);
+  api.cache(false)
 
-    return {
-      presets: ['@babel/preset-env', 'babel-preset-gatsby', '@babel/preset-react', '@babel/preset-typescript'],
-      plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/plugin-transform-runtime', '@babel/plugin-proposal-decorators'],
-    };
-  };
+  return {
+    presets: ['@babel/preset-env', 'babel-preset-gatsby', '@babel/preset-react', '@babel/preset-typescript'],
+    plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/plugin-transform-runtime', ['@babel/plugin-proposal-class-properties', { loose: true }], ['@babel/plugin-proposal-private-methods', { loose: true }], ['@babel/plugin-proposal-private-property-in-object', { loose: true }], [
+      '@babel/plugin-proposal-decorators',
+      {
+        legacy: true
+      }
+    ]]
+  }
+}
