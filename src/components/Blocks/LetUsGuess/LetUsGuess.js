@@ -1,7 +1,19 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 20:35:54
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
-import './LetUsGuess.scss';
+import './LetUsGuess.css';
 import cards from './data.js';
 import { StaticImage } from "gatsby-plugin-image"
 

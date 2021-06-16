@@ -1,10 +1,22 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 20:37:51
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from "react";
 import PropTypes from "prop-types";
 
 // components
-import Button from "../../../components/Elements/Button.js";
-import Input from "../../../components/Elements/Input.js";
-import Select from "../../../components/Elements/Select.js";
+import Button from "../../../src/components/Elements/Button.js";
+import Input from "../../../src/components/Elements/Input.js";
+import Select from "../../../src/components/Elements/Select.js";
 
 export default function CardSettingsLarge({ title, button, forms }) {
   const widths = {
@@ -23,14 +35,14 @@ export default function CardSettingsLarge({ title, button, forms }) {
   };
   return (
     <>
-      <div className="relative flex flex-col w-full mb-6 shadow-lg rounded-lg bg-white">
-        <div className="mb-0 p-6 pb-0">
-          <div className="text-center flex justify-between items-center">
-            <h6 className="text-xl font-bold mb-0">{title}</h6>
+      <div className="relative flex flex-col w-full mb-6 bg-white rounded-lg shadow-lg">
+        <div className="p-6 pb-0 mb-0">
+          <div className="flex items-center justify-between text-center">
+            <h6 className="mb-0 text-xl font-bold">{title}</h6>
             <Button {...button} />
           </div>
         </div>
-        <div className="flex-auto px-6 pb-6 pt-0">
+        <div className="flex-auto px-6 pt-0 pb-6">
           <form>
             {forms.map((prop, key) => (
               <div key={key}>
@@ -46,7 +58,7 @@ export default function CardSettingsLarge({ title, button, forms }) {
                         <div className="relative w-full mb-3">
                           {inputProp.label && (
                             <label
-                              className="block uppercase text-blueGray-500 text-xs font-bold mb-2 ml-1"
+                              className="block mb-2 ml-1 text-xs font-bold uppercase text-blueGray-500"
                               htmlFor="grid-password"
                             >
                               {inputProp.label}

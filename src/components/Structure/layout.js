@@ -15,7 +15,6 @@ import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import navigation from './data.js'
 import Logo from "../Logo/logo.js"
-import "../../styles/base.css"
 
 import {
   MenuIcon,

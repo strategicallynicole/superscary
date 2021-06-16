@@ -85,24 +85,21 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    // `gatsby-plugin-postcss`,
-
     {
       resolve: 'gatsby-plugin-sass',
 
       options: {
         sassOptions: {
-          includePaths: ['src']
+          includePaths: ['./src']
         },
         useResolveUrlLoader: true,
-        implementation: require('node-sass'),
+        implementation: require('dart-sass'),
         postCssPlugins: [
-          require('postcss-preset-env'),
-          require('postcss-import'),
-          require('@postcss-plugins/console'),
-          require('tailwindcss'),
-          require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
-          require('autoprefixer')
+            require('postcss-preset-env'),
+            require('postcss-import'),
+            require('tailwindcss'),
+            require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
+            require('autoprefixer')
         ]
       }
     },

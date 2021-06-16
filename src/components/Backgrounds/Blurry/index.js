@@ -10,42 +10,42 @@
     * - Author          :
     * - Modification    :
 **/
-import React from "react";
-import "./blurry.scoped.scss";
+import React from 'react'
+import './blurry.scoped.scss'
 
-const Blurry = ({children}) => (
-    <div
+const Blurry = ({ children }) => (
+  <div
     style={{
-      position: "relative",
+      position: 'relative',
 
-      width: "100%",
-      height: "100%",
+      width: '100%',
+      height: '100%'
     }}
   >
-<div className="particlesbackground">    {children}
+    <div className='particlesbackground'>    {children}
 
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
 
-                </div>
-                </div>
+    </div>
+  </div>
 
 )
 

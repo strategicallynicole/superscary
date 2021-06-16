@@ -166,7 +166,7 @@ RubberButton.propTypes = {
 
 RubberButton.defaultProps = {
   angle: 'right',
-  background: '#2b2b2b',
+  backgroundColor: '#2b2b2b',
   borderRadius: 20,
   borderWidth: 2,
   disabled: false,

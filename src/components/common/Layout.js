@@ -20,7 +20,6 @@ import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 
 // Styles
-import '../../styles/base.css'
 /**
 * Main layout component
 *

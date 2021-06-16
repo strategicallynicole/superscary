@@ -1,7 +1,19 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 20:37:13
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React, { Component, useState } from 'react';
 import { Link } from 'gatsby';
 import RunningMan from '../../Illustrations/RunningMan/RunningMan';
-import './Slider.scoped.scss';
+import './Slider.scoped.css';
 import { render } from 'react-dom';
 /*const OwlCarousel = dynamic(import('react-owl-carousel3'))
 

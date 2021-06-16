@@ -11,8 +11,7 @@
     * - Modification    :
 **/
 import React from "react";
-import "../../../styles/globals.scss";
-import "./casestudysqueeze.scoped.scss";
+import "./casestudysqueeze.scoped.css";
 import HubspotForm from 'react-hubspot-form';
 import Particles from '../../Backgrounds/Particles/Stars';
 export default function CaseStudySqueeze() {

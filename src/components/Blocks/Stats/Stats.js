@@ -1,6 +1,18 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 20:37:40
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React, { Component } from 'react';
 import { Link } from "gatsby"
-import "./Stats.scoped.scss";
+import "./Stats.scoped.css";
 import RubberButton from "../../Buttons/Rubber";
 class Stats extends Component {
     render() {

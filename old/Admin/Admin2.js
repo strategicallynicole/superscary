@@ -1,10 +1,22 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 20:37:56
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from "react";
 import PropTypes from "prop-types";
 // components
-import Sidebar from "../../Sidebar/Sidebar.js";
-import NavbarSearchUser from "../../Navbars/NavbarSearchUser.js";
-import HeaderUser from "../../Headers/Admin/HeaderUser.js";
-import FooterAdmin from "../../Footers/Admin/FooterAdmin.js";
+import Sidebar from "../../src/components/Sidebar/Sidebar.js";
+import NavbarSearchUser from "../../src/components/Navbars/NavbarSearchUser.js";
+import HeaderUser from "../../src/components/Headers/Admin/HeaderUser.js";
+import FooterAdmin from "../../src/components/Footers/Admin/FooterAdmin.js";
 
 export default function Admin2({ sidebar, navbar, header, footer, children }) {
   return (

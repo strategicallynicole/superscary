@@ -1,5 +1,17 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 20:36:56
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React, { Component } from 'react';
-import "./Services.scoped.scss";
+import "./Services.scoped.css";
 import SectionTitle from "../../Titles/SectionTitle";
 
 const subtitle="<div>What Makes Us The <span className='text-2xl text-center text-gradient grotesk text-bold'>Best</span></div>";

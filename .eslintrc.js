@@ -1,7 +1,20 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 16/06/2021 - 05:59:49
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 16/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 module.exports = {
     'parser': 'babel-eslint',
     'parserOptions': {
         'ecmaVersion': 6,
+        'esVersion': 6,
         'ecmaFeatures': {
             'jsx': true,
             'experimentalObjectRestSpread': true

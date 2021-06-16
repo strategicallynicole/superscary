@@ -1,8 +1,19 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 15/06/2021 - 20:36:24
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React, { Component } from 'react';
 import {Link} from 'gatsby';
-import "./Industries.scoped.scss";
+import "./Industries.scoped.css";
 import SectionTitle from '../../Titles/SectionTitle';
-import GradientBG from "../../Backgrounds/Gradient/GradientBG";
 import Button from "../../Buttons/Simple/index";
 import Flashy from "../../Buttons/Flashy/index";
 class Industries extends Component {
