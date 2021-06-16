@@ -14,7 +14,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { prop, ifProp } from 'styled-tools';
-import styled from 'styled';
+import styled, { css } from 'styled-components';
 
 const GradientBackground = styled.button`
   position: relative;
