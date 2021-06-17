@@ -1,17 +1,29 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 16/06/2021 - 19:45:17
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 16/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 // Generate a config at https://vincentgarreau.com/particles.js/
 
 export default {
   particles: {
     number: {
-      value: 75,
+      value: 20,
       density: {
         enable: true,
         value_area: 600
       }
     },
     color: {
-      value: '#FE943C',
-      value: '#EA4C89',
+      value: '#000000',
+      value: '#121212',
       value: '#212121',
 
     },
@@ -23,12 +35,12 @@ export default {
       }
     },
     opacity: {
-      value: 0.9,
+      value: 0.8,
       random: true,
       anim: {
         enable: true,
         speed: .03,
-        opacity_min: 0.7,
+        opacity_min: 0.6,
         sync: false
       }
     },
@@ -37,8 +49,9 @@ export default {
       random: true,
       anim: {
         enable: false,
-        speed: 20,
-        size_min: 0.9,
+        speed: .03,
+        size_min: 1,
+        size_max: 20,
         sync: false
       }
     },
@@ -51,7 +64,7 @@ export default {
     },
     move: {
       enable: true,
-      speed: 4,
+      speed: 1,
       direction: 'left',
       random: true,
       straight: false,

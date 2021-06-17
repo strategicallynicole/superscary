@@ -46,8 +46,8 @@
 
 			li {
 				position: relative;
-				background: $black-gradient;
-@apply shadow;
+                @include glass;
+                @include shadow;
 				border-radius: 60px 20px 20px 60px;
 				transition: $transition;
 				overflow: hidden;

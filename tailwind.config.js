@@ -11,7 +11,7 @@
     * - Modification    :
 **/
 module.exports = {
-    purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+    purge: ["./public/**/*.{js,jsx,ts,tsx}"],
     darkMode: 'media',
   theme: {
     borderColor: theme => ({

@@ -11,14 +11,14 @@
     * - Modification    :
 **/
 import React from "react";
-import "./casestudysqueeze.scoped.css";
+import "./casestudysqueeze.scoped.scss";
 import HubspotForm from 'react-hubspot-form';
 import Particles from '../../Backgrounds/Particles/Stars';
 export default function CaseStudySqueeze() {
     return (
         <>
         <section className="max-w-full px-4 py-8">
-      <div className="gradientbgdiv">
+      <div className="gradientglass">
           <Particles>
         <div className="z-10 max-w-full px-4 py-8 mx-auto sm:px-3 lg:py-8 lg:px-4 lg:flex lg:items-center">
           <div className="px-5 lg:w-0 lg:flex-1">

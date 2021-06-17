@@ -13,42 +13,59 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { Tags } from '@tryghost/helpers-gatsby'
+import { Tags } from '../Tags/index.js'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
+import "./PostCard.scoped.scss";
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`;
     const readingTime = readingTimeHelper(post);
 
     return (
-        <Link to={url} className="px-5 py-5 post-card glass">
-            <header className="post-card-header">
+        <>
+        <div className="rounded shadow glass">
+
+              <div key={post.title} className="flex flex-col overflow-hidden">
+
                 {post.feature_image &&
-                    <div className="post-card-image" style={{
-                        backgroundImage: `url(${post.feature_image})` ,
-                    }}></div>}
-                {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
-                {post.featured && <span>Featured</span>}
-                <h2 className="post-card-title">{post.title}</h2>
-            </header>
-            <section className="post-card-excerpt">{post.excerpt}</section>
-            <footer className="post-card-footer">
-                <div className="post-card-footer-left">
-                    <div className="post-card-avatar">
-                        {post.primary_author.profile_image ?
-                            <img className="author-profile-image" src={post.primary_author.profile_image} alt={post.primary_author.name}/> :
-                            <img className="default-avatar" src="/images/icons/avatar.svg" alt={post.primary_author.name}/>
-                        }
+                        <div className="flex-shrink-0">
+                <Link to={url}>   <img className="object-cover w-full h-48 top-left-and-right-rounded overflow:hidden grayscale" src={post.feature_image} alt={post.title} /></Link>
+                </div>   }
+                <div className="flex flex-col justify-between flex-1 p-6">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-indigo-500">
+                    <Tags post={post} visibility="public" autolink={true} />
+                    </p>
+                    <a href={post.href} className="block mt-2">
+                    <Link to={url} className="wave-link">    <h2 className="text-3xl font-semibold leading-tight text-white underline dincondensed wave-link">{post.title}</h2></Link>
+                         <Link to={url}>  <p className="mt-3 text-base text-gray-500 roboto">{post.excerpt}</p></Link>
+                    </a>
+                  </div>
+                  <div className="flex items-center mt-6">
+                    <div className="flex-shrink-0">
+                      <a href={post.primary_author.url}>
+                        <span className="sr-only">{post.primary_author.name}</span>
+                        <img className="w-10 h-10 rounded-full" src={post.primary_author.profile_image} alt="" />
+                      </a>
                     </div>
-                    <span>{ post.primary_author.name }</span>
+                    <div className="ml-3">
+                      <p className="leading-tight text-gray-900 text-tiny">
+                        <a href={post.primary_author.url} className="hover:underline">
+                        {post.primary_author.name}
+                        </a>
+
+                      <div className="flex leading-tight text-gray-500 text-tiny">
+                        <time dateTime={post.datetime}>{post.datetime}</time>
+                        <span>{readingTime} read</span>
+                      </div>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="post-card-footer-right">
-                    <div>{readingTime}</div>
-                </div>
-            </footer>
-        </Link>
-    )
-}
+              </div>
+        </div>
+    </>
+            );};
 
 PostCard.propTypes = {
     post: PropTypes.shape({

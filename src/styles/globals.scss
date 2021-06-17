@@ -1,5 +1,5 @@
-@use "./grid.scss";
-@use "./mixins.scss";
+@import "./grid.scss";
+@import "./mixins.scss";
 $shadow: #171040;
 $transition: .6s all ease-in-out;
 $main-color: #121212;

@@ -13,7 +13,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { prop, ifProp } from 'styled-tools';
+import { prop, ifProp, switchProp } from 'styled-tools';
 import styled, { css } from 'styled-components';
 
 const GradientBackground = styled.button`
@@ -21,10 +21,17 @@ const GradientBackground = styled.button`
   display: flex;
   box-sizing: border-box;
   border: 1px solid #ffffff;
-  padding: ${props => props.borderWidth}px;
+color: #ffffff;
+font-size: 1.6em;
+font-family: 'din-condensed';
+padding-right: 3em;
+padding-top: .3em;
+padding-bottom: .3em;
+text-decoration: underline;
+text-decoration-color: #ffffff;
+  padding-left: 3em;
   outline: 0;
-  background: linear-gradient(90deg, rgba(102, 51, 255, .7) 18.59%, rgba(51, 102, 255, .7) 68.36%, rgba(0, 153, 255, .7) 105%);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
     border-radius: 10px;
@@ -33,26 +40,29 @@ const GradientBackground = styled.button`
   border-radius: 20px;
   &:hover {
     animation: rubberBand 2s linear;
-
-  }
-}`;
+}
+    background: ${switchProp('gradient', {
+    regular: 'linear-gradient(90deg, rgba(102, 51, 255, .7) 18.59%, rgba(51, 102, 255, .7) 68.36%, rgba(0, 153, 255, .7) 105%)',
+    black: 'rgba( 0, 0, 0, 0.60 )'
+  })};
+ `
 
 GradientBackground.propTypes = {
-
-};
+  gradient: PropTypes.oneOf[('black', 'regular')]
+}
 
 GradientBackground.defaultProps = {
-
-};
+  gradient: 'black'
+}
 
 const Inner = styled.div`
   width: 100%;
   height: 100%;
-  padding: 5px 10px 10px 5px;
+  padding: 7px 7px 7px 7px;
   outline: 0;
   animation: rubberBand 2s linear;
   transition: 2s all ease-in-out;
-
+  color: #fff;
       &:hover {
         background: transparent;
         color: #fff;
@@ -62,15 +72,15 @@ const Inner = styled.div`
   };
 `;
 
-
 const GlassyButton = ({
-  children,
-  ...props
+  children, gradient, texty, ...props
 }) => (
   <GradientBackground
+  gradient={gradient}
     {...props}
   >
     <Inner>
+   {texty}
       {children}
     </Inner>
   </GradientBackground>
@@ -83,7 +93,7 @@ GlassyButton.propTypes = {
 
 GlassyButton.defaultProps = {
   texty: 'Clink',
-  linky: 'contact'
+  linky: 'contact',
 };
 
 export default GlassyButton;

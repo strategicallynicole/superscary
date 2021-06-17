@@ -40,7 +40,7 @@ class Stats extends Component {
                             </div>
                             <Link href="/about-2">
 
-                           <GlassyButton />      </Link>
+                           <GlassyButton texty="hello" />      </Link>
 
 
 
@@ -54,27 +54,27 @@ class Stats extends Component {
 <div className="w-full overflow-hidden md:my-1 md:px-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:my-4 xl:px-4 xl:w-1/2">
                         <div className="flex flex-wrap -mx-1 overflow-visible sm:-mx-3 md:-mx-3 lg:-mx-3 xl:-mx-4">
                                 <div className="w-1/2 px-1 my-1 overflow-visible sm:my-3 sm:px-3 sm:w-1/2 md:my-3 md:px-3 md:w-1/2 lg:my-3 lg:px-3 lg:w-1/2 xl:my-4 xl:px-4 xl:w-1/2 counter-nth">
-                                    <div className="border border-solid rounded single-counter bg-black-gradient border-blue hover:border-white hover:text-white text-blue">
+                                    <div className="border border-solid rounded single-counter bg-glass border-blue hover:border-white hover:text-white text-blue">
                                         <h2><span className="text-4xl underline target dincondensed bold">318</span></h2>
                                         <p className="font-light leading-4 text-md target roboto">Brands Reborn</p>
                                          </div>
 </div>
                                 <div className="w-1/2 px-1 my-1 overflow-visible sm:my-3 sm:px-3 sm:w-1/2 md:my-3 md:px-3 md:w-1/2 lg:my-3 lg:px-3 lg:w-1/2 xl:my-4 xl:px-4 xl:w-1/2 counter-nth">
-                                    <div className="border border-solid rounded single-counter bg-black-gradient border-purple text-purple hover:border-white hover:text-white ">
+                                    <div className="border border-solid rounded single-counter bg-glass border-purple text-purple hover:border-white hover:text-white ">
                                         <h2><span className="text-4xl underline target dincondensed bold">247</span></h2>
                                         <p className="font-light leading-4 text-md target roboto">Strategies Delivered</p>
                                     </div>
                                 </div>
 
                                 <div className="w-1/2 px-1 my-1 overflow-visible sm:my-3 sm:px-3 sm:w-1/2 md:my-3 md:px-3 md:w-1/2 lg:my-3 lg:px-3 lg:w-1/2 xl:my-4 xl:px-4 xl:w-1/2 counter-nth">
-                                    <div className="border border-solid rounded border-indigo text-indigo hover:border-white hover:text-white single-counter bg-black-gradient">
+                                    <div className="border border-solid rounded border-indigo text-indigo hover:border-white hover:text-white single-counter bg-glass">
                                         <h2><span className="text-4xl underline target dincondensed bold">0</span></h2>
                                         <p className="font-light leading-4 text-md target roboto">Fucks Given</p>
                                     </div>
                                 </div>
 
                                 <div className="w-1/2 px-1 my-1 overflow-visible sm:my-3 sm:px-3 sm:w-1/2 md:my-3 md:px-3 md:w-1/2 lg:my-3 lg:px-3 lg:w-1/2 xl:my-4 xl:px-4 xl:w-1/2 counter-nth">
-                                    <div className="border border-solid rounded border-gray text-gray hover:border-white hover:text-white single-counter bg-black-gradient">
+                                    <div className="border border-solid rounded border-gray text-gray hover:border-white hover:text-white single-counter bg-glass">
                                         <h2><span className="text-4xl underline target dincondensed bold">80</span></h2>
                                         <p className="font-light leading-4 text-md target roboto">Award Win</p>
                                     </div>
