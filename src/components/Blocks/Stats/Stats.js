@@ -38,10 +38,8 @@ class Stats extends Component {
                                 <h3 className="text-sm grotesk bold">A Community With A Unique Mission</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Quis ipsum suspendisse ultrices gravida suspendisse.</p>
                             </div>
-                            <Link href="/about-2">
 
-                           <GlassyButton texty="hello" />      </Link>
-
+                           <GlassyButton texty="hello" />     
 
 
 
