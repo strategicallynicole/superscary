@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 17/06/2021 - 01:12:39
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 17/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import * as Functions from './functions';
 import * as Noop from './noop';
 import Reference from './reference';

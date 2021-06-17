@@ -55,7 +55,7 @@ const Blog = ({ data, location, pageContext }) => {
     )
 }
 
-Index.propTypes = {
+Blog.propTypes = {
     data: PropTypes.shape({
         allGhostPost: PropTypes.object.isRequired,
     }).isRequired,

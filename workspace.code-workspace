@@ -27,6 +27,7 @@
 			"**/CVS": true,
 			"**/.DS_Store": true,
 			"**/node_modules": false
-		}
+		},
+		"git.ignoreLimitWarning": true
 	}
 }

@@ -76,3 +76,5 @@ typings/
 # Local Netlify folder
 .cache/
 cache/
+old
+old/
