@@ -19,10 +19,10 @@
 			"path": "../abstract"
 		},
 		{
-			"path": "../next.js"
+			"path": "../monster"
 		},
 		{
-			"path": "../monster"
+			"path": "../jumpx"
 		}
 	],
 	"settings": {
@@ -34,6 +34,7 @@
 			"**/.DS_Store": true,
 			"**/node_modules": false
 		},
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"compile-hero.disable-compile-files-on-did-save-code": false
 	}
 }

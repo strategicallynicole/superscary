@@ -12,7 +12,7 @@
 **/
 import React, { Component } from 'react';
 import {Link} from 'gatsby';
-import "./Industries.scoped.scss";
+import "./Industries.comp.scss";
 import SectionTitle from '../../Titles/SectionTitle';
 import Button from "../../Buttons/Simple/index";
 import Flashy from "../../Buttons/Flashy/index";

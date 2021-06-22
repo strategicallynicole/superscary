@@ -11,8 +11,8 @@
     * - Modification    :
 **/
 module.exports = {
-    purge: ["./public/**/*.{js,jsx,ts,tsx}"],
-    darkMode: 'media',
+  purge: ['./public/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'media',
   theme: {
     borderColor: theme => ({
       DEFAULT: theme('colors.indigo.500', 'currentColor'),
