@@ -23,7 +23,7 @@ import {
   MenuIcon,
   XIcon
 } from '@heroicons/react/outline'
-
+import data from "../../utils/siteConfig.js";
 import Footer from '../Footers/Simple/links.js';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
