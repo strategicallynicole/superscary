@@ -2,7 +2,7 @@
     * @description      :
     * @author           :
     * @group            :
-    * @created          : 22/06/2021 - 01:48:51
+    * @created          : 22/06/2021 - 01:48:37
     *
     * MODIFICATION LOG
     * - Version         : 1.0.0
@@ -17,7 +17,7 @@ import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/Meta'
-import Structure from "../components/Structure/layout.js";
+import Structure from '../components/Structure/layout.js';
 
 
 /**

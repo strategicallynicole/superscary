@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 22/06/2021 - 16:06:44
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 22/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
@@ -7,7 +19,7 @@ import url from 'url'
 
 import getAuthorProperties from './getAuthorProperties'
 import ImageMeta from './ImageMeta'
-import config from '../../../utils/siteConfig'
+import config from '../../utils/siteConfig'
 
 import { tags as tagsHelper } from '@tryghost/helpers'
 

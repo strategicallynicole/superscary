@@ -13,7 +13,7 @@
 import React from 'react';
 import { Tags } from '@tryghost/helpers-gatsby'
 import NewsQuery from './NewsQuery'
-import { MetaData } from './meta'
+import { MetaData } from '../Meta'
 import { PostCard } from './'
 import { useStaticQuery, graphql } from 'gatsby'
 import SectionTitle from '../Titles/SectionTitle';

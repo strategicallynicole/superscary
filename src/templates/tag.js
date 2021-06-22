@@ -1,9 +1,21 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 22/06/2021 - 01:46:52
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 22/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-
-import { Layout, PostCard, Pagination } from '../components/common'
-import { MetaData } from '../components/common/meta'
+import Structure from "../components/Structure/layout"
+import { PostCard, Pagination } from '../components/common'
+import { MetaData } from '../components/Meta'
 
 /**
 * Tag page (/tag/:slug)
@@ -22,7 +34,7 @@ const Tag = ({ data, location, pageContext }) => {
                 location={location}
                 type="series"
             />
-            <Layout>
+            <Structure>
                 <div className="container">
                     <header className="tag-header">
                         <h1>{tag.name}</h1>
@@ -36,7 +48,7 @@ const Tag = ({ data, location, pageContext }) => {
                     </section>
                     <Pagination pageContext={pageContext} />
                 </div>
-            </Layout>
+            </Structure>
         </>
     )
 }

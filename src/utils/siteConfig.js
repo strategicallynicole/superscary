@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 22/06/2021 - 16:04:01
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 22/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 module.exports = {
     siteUrl: `https://scaryberries.netlify.app`, // Site domain. Do not include a trailing slash!
 

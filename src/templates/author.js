@@ -1,9 +1,21 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 22/06/2021 - 01:48:32
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 22/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import { Layout, PostCard, Pagination } from '../components/common'
-import { MetaData } from '../components/common/meta'
+import { MetaData } from '../components/Meta'
 
 /**
 * Author page (/author/:slug)

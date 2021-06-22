@@ -1,8 +1,20 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 22/06/2021 - 01:47:22
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 22/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { MetaData } from '../components/common/meta'
+import { MetaData } from '../components/Meta'
 import Structure from '../components/Structure/layout.js'
 import "../styles/ghost.scss";
 import "../styles/post.scoped.scss";

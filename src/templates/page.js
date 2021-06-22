@@ -1,10 +1,22 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 22/06/2021 - 01:49:16
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 22/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
-import { MetaData } from '../components/common/meta'
+import { MetaData } from '../components/Meta'
 
 /**
 * Single page (/:slug)

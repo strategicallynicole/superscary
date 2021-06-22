@@ -15,7 +15,10 @@ import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import navigation from './data.js'
 import Logo from "../Logo/logo.js"
-
+import config from '../../utils/siteConfig'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import {
   MenuIcon,
   XIcon
@@ -26,10 +29,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Structure({children}) {
+export default function Structure({children, data, bodyClass, isHome, Footer}) {
+
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
+    <>
+    <Helmet>
+        <html lang="en-US" />
+        <style type="text/css">{`${site.codeinjection_styles}`}</style>
+        <body className={bodyClass} />
+        <link href="./fonts/FlatIcon/flaticon.css" rel="stylesheet" />
+
+    </Helmet>
     <div className="overflow-x-hidden bg-cover bg-wallpaper">
     <div className="flex h-screen overflow-hidden text-white bg-transparent">
       <Transition.Root show={sidebarOpen} as={Fragment}>
@@ -160,13 +172,14 @@ export default function Structure({children}) {
           </button>
         </div>
         <main className="relative z-0 flex-1 overflow-y-auto focus:outline-none">
-           {children}
+          {children}
         </main>
 
       </div>
     </div>
-                       <Footer />
+    <Footer />
 
     </div>
+    </>
   )
 }

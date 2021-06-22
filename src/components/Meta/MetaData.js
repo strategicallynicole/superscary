@@ -1,9 +1,21 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 22/06/2021 - 01:50:46
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 22/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import url from 'url'
 
-import config from '../../../utils/siteConfig'
+import config from '../../utils/siteConfig'
 import ArticleMeta from './ArticleMeta'
 import WebsiteMeta from './WebsiteMeta'
 import AuthorMeta from './AuthorMeta'

@@ -21,7 +21,6 @@ import News from '../components/common/News'
 import Services from '../components/Blocks/Services/Services'
 import Stats from '../components/Blocks/Stats/Stats'
 import Stars from '../components/Blocks/LetUsGuess/LetUsGuess'
-import Present from '../components/Present'
 class Index extends Component {
   render () {
     return (

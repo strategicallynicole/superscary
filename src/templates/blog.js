@@ -15,7 +15,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Structure/layout'
 import { PostCard, Pagination } from '../components/common'
-import { MetaData } from '../components/common/meta'
+import { MetaData } from '../components/Meta'
 /**
 * Main index page (home page)
 *
