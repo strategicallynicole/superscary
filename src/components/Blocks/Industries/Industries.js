@@ -72,7 +72,7 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-machine-learning"></i>
-                                            <h3 className="text-2xl text-white underline dincondensed bold">Heavy Industry</h3>
+                                            <h3 className="text-2xl text-white underline stolzl bold">Heavy Industry</h3>
                                             <p className="text-white text-md grotesk">All kind of industry</p>
                                         </span>
                                     </li>
@@ -82,7 +82,7 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-artificial-intelligence"></i>
-                                            <h3 className="text-2xl text-white underline dincondensed bold">Transportation</h3>
+                                            <h3 className="text-2xl text-white underline stolzl bold">Transportation</h3>
                                             <p>All kind of industry</p>
                                         </span>
                                     </li>
@@ -92,7 +92,7 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-health"></i>
-                                            <h3 className="text-2xl text-white underline dincondensed bold">Health Care</h3>
+                                            <h3 className="text-2xl text-white underline stolzl bold">Health Care</h3>
                                             <p>All kind of industry</p>
                                         </span>
                                     </li>
@@ -102,7 +102,7 @@ class Industries extends Component {
                                     >
                                         <span>
                                             <i className="flaticon-automation"></i>
-                                            <h3 className="text-2xl text-white underline dincondensed bold">Manufacturing</h3>
+                                            <h3 className="text-2xl text-white underline stolzl bold">Manufacturing</h3>
                                             <p>All kind of industry</p>
                                         </span>
                                     </li>

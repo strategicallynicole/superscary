@@ -22,7 +22,7 @@ export default function CaseStudySqueeze() {
           <Particles>
         <div className="z-10 max-w-full px-4 py-8 mx-auto sm:px-3 lg:py-8 lg:px-4 lg:flex lg:items-center">
           <div className="px-5 lg:w-0 lg:flex-1">
-            <h2 className="text-4xl font-extrabold leading-tight text-white underline dincondensed sm:text-4xl" id="newsletter-headline">
+            <h2 className="text-4xl font-extrabold leading-tight text-white underline stolzl sm:text-4xl" id="newsletter-headline">
 Case Studies
             </h2>
             <h3 className="text-lg font-semibold leading-snug text-white grotesk sm:text-lg md:mb-5" id="newsletter-headline px-5 py-5">

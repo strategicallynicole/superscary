@@ -28,7 +28,7 @@ class Services extends Component {
     <i className="flaticon-chip"></i>
                                 <h3>
                                     <Link href="/service-details">
-                                        <a className="text-white dincondensed hover:text-indigo-500">Brand Strategy</a>
+                                        <a className="text-white stolzl hover:text-indigo-500">Brand Strategy</a>
                                     </Link>
                                 </h3>
                                 <p>Know how parents always say, "There should be a manual on parenting"... Kind of like that.
@@ -40,7 +40,7 @@ class Services extends Component {
     <i className="flaticon-chip"></i>
                                 <h3>
                                     <Link href="/service-details">
-                                        <a className="text-white dincondensed hover:text-indigo-500">Brand Development</a>
+                                        <a className="text-white stolzl hover:text-indigo-500">Brand Development</a>
                                     </Link>
                                 </h3>
                                 <p>Your brand is your foundation and a weak foundation makes for a shaky house.
@@ -51,7 +51,7 @@ class Services extends Component {
                                <i className="flaticon-chip"></i>
                                                            <h3>
                                                                <Link href="/service-details">
-                                                                   <a className="text-white dincondensed hover:text-indigo-500">Site & Tech Infrastructure
+                                                                   <a className="text-white stolzl hover:text-indigo-500">Site & Tech Infrastructure
 </a>
                                                                </Link>
                                                            </h3>
@@ -65,7 +65,7 @@ class Services extends Component {
                                <i className="flaticon-chip"></i>
                                                            <h3>
                                                                <Link href="/service-details">
-                                                                   <a className="text-white dincondensed hover:text-indigo-500">Content</a>
+                                                                   <a className="text-white stolzl hover:text-indigo-500">Content</a>
                                                                </Link>
                                                            </h3>
                                                            <p>Your content needs to grab the attention of your target market and hold it.
@@ -76,7 +76,7 @@ class Services extends Component {
                                <i className="flaticon-chip"></i>
                                                            <h3>
                                                                <Link href="/service-details">
-                                                                   <a className="text-white dincondensed hover:text-indigo-500">Creative Infusion</a>
+                                                                   <a className="text-white stolzl hover:text-indigo-500">Creative Infusion</a>
                                                                </Link>
                                                            </h3>
                                                            <p>The power that an outside perspective brings to the table can reignite the struggling creative juices of your talented team.</p>
@@ -86,7 +86,7 @@ class Services extends Component {
                                <i className="flaticon-chip"></i>
                                                            <h3>
                                                                <Link href="/service-details">
-                                                                   <a className="text-white dincondensed hover:text-indigo-500">Marketing & Growth Strategy</a>
+                                                                   <a className="text-white stolzl hover:text-indigo-500">Marketing & Growth Strategy</a>
                                                                </Link>
                                                            </h3>
                                                            <p>Go ahead, try to find a better marketing, sales, or growth strategy, it's right next to the Fountain of Youth and anything marketed as "free" that's actually free.</p>

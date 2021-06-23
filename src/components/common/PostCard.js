@@ -37,7 +37,7 @@ const PostCard = ({ post }) => {
                     <Tags post={post} visibility="public" autolink={true} />
                     </p>
                     <a href={post.href} className="block mt-2">
-                    <Link to={url} className="wave-link">    <h2 className="text-3xl font-semibold leading-tight text-white underline dincondensed wave-link">{post.title}</h2></Link>
+                    <Link to={url} className="wave-link">    <h2 className="text-3xl font-semibold leading-tight text-white underline stolzl wave-link">{post.title}</h2></Link>
                          <Link to={url}>  <p className="mt-3 text-base text-gray-500 roboto">{post.excerpt}</p></Link>
                     </a>
                   </div>

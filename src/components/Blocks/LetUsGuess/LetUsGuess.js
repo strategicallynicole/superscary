@@ -18,13 +18,16 @@ import cards from './data.js';
 import { StaticImage } from "gatsby-plugin-image"
 
 import Particles from '../../Backgrounds/Particles/Stars';
+import SectionTitle from "../../Titles/SectionTitle";
+
 function Stars() {
+
   return (
 <div className="rounded bg-gradientglass">
       <Particles>
         <Hero>
-          <div className="px-4 py-4 starscontainer">
-          <h1 className="text-4xl text-center text-white underline dincondensed text-bold">Let Us Guess...</h1>
+          <div className="pb-10 starscontainer">
+          <SectionTitle subtitle="We Get It" title='Let Us Guess' body=''/>
 
             <div className="starsrow">
               {cards.map((card, i) => (

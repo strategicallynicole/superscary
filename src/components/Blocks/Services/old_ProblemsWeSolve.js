@@ -15,7 +15,7 @@ export default function LetUsGuess() {
       <div className="relative mx-auto max-w-7xl lg:px-8 lg:grid lg:grid-cols-2">
         <div className="px-4 py-16 sm:py-24 sm:px-6 lg:px-0 lg:pr-8">
           <div className="max-w-lg mx-auto lg:mx-0">
-             <h2 className="text-4xl font-bold tracking-wide underline dincondensed 2xl:text-8xl xl:text-7xl">Let Us Guess</h2>
+             <h2 className="text-4xl font-bold tracking-wide underline stolzl 2xl:text-8xl xl:text-7xl">Let Us Guess</h2>
           <MeditatingMan />
             <dl className="mt-12 space-y-10">
 

@@ -18,7 +18,7 @@ const ButtonStyle = styled.button`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: "din-condensed", Impact, sans-serif !important;
+    font-family: "stolzl", Impact, sans-serif !important;
     font-weight: 400 !important;
    font-size: 2rem;
    line-height: 3rem;

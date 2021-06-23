@@ -23,7 +23,7 @@ const GradientBackground = styled.button`
   border: 1px solid #ffffff;
 color: #ffffff;
 font-size: 1.6em;
-font-family: 'din-condensed';
+font-family: 'stolzl';
 padding-right: 3em;
 padding-top: .3em;
 padding-bottom: .3em;

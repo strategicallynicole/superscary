@@ -53,10 +53,10 @@ class MainBanner extends Component {
           <section className="slider-area">
           <div className="container pt-6 mx-auto">
                     <div className="w-full pb-6 md:w-1/4 md:pb-0 md:pr-6">
-                    <h1 className="text-white underline 2xl:text-9xl xl:text-9xl text-9xl dincondensed">
+                    <h1 className="text-white underline 2xl:text-9xl xl:text-9xl text-9xl stolzl">
                                                 Hi.
                                             </h1>
-                                            <h2 className="font-bold dincondensed white-text font-size-3xl ">
+                                            <h2 className="font-bold stolzl white-text font-size-3xl ">
                                                 We <span className="underline">Need</span> To Talk.
                                             </h2>
                                             <p className="no-underline grotesk white-text font-size-xl">
@@ -90,10 +90,10 @@ class MainBanner extends Component {
                                 <div class="section group ">
                                     <div class="overflow-hidden align-middle 	">
                                         <div className="w-full pb-6 md:w-1/4 md:pb-0 md:pr-6">
-                                            <h1 className="pl-2 mt-8 leading-normal text-white border-l-8 2xl:text-9xl xl:text-9xl text-9xl dincondensed lg:pl-12 xl:mt-0">
+                                            <h1 className="pl-2 mt-8 leading-normal text-white border-l-8 2xl:text-9xl xl:text-9xl text-9xl stolzl lg:pl-12 xl:mt-0">
                                                 Hi.
                                             </h1>
-                                            <h2 className="font-bold underline dincondensed white-text font-size-3xl ">
+                                            <h2 className="font-bold underline stolzl white-text font-size-3xl ">
                                                 We Need To Talk.
                                             </h2>
                                             <p className="grotesk white-text font-size-xl">

@@ -16,6 +16,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import navigation from './data.js'
 import Logo from "../Logo/logo.js"
 import { Helmet } from 'react-helmet'
+import "../../styles/base.css"
 
 import {
   MenuIcon,
@@ -156,11 +157,11 @@ export default function Structure({children}) {
       <div className="overflow-x-hidden overflow-y-auto md:flex-col md:flex-1 md:flex md:flex-shrink-0">
         <div className="pt-1 pl-1 md:hidden sm:pl-2 sm:pt-3">
           <button
-            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            className="inline-flex items-center justify-center w-12 h-12 mt-1 ml-1 text-gray-500 rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>
-            <MenuIcon className="w-6 h-6" aria-hidden="true" />
+            <MenuIcon className="w-16 h-16" aria-hidden="true" />
           </button>
         </div>
         <main className="relative z-0 flex-1 overflow-y-auto focus:outline-none">

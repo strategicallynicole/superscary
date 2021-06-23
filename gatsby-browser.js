@@ -10,4 +10,3 @@
     * - Author          :
     * - Modification    :
 **/
-import "./src/styles/base.css"

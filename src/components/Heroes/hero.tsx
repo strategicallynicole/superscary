@@ -5,16 +5,16 @@ const Hero = (props) => {
     const [menu, setMenu] = useState(false);
     return (
         <div className="relative pb-24 lg:pb-96 bg-black">
-        
+
             <div className>
-          
+
                 <div className="mx-auto container relative z-20 lg:px-0 px-4">
                     <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-24">
                         <div className="lg:w-1/2 lg:pt-0 pt-8">
-                            <h1 className="2xl:text-9xl	 xl:text-9xl text-9xl dincondensed leading-normal text-white border-l-8 lg:pl-12 pl-2 xl:mt-0 mt-8">
+                            <h1 className="2xl:text-9xl	 xl:text-9xl text-9xl stolzl leading-normal text-white border-l-8 lg:pl-12 pl-2 xl:mt-0 mt-8">
                                 Hi.
                                 <br />
-                                <span className="leading-normal 2xl:text-7xl xl:text-7xl text-7xl font-bold dincondensed underline">We Need To Talk.</span>
+                                <span className="leading-normal 2xl:text-7xl xl:text-7xl text-7xl font-bold stolzl underline">We Need To Talk.</span>
                             </h1>
                             <p className="lg:leading-8 leading-6 text-xl text-white roboto text-light mt-6 border-l-8  lg:pl-12 pl-2 py-2">It's about your creative again... it's been... frightening.</p>
                             <div className="sm:flex items-center justify-center mt-12">

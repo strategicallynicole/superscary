@@ -60,10 +60,10 @@ class App extends React.Component {
               <div className="mainbody">
                 <span id="about_section" />
                 <div class="text-center">
-                  <h1 className="pl-2 mt-8 leading-normal text-white border-l-8 2xl:text-9xl xl:text-9xl text-9xl dincondensed lg:pl-12 xl:mt-0">
+                  <h1 className="pl-2 mt-8 leading-normal text-white border-l-8 2xl:text-9xl xl:text-9xl text-9xl stolzl lg:pl-12 xl:mt-0">
                     Hi.
                   </h1>
-                  <h2 className="font-bold underline dincondensed white-text font-size-3xl ">
+                  <h2 className="font-bold underline stolzl white-text font-size-3xl ">
                     We Need To Talk.
                   </h2>
                   <p className="grotesk white-text font-size-xl">

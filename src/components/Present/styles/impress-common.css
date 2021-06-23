@@ -86,7 +86,7 @@ It is focused on plugin functionality, not the visual style of your presentation
     padding: 1em;
     text-align: center;
     z-index: 100;
-    font-family: 'din-condensed', Arial, Sans;
+    font-family: 'stolzl', Arial, Sans;
 }
 .impress-enabled #impress-help td {
     padding-left: 1em;

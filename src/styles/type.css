@@ -23,7 +23,7 @@
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
-.dincondensed {
+.stolzl {
     font-family: 'DIN Condensed';
 }
 .prose blockquote {
@@ -41,7 +41,7 @@
     -webkit-initial-letter: 4;
   }
 .h1, .h2, h2, h1 {
-    @apply leading-loose dincondensed bold;
+    @apply leading-loose stolzl bold;
 }
 
 p, .p, body, section {

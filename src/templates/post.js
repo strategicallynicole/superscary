@@ -121,7 +121,7 @@ const Post = ({ data, location }) => {
           <div className="mx-auto text-lg max-w-prose">
           <span className="block mt-2 text-3xl font-extrabold leading-8 tracking-tight text-center text-white sm:text-4xl">
 {post.subtitle}              </span>
-              <h1 key={post.key} className="block mt-0 mb-2 text-3xl font-semibold leading-normal tracking-wide text-center text-white underline uppercase dincondensed">
+              <h1 key={post.key} className="block mt-0 mb-2 text-3xl font-semibold leading-normal tracking-wide text-center text-white underline uppercase stolzl">
                      {post.title}</h1>
 
             <div className="mx-auto mt-6 prose prose-lg text-white">
