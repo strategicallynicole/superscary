@@ -1,0 +1,27 @@
+.runawaylittlegirl {
+  display: block;
+  opacity: 0;
+  transform: translate(25px, 0);
+  min-width: 400px;
+}
+
+.runawaylittlegirl.animate-enter {
+  animation: animate-enter-frames 1.6s ease-in-out 0s 1 normal forwards;
+  display: block;
+  opacity: 0;
+  transform: translate(25px, 0);
+}
+
+@keyframes animate-enter-frames {
+  from {
+    opacity: 0;
+    transform: translate(25px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.gatsby-image-wrapper img {
+  height: auto;
+}

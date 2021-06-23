@@ -15,32 +15,24 @@ import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import navigation from './data.js'
 import Logo from "../Logo/logo.js"
-import config from '../../utils/siteConfig'
-import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import { Link, StaticQuery, graphql } from 'gatsby'
+
 import {
   MenuIcon,
   XIcon
 } from '@heroicons/react/outline'
-import data from "../../utils/siteConfig.js";
+
 import Footer from '../Footers/Simple/links.js';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Structure({children, data, bodyClass, isHome, Footer}) {
-
+export default function Structure({children}) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <>
-    <Helmet>
-        <html lang="en-US" />
-        <style type="text/css">{`${site.codeinjection_styles}`}</style>
-        <body className={bodyClass} />
-        <link href="./fonts/FlatIcon/flaticon.css" rel="stylesheet" />
-
+      <>
+<Helmet>
     </Helmet>
     <div className="overflow-x-hidden bg-cover bg-wallpaper">
     <div className="flex h-screen overflow-hidden text-white bg-transparent">
@@ -172,12 +164,12 @@ export default function Structure({children, data, bodyClass, isHome, Footer}) {
           </button>
         </div>
         <main className="relative z-0 flex-1 overflow-y-auto focus:outline-none">
-          {children}
+           {children}
         </main>
 
       </div>
     </div>
-    <Footer />
+                       <Footer />
 
     </div>
     </>

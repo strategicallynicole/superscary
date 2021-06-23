@@ -79,6 +79,7 @@
     "create-react-class": "^15.7.0",
     "css-loader": "^5.2.6",
     "eslint-plugin-flowtype": "5.7.2",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.7.2",
     "gatsby-awesome-pagination": "0.3.8",
     "gatsby-image": "3.7.1",

@@ -1,5 +1,17 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 23/06/2021 - 16:28:31
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 23/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React, { Component, useState } from 'react';
-import RunningMan from '../../Illustrations/RunningMan/RunningMan';
+import RunAwayLittleGirl from '../../Illustrations/RunAwayLittleGirl';
 
 const Index = (props) => {
     const [menu, setMenu] = useState(false);
@@ -30,11 +42,8 @@ const Index = (props) => {
 
                         </div>
 
-                        <div className="hidden lg:w-1/2 height-main-hero xl:block">
-                        <RunningMan />
-                        </div>
-                        <div className="block xl:w-1/2 xl:hidden">
-                        <RunningMan />
+                        <div className="pt-8 mt-96 lg:mt-6 lg:w-1/2 lg:pt-0">
+                        <RunAwayLittleGirl />
                         </div>
                         </div>
                 {/* Hero */}

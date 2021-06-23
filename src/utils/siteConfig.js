@@ -10,6 +10,7 @@
     * - Author          :
     * - Modification    :
 **/
+
 module.exports = {
     siteUrl: `https://scaryberries.netlify.app`, // Site domain. Do not include a trailing slash!
 
@@ -25,4 +26,5 @@ module.exports = {
     siteIcon: `favicon.png`, // Logo in /static dir used for SEO, RSS, and App manifest
     backgroundColor: `#e9e9e9`, // Used for Offline Manifest
     themeColor: `#15171A`, // Used for Offline Manifest
+    twitter: `oakwave`
 }

@@ -20,10 +20,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import Particles from '../../Backgrounds/Particles/Stars';
 function Stars() {
   return (
-<div className="rounded bg-gradient">
+<div className="rounded bg-gradientglass">
       <Particles>
         <Hero>
-          <div className="px-20 py-20 starscontainer">
+          <div className="px-4 py-4 starscontainer">
           <h1 className="text-4xl text-center text-white underline dincondensed text-bold">Let Us Guess...</h1>
 
             <div className="starsrow">
@@ -36,7 +36,7 @@ function Stars() {
       layout="fullWidth"
       width={700}
       loading="lazy"
-      className="object-cover running-1 animate-enter pb-28"
+      className="object-cover pb-2 running-1 animate-enter"
     />
                     <div className="starscard-title">{card.title}</div>
                     <div className="starscard-body">{card.description}</div>

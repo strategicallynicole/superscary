@@ -18,7 +18,7 @@ class Stats extends Component {
     render() {
         return (
 
-            <section className="px-10 business-area ptb-100 gradientbgdiv">
+            <section className="px-10 business-area ptb-100 animatedglassgradient">
                 <div className="container">
                 <div className="flex flex-wrap overflow-hidden md:-mx-1 lg:-mx-4 xl:-mx-4">
                         <div className="w-full overflow-hidden col-lg-6 md:my-1 md:px-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:my-4 xl:px-4 xl:w-1/2">
@@ -39,7 +39,7 @@ class Stats extends Component {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Quis ipsum suspendisse ultrices gravida suspendisse.</p>
                             </div>
 
-                           <GlassyButton texty="hello" />     
+                           <GlassyButton texty="hello" />
 
 
 
