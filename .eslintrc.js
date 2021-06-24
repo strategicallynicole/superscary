@@ -24,36 +24,47 @@ module.exports = {
     extends: [
         'plugin:ghost/node',
         'plugin:ghost/ember',
-        'plugin:react/recommended'
+        'plugin:react/recommended',
     ],
     "settings": {
         "react": {
             "createClass": "createReactClass",
+
             "pragma": "React",
-            "version": "16.0",
-            "flowVersion": "0.53"
+            "version": "17.0",
+            "flowVersion": "0.53",
         },
         "propWrapperFunctions": ["forbidExtraProps"]
     },
     "rules": {
         "ghost/sort-imports-es6-autofix/sort-imports-es6": "off",
         "ghost/ember/use-ember-get-and-set": "off",
-        "no-console": "off",
+        "no-console": "warn",
         "no-inner-declarations": "off",
+        "no-multiple-empty-lines": "off",
+        "no-mixed-spaces-and-tabs": "off",
+        "space-in-parens": "off",
+        "semi": "off",
+        "no-constant-condition": "off",
         "valid-jsdoc": "off",
+        "key-spacing": "off",
+        "quotes": "off",
+        "quote-props": "off",
+        "indent": "off",
         "require-jsdoc": "off",
-        "quotes": ["error", "backtick"],
-        "consistent-return": ["error"],
+        "dot-notation": "off",
+        "quotes": ["off", "backtick"],
+        "consistent-return": ["off"],
         "arrow-body-style": [
-            "error",
+            "off",
             "as-needed",
             { "requireReturnForObjectLiteral": true }
         ],
-        "jsx-quotes": ["error", "prefer-double"],
-        "semi": ["error", "never"],
-        "object-curly-spacing": ["error", "always"],
+        "jsx-quotes": ["off", "prefer-double"],
+        "semi": ["off", "never"],
+        "object-curly-spacing": ["off", "always"],
         "comma-dangle": [
-            "error",
+            "off",
             {
                 "arrays": "always-multiline",
                 "objects": "always-multiline",
@@ -63,7 +74,7 @@ module.exports = {
             }
         ],
         "react/prop-types": [
-            "error",
+            "off",
             {
                 "ignore": ["children"]
             }
