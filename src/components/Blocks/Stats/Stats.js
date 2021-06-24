@@ -12,8 +12,9 @@
 **/
 import React, { Component } from 'react';
 import { Link } from "gatsby"
-import "./Stats.scoped.css";
 import GlassyButton from "../../Buttons/Glass";
+import "./Stats.comp.scss";
+
 class Stats extends Component {
     render() {
         return (

@@ -12,9 +12,10 @@
 **/
 import React, { Component, useState } from 'react';
 import { Link } from 'gatsby';
+import { render } from 'react-dom';
 import RunningMan from '../../Illustrations/RunningMan/RunningMan';
 import './Slider.scoped.css';
-import { render } from 'react-dom';
+
 /*const OwlCarousel = dynamic(import('react-owl-carousel3'))
 
 const options = {

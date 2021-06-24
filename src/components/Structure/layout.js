@@ -16,7 +16,6 @@ import { Dialog, Transition } from '@headlessui/react'
 import navigation from './data.js'
 import Logo from "../Logo/logo.js"
 import { Helmet } from 'react-helmet'
-import "../../styles/base.css"
 
 import {
   MenuIcon,
@@ -24,6 +23,8 @@ import {
 } from '@heroicons/react/outline'
 
 import Footer from '../Footers/Simple/links.js';
+import "../../styles/base.css"
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }

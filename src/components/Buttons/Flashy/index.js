@@ -11,7 +11,7 @@
     * - Modification    :
 **/
 import React from 'react';
-import './flashy.scoped.scss';
+import './flashy.comp.scss';
 
 const FlashyButton = ({
     angle,

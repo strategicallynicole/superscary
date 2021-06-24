@@ -12,7 +12,7 @@
 **/
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import "./index.scoped.scss"
+import "./index.comp.scss"
 
 export default function RunAwayLittleGirl() {
   return (

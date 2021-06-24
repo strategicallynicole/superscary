@@ -11,8 +11,8 @@
     * - Modification    :
 **/
 import React, { Component } from 'react';
-import "./Services.scoped.css";
 import SectionTitle from "../../Titles/SectionTitle";
+import "./Services.comp.scss";
 
 const subtitle="<div>What Makes Us The <span className='text-2xl text-center text-gradient grotesk text-bold'>Best</span></div>";
 

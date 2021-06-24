@@ -13,12 +13,12 @@
 import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
-import './LetUsGuess.css';
 import cards from './data.js';
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 
 import Particles from '../../Backgrounds/Particles/Stars';
 import SectionTitle from "../../Titles/SectionTitle";
+import './LetUsGuess.comp.scss';
 
 function Stars() {
 

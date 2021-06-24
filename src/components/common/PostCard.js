@@ -15,7 +15,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Tags } from '../Tags/index.js'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
-import "./PostCard.scoped.scss";
+import "./PostCard.comp.scss";
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`;

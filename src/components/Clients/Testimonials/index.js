@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import dynamic from 'next/dynamic';
 import PartnerSlider from '../Slider';
 import SectionTitle from "../../Titles/SectionTitle";
-import "./testimonials.scoped.scss";
+import "./testimonials.comp.scss";
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {

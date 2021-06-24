@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import "./RunningMan.scoped.scss"
+import "./RunningMan.comp.scss"
 export default function RunningMan() {
   return (
 

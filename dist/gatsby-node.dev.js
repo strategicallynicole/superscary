@@ -29,13 +29,32 @@ var themeOptions = require('./src/utils/siteConfig');
 
 var standardBasePath = "/";
 
-exports.createPages = function _callee(_ref, themeOptions) {
+exports.onCreateWebpackConfig = function (_ref) {
+  var stage = _ref.stage,
+      actions = _ref.actions,
+      getConfig = _ref.getConfig;
+
+  if (stage === 'build-javascript') {
+    var config = getConfig();
+    var miniCssExtractPlugin = config.plugins.find(function (plugin) {
+      return plugin.constructor.name === 'MiniCssExtractPlugin';
+    });
+
+    if (miniCssExtractPlugin) {
+      miniCssExtractPlugin.options.ignoreOrder = true;
+    }
+
+    actions.replaceWebpackConfig(config);
+  }
+};
+
+exports.createPages = function _callee(_ref2, themeOptions) {
   var actions, createPage, basePath;
   return regeneratorRuntime.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          actions = _ref.actions;
+          actions = _ref2.actions;
           createPage = actions.createPage;
           basePath = themeOptions.basePath || standardBasePath;
           createPage({
@@ -51,13 +70,13 @@ exports.createPages = function _callee(_ref, themeOptions) {
   });
 };
 
-exports.createPages = function _callee2(_ref2) {
+exports.createPages = function _callee2(_ref3) {
   var graphql, actions, createPage, result, tags, authors, pages, posts, indexTemplate, tagsTemplate, authorTemplate, pageTemplate, postTemplate;
   return regeneratorRuntime.async(function _callee2$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
-          graphql = _ref2.graphql, actions = _ref2.actions;
+          graphql = _ref3.graphql, actions = _ref3.actions;
           createPage = actions.createPage;
           _context2.next = 4;
           return regeneratorRuntime.awrap(graphql("\n        {\n            allGhostPost(sort: { order: ASC, fields: published_at }) {\n                edges {\n                    node {\n                        slug\n                    }\n                }\n            }\n            allGhostTag(sort: { order: ASC, fields: name }) {\n                edges {\n                    node {\n                        slug\n                        url\n                        postCount\n                    }\n                }\n            }\n            allGhostAuthor(sort: { order: ASC, fields: name }) {\n                edges {\n                    node {\n                        slug\n                        url\n                        postCount\n                    }\n                }\n            }\n            allGhostPage(sort: { order: ASC, fields: published_at }) {\n                edges {\n                    node {\n                        slug\n                        url\n                    }\n                }\n            }\n        }\n    "));
@@ -85,8 +104,8 @@ exports.createPages = function _callee2(_ref2) {
           pageTemplate = path.resolve("./src/templates/page.js");
           postTemplate = path.resolve("./src/templates/post.js"); // Create tag pages
 
-          tags.forEach(function (_ref3) {
-            var node = _ref3.node;
+          tags.forEach(function (_ref4) {
+            var node = _ref4.node;
             var totalPosts = node.postCount !== null ? node.postCount : 0; // This part here defines, that our tag pages will use
             // a `/tag/:slug/` permalink.
 
@@ -100,8 +119,8 @@ exports.createPages = function _callee2(_ref2) {
               items: items,
               itemsPerPage: postsPerPage,
               component: tagsTemplate,
-              pathPrefix: function pathPrefix(_ref4) {
-                var pageNumber = _ref4.pageNumber;
+              pathPrefix: function pathPrefix(_ref5) {
+                var pageNumber = _ref5.pageNumber;
                 return pageNumber === 0 ? url : "".concat(url, "/page");
               },
               context: {
@@ -110,8 +129,8 @@ exports.createPages = function _callee2(_ref2) {
             });
           }); // Create author pages
 
-          authors.forEach(function (_ref5) {
-            var node = _ref5.node;
+          authors.forEach(function (_ref6) {
+            var node = _ref6.node;
             var totalPosts = node.postCount !== null ? node.postCount : 0; // This part here defines, that our author pages will use
             // a `/author/:slug/` permalink.
 
@@ -125,8 +144,8 @@ exports.createPages = function _callee2(_ref2) {
               items: items,
               itemsPerPage: postsPerPage,
               component: authorTemplate,
-              pathPrefix: function pathPrefix(_ref6) {
-                var pageNumber = _ref6.pageNumber;
+              pathPrefix: function pathPrefix(_ref7) {
+                var pageNumber = _ref7.pageNumber;
                 return pageNumber === 0 ? url : "".concat(url, "/page");
               },
               context: {
@@ -135,8 +154,8 @@ exports.createPages = function _callee2(_ref2) {
             });
           }); // Create pages
 
-          pages.forEach(function (_ref7) {
-            var node = _ref7.node;
+          pages.forEach(function (_ref8) {
+            var node = _ref8.node;
             // This part here defines, that our pages will use
             // a `/:slug/` permalink.
             node.url = "/".concat(node.slug, "/");
@@ -151,8 +170,8 @@ exports.createPages = function _callee2(_ref2) {
             });
           }); // Create post pages
 
-          posts.forEach(function (_ref8) {
-            var node = _ref8.node;
+          posts.forEach(function (_ref9) {
+            var node = _ref9.node;
             // This part here defines, that our posts will use
             // a `/:slug/` permalink.
             node.url = "/".concat(node.slug, "/");
@@ -172,8 +191,8 @@ exports.createPages = function _callee2(_ref2) {
             items: posts,
             itemsPerPage: postsPerPage,
             component: indexTemplate,
-            pathPrefix: function pathPrefix(_ref9) {
-              var pageNumber = _ref9.pageNumber;
+            pathPrefix: function pathPrefix(_ref10) {
+              var pageNumber = _ref10.pageNumber;
 
               if (pageNumber === 0) {
                 return "/blog";
