@@ -18,14 +18,9 @@ import { color, fontSize, borderRadius } from 'styled-system';
 import { prop, ifProp } from 'styled-tools';
 
 import { getLinearGradient, getPadding } from './processor.js';
-
+import "../../../styles/globals.scss";
 const GradientBackground = styled.button`
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  border: 1px solid #ffffff;
-  padding: ${props => props.borderWidth}px;
-  outline: 0;
+  @include button;
   background-image: linear-gradient(
     ${ifProp(
       ({ angle }) => angle.includes('deg'),
@@ -34,7 +29,6 @@ const GradientBackground = styled.button`
     )},
     ${props => getLinearGradient(props.theme, props.gradient)}
   );
-  cursor: pointer;
   &:hover {
     animation: rubberBand 2s linear;
 

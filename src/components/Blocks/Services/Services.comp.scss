@@ -25,12 +25,14 @@
 		padding: 0;
 		margin: 0;
 		li {
+            @include shadow;
 			position: relative;
 			padding-left: 120px;
 			padding-right: 30px;
 			padding-top: 30px;
 			padding-bottom: 30px;
 			margin-bottom: 30px;
+            border-radius: 20px;
 			transition: $transition;
             @include glass;
             border-color: #ffffff 1px solid;

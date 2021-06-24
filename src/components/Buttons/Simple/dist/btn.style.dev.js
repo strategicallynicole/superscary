@@ -40,7 +40,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    font-family: \"stolzl\", Impact, sans-serif !important;\n    font-weight: 400 !important;\n   font-size: 2rem;\n   line-height: 3rem;\n\n    text-decoration: underline;\n    border: 0;\n\n    margin: 40px;\n    min-width: 170px;\n    -webkit-transition: 450ms all;\n    transition: 450ms all;\n    position: relative;\n    z-index: 999;\n    &:hover,\n    &:focus {\n        outline: none;\n\n    }\n    .icon-left{\n        margin-right: 8px;\n    }\n    .icon-right{\n        margin-left: 8px;\n    }\n\n    ", "\n    ", "\n"]);
+  var data = _taggedTemplateLiteral(["\n\n@include button;\n    transition: 450ms all;\n    position: relative;\n    z-index: 999;\n    &:hover,\n    &:focus {\n        outline: none;\n\n    }\n    .icon-left{\n        margin-right: 8px;\n    }\n    .icon-right{\n        margin-left: 8px;\n    }\n\n    ", "\n    ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;

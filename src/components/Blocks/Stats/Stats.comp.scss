@@ -17,11 +17,14 @@
 	margin-bottom: 30px;
 	position: relative;
 
+@include shadow;
+@include glass;
+border: $white 2px solid;
+
 	i {
 		position: absolute;
 		left: 0;
 		top: 5px;
-		background-color: #eeeefe;
 		display: inline-block;
 		width: 50px;
 		height: 50px;
@@ -38,7 +41,8 @@
 	}
 }
 .single-counter {
-
+    @include shadow;
+    @include glass;
 	text-align: center;
 	padding: 50px;
 	transition: $transition;
@@ -58,17 +62,26 @@
 	}
 }
 .counter-nth {
+    &:nth-child(1) {
+		.single-counter {
+            border: $lightblue 2px solid;
+		}
+	}
 	&:nth-child(2) {
 		.single-counter {
+            border: $purple 2px solid;
 		}
 	}
 	&:nth-child(3) {
 		.single-counter {
+            border: $blue 2px solid;
 
 		}
 	}
 	&:nth-child(4) {
 		.single-counter {
+
+            border: $gray 2px solid;
 
 
 		}
@@ -141,6 +154,7 @@
     @media only screen and (max-width: 767px) {
 
     .business-content h2 {
+        border: $white 2px solid;
 
         line-height: 1.3;
     }

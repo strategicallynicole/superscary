@@ -1,0 +1,92 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.grow:hover {
+  font-size: 24px;
+  padding: 17px 34.5px;
+  text-shadow: 0px 4px 0px #ef9139;
+}
+
+.pulse:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.skew:hover {
+  animation: skew 1s;
+}
+
+.swing:hover {
+  animation: swing 1s;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1) translate(0, -5px);
+  }
+}
+/* Pulse animation */
+@keyframes skew {
+  0% {
+    transform: skewX(0deg);
+  }
+  10% {
+    transform: skewX(-10deg);
+  }
+  20% {
+    transform: skewX(10deg);
+  }
+  25% {
+    transform: skewX(-8deg);
+  }
+  30% {
+    transform: skewX(8deg);
+  }
+  33% {
+    transform: skewX(-4deg);
+  }
+  36% {
+    transform: skewX(4deg);
+  }
+  40% {
+    transform: skewX(0deg);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotateZ(0deg) translate(0, 0);
+  }
+  20% {
+    transform: rotateZ(10deg) translate(5px, -2px);
+  }
+  40% {
+    transform: rotateZ(-10deg) translate(-5px, 2px);
+  }
+  60% {
+    transform: rotateZ(11deg) translate(4px, -1px);
+  }
+  80% {
+    transform: rotateZ(0deg) translate(0px, 0px);
+  }
+}

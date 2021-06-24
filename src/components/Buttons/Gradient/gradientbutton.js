@@ -1,17 +1,25 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 24/06/2021 - 02:15:29
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 24/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { color, fontSize, borderRadius } from 'styled-system';
 import { prop, ifProp } from 'styled-tools';
-
+import "../../../styles/globals.scss";
 import { getLinearGradient, getPadding } from './processor';
 
 const GradientBackground = styled.button`
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  border: 1px solid #ffffff;
   padding: ${props => props.borderWidth}px;
   outline: 0;
   background-image: linear-gradient(
@@ -22,8 +30,7 @@ const GradientBackground = styled.button`
     )},
     ${props => getLinearGradient(props.theme, props.gradient)}
   );
-  cursor: pointer;
-
+@include button;
   ${ifProp(
     'disabled',
     css`

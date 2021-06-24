@@ -1,0 +1,24 @@
+/*
+Section Title Area Style
+======================================================*/
+.section-title {
+  text-align: center;
+  position: relative;
+}
+.section-title h4 {
+  line-height: 1em;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  z-index: 99;
+  position: relative;
+}
+.section-title h2 {
+  position: relative;
+  display: block;
+  line-height: 1em;
+  margin-top: -1px;
+  z-index: 99;
+}
+.section-title h2:last-child {
+  margin-bottom: 0;
+}

@@ -2,9 +2,11 @@
 @import "../../../styles/globals.scss";
 
 .particlesbackground {
-    width: 100%;
+    width: 90%;
     height: auto;
-    background: rgba( 0, 0, 0, 0.60 );
+    background: rgba( 0, 0, 0, 0.50 );
+    backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );

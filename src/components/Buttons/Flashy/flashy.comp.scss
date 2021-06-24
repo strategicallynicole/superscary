@@ -3,7 +3,7 @@
 .btn-flashy {
         position: relative;
         background: $black-gradient;
-        @apply shadow;
+        @include button;
         border-radius: 20px;
         transition: $transition;
         overflow: hidden;

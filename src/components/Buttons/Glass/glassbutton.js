@@ -15,29 +15,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { prop, ifProp, switchProp } from 'styled-tools';
 import styled, { css } from 'styled-components';
-
+import "./glassbutton.comp.scss";
 const GradientBackground = styled.button`
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  border: 1px solid #ffffff;
-color: #ffffff;
-font-size: 1.6em;
-font-family: 'stolzl';
-padding-right: 3em;
-padding-top: .3em;
-padding-bottom: .3em;
-text-decoration: underline;
-text-decoration-color: #ffffff;
-  padding-left: 3em;
-  outline: 0;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-  cursor: pointer;
-  border-radius: 20px;
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
   &:hover {
     animation: rubberBand 2s linear;
 }
@@ -62,7 +43,6 @@ const Inner = styled.div`
   outline: 0;
   animation: rubberBand 2s linear;
   transition: 2s all ease-in-out;
-  color: #fff;
       &:hover {
         background: transparent;
         color: #fff;

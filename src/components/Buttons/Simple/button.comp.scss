@@ -1,16 +1,6 @@
 @import "../../../styles/globals.scss";
 .button {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1em;
-    color: #ffffff;
-
-    //Button shape & animation
-    border-radius: 10px;
-    margin: 40px !important;
-    padding: 1em 3em;
+   @include button;
     background-size: 200% auto;
     color: #ffffff;
     transition: all 1s ease-in-out;

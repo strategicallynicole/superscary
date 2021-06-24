@@ -41,7 +41,7 @@ class ProblemsWeSolve extends Component {
 <div className="problems-we-solve-content ">
 
 <ul>
-    <li className="rounded glass">
+    <li className="glass">
         <span>01 <i className="flaticon-technical-support"></i></span>
         <h3>Safe Security</h3>
         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>

@@ -23,9 +23,9 @@
      return (
         <>
         <div className="section-title">
-        <h4 className="text-lg leading-tight text-center text-white grotesk text-bold">{subtitle}</h4>
+        <h4 className="text-lg text-center text-white grotesk text-bold">{subtitle}</h4>
 
-                        <h2 className="text-6xl leading-tight text-center text-white underline stolzl text-bold">{title}</h2>
+                        <h2 className="text-6xl text-center text-white underline stolzl text-bold">{title}</h2>
                         <p className="text-base text-center text-white roboto">{body}{children}</p>
                     </div>
                    </>
