@@ -14,44 +14,75 @@ import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
 import cards from './data.js';
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Particles from '../../Backgrounds/Particles/Stars';
-import SectionTitle from "../../Titles/SectionTitle";
+import SectionTitle from '../../Titles/SectionTitle';
 import './LetUsGuess.comp.scss';
 
 function Stars() {
 
   return (
-<div className="rounded bg-gradientglass">
-      <Particles>
+    <div className="rounded">
         <Hero>
           <div className="pb-10 starscontainer">
-          <SectionTitle subtitle="We Get It" title='Let Us Guess' body=''/>
+            <SectionTitle subtitle="We Get It" title='Let Us Guess' body=''/>
 
             <div className="starsrow">
-              {cards.map((card, i) => (
                 <div className="starscolumn">
-                  <Card>        <img
-      src={card.image}
-      alt={card.title}
-      placeholder="blurred"
-      layout="fullWidth"
-      width={700}
-      loading="lazy"
-      className="object-cover pb-2 running-1 animate-enter"
-    />
-                    <div className="starscard-title">{card.title}</div>
-                    <div className="starscard-body">{card.description}</div>
+                  <Card>
+                    <StaticImage
+                        src="../../../images/illustrations/trex.svg"
+                        alt="You're a bit skeptical... of everything."
+                        placeholder="blurred"
+                        layout="fullWidth"
+                        width={700}
+                        loading="lazy"
+                        className="object-cover pb-2 running-1 animate-enter"
+                        />
+                    <div className="starscard-title">You're a bit skeptical... of everything.</div>
+                    <div className="starscard-body">You have tried every "new idea" that's slithered across your desk and you're just… done with it. On any idle Thursday at 11PM, when you can’t sleep and can’t find a solution to your impossible growth challenge, we’re the resource you've always needed.'</div>
 
                   </Card>
                 </div>
-              ))}
+
+                <div className="starscolumn">
+                  <Card>
+                    <StaticImage
+                        src="../../../images/illustrations/pyramid.svg"
+                        alt="You've Had It Up To..."
+                        placeholder="blurred"
+                        layout="fullWidth"
+                        width={700}
+                        loading="lazy"
+                        className="object-cover pb-2 running-1 animate-enter"
+                        />
+                    <div className="starscard-title">You've Had It Up To...</div>
+                    <div className="starscard-body">here with the "magical solution to all your marketing problems" line of crap you\'ve been given. There is no magic pill, But, we can find the blend without wasting more dollars.</div>
+
+                  </Card>
+                </div>
+
+                <div className="starscolumn">
+                  <Card>
+                    <StaticImage
+                        src="../../../images/illustrations/disparatee.svg"
+                        alt="You're Tired of the Disconnect."
+                        placeholder="blurred"
+                        layout="fullWidth"
+                        width={700}
+                        loading="lazy"
+                        className="object-cover pb-2 running-1 animate-enter"
+                        />
+                    <div className="starscard-title">You're Tired of the Disconnect.</div>
+                    <div className="starscard-body">You have tried every "new idea" that's slithered across your desk and you're just… done with it. On any idle Thursday at 11PM, when you can’t sleep and can’t find a solution to your impossible growth challenge, we’re the resource you've always needed.</div>
+
+                  </Card>
+                </div>
             </div>
           </div>
         </Hero>
-      </Particles>
-      </div>
+</div>
   );
 }
 

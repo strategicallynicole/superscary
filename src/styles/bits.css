@@ -42,8 +42,8 @@ ul {
     line-height: 70px;
     text-align: center;
     position: relative;
-    border: 2px dotted #ffffff;
-    border-radius: 50%;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
     font-size: 30px;
     font-weight: 600;
     color: #ffffff;
@@ -68,7 +68,7 @@ ul {
     line-height: 40px;
     background-color: #ffffff;
     box-shadow: 0 0 20px 3px rgb(0 0 0 / 70%);
-    border-radius: 50%;
+    border-radius: 20p%;
     display: inline-block;
     font-size: 25px;
     color: #dcddfa;
@@ -80,9 +80,9 @@ ul {
     line-height: 70px;
     text-align: center;
     position: relative;
-    border: 2px dotted #ffffff;
-    border-radius: 50%;
-    font-size: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-size: 20px;
     font-weight: 600;
     color: #ffffff;
     animation: border-transform 7s linear infinite alternate forwards;

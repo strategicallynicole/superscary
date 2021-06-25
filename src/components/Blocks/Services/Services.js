@@ -41,18 +41,18 @@ class ProblemsWeSolve extends Component {
 <div className="problems-we-solve-content ">
 
 <ul>
-    <li className="glass">
+    <li className="problems">
         <span>01 <i className="flaticon-technical-support"></i></span>
         <h3>Safe Security</h3>
         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
     </li>
-    <li className="rounded ml glass">
+    <li className="ml">
                                         <span>02 <i className="flaticon-shield"></i></span>
                                         <h3>Technical Support</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                     </li>
 
-                                    <li className="rounded ml-25 glass">
+                                    <li className="problems ml-25">
                                         <span>03 <i className="flaticon-support"></i></span>
                                         <h3>Live Support</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -67,7 +67,7 @@ class ProblemsWeSolve extends Component {
                                 <ul>
 
 
-                                    <li className="rounded glass">
+                                    <li className="problems">
                                         <span>04 <i className="flaticon-technical-support"></i></span>
                                         <h3>Free Try </h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -76,7 +76,7 @@ class ProblemsWeSolve extends Component {
 
 
 
-  <li className="rounded ml glass">
+  <li className="ml">
                                         <span>05 <i className="flaticon-shield"></i></span>
                                         <h3>Advanced Tchnology</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -84,7 +84,7 @@ class ProblemsWeSolve extends Component {
 
 
 
-  <li className="rounded ml-25 glass">
+  <li className="problems ml-25">
                                         <span>06 <i className="flaticon-support"></i></span>
                                         <h3>Competitive Pricing</h3>
                                         <p>Lorem ipsum dolor sit labore amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>

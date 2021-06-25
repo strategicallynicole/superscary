@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 24/06/2021 - 01:32:28
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 24/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React from "react";
 import PropTypes from "prop-types";
 import ButtonStyle from './btn.style';

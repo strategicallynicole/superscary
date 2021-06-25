@@ -60,7 +60,7 @@ class MainBanner extends Component {
                                             <h2 className="font-bold stolzl white-text font-size-3xl ">
                                                 We <span className="underline">Need</span> To Talk.
                                             </h2>
-                                            <p className="no-underline grotesk white-text font-size-xl">
+                                            <p className="text-2xl no-underline grotesk white-text">
                                                 It's about your brand and creative again.
                                                 It's been... frightening.
                                             </p>

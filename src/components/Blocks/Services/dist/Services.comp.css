@@ -452,22 +452,25 @@
   margin: 0;
 }
 .problems-we-solve-content ul li {
-  box-shadow: 2px 2px 1px #171040, 3px 3px 1px #171040, 4px 4px 1px #171040, 5px 5px 1px #171040, 6px 6px 1px #171040, 7px 7px 1px #171040, 8px 8px 1px #171040, 9px 9px 1px #171040, 10px 10px 1px #171040, 11px 11px 1px #171040, 12px 12px 1px #171040;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+  border-left: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #6633FF 18.59%, #3366FF 68.36%, #0099FF 105%);
+  padding-left: 10%;
   position: relative;
   padding-left: 120px;
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-radius: 20px;
   transition: all 0.6s ease;
-  background: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7.5px);
-  -webkit-backdrop-filter: blur(7.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-color: #ffffff 1px solid;
 }
 .problems-we-solve-content ul li:last-child {
   margin-bottom: 0;
@@ -478,8 +481,8 @@
   line-height: 70px;
   text-align: center;
   position: relative;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
   font-size: 30px;
   font-weight: 600;
   color: #ffffff;

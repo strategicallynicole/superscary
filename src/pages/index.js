@@ -16,21 +16,19 @@ import Clients from '../components/Clients/composer.js'
 import CTA from '../components/CTA/CaseStudySqueeze/index.js'
 import Homepage from '../templates/index'
 import Industries from '../components/Blocks/Industries/Industries'
-import MainBanner from '../components/Blocks/Slider'
+import Slider from '../components/Slider/index'
 import News from '../components/common/News'
-import Services from '../components/Blocks/Services/Services'
-import Stats from '../components/Blocks/Stats/Stats'
 import Stars from '../components/Blocks/LetUsGuess/LetUsGuess'
+import Services from '../components/Services/'
 class Index extends Component {
   render () {
     return (
       <>
         <Homepage>
           <Background>
-              <MainBanner />
+              <Slider />
+              <Services />
                 <Stars />
-                <Services />
-                <Stats />
                 <Industries />
                 <Clients />
                 <News />

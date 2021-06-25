@@ -68,7 +68,7 @@ border-radius: 20px;
   display: flex;
   flex-direction: column;
   padding: 40px;
-  background: linear-gradient(90deg, #292929 2.11%, #000000 104.85%);
+@include glass;
   border-radius: 20px;
   color: #ffffff !important;
   @include shadow;

@@ -1,4 +1,13 @@
 $shadow-color: #171040;
+@mixin lineontheside {
+    border-left: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(180deg, #6633FF 18.59%, #3366FF 68.36%, #0099FF 105%);
+    padding-left: 10%;
+}
+.lineontheside {
+   @include lineontheside
+}
 
 @mixin shadow {
     box-shadow:
@@ -18,22 +27,22 @@ $shadow-color: #171040;
 
 @mixin button {
     position: relative;
-display: flex;
-box-sizing: border-box;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-color: #ffffff;
-text-decoration: underline;
-@include shadow;
-text-decoration-color: #ffffff;
-font-size: 1.6em;
-font-family: 'stolzl';
-padding-right: 3em;
-padding-top: .3em;
-padding-bottom: .3em;
-cursor: pointer;
-padding-left: 3em;
-outline: 0;
-border-radius: 20px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #ffffff;
+    text-decoration: underline;
+    @include shadow;
+    text-decoration-color: #ffffff;
+    font-size: 1.6em;
+    font-family: 'stolzl';
+    padding-right: 3em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    cursor: pointer;
+    padding-left: 3em;
+    outline: 0;
+    border-radius: 20px;
 }
 
 
@@ -41,9 +50,7 @@ border-radius: 20px;
     background: linear-gradient(90deg, rgba(102, 51, 255, .5) 18.59%, rgba(51, 102, 255, .5) 68.36%, rgba(0, 153, 255, .5) 105%);
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+    border-radius: 20px;
     }
 
 

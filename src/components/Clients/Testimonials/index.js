@@ -1,3 +1,15 @@
+/**
+    * @description      :
+    * @author           :
+    * @group            :
+    * @created          : 24/06/2021 - 01:32:41
+    *
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 24/06/2021
+    * - Author          :
+    * - Modification    :
+**/
 import React, { Component } from 'react';
 import dynamic from 'next/dynamic';
 import PartnerSlider from '../Slider';

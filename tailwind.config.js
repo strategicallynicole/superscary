@@ -19,12 +19,11 @@ module.exports = {
       purple: theme('colors.purple.500'),
       blue: theme('colors.blue.500'),
       gray: theme('colors.gray.500'),
-
       indigo: theme('colors.indigo.500'),
       pink: theme('colors.pink.500')
     }),
     borderRadius: {
-      DEFAULT: '2.5rem',
+      DEFAULT: '20px',
       '4xl': '2.5rem'
     },
     fontSize: {
@@ -45,12 +44,11 @@ module.exports = {
       '9xl': '7rem'
     },
     boxShadow: {
-      default: '3px 5px 1px #171040',
+      default: '2px 2px 1px #171040, 3px 3px 1px #171040, 4px 4px 1px #171040, 5px 5px 1px #171040, 6px 6px 1px #171040',
       purple: '3px 5px 1px #21076E',
       lightblue: '3px 5px 1px #0B4C78',
       blue: '3px 5px 1px #162F7C',
       orange: '3px 5px 1px #A65512'
-
     },
     filter: {
       none: 'none',
@@ -64,7 +62,7 @@ module.exports = {
     },
     extend: {
       borderColor: theme => ({
-        DEFAULT: theme('colors.indigo.500', 'currentColor'),
+        DEFAULT: theme('colors.white.500', 'currentColor'),
         indigo: theme('colors.indigo.500')
       }),
       borderRadius: {
@@ -75,10 +73,15 @@ module.exports = {
         waves: "url('../images/waves.svg')",
         gradient: 'linear-gradient(90deg, #8F6AFA 0%, #375CDC 47.03%, #0099EE 105%)',
         wallpaper: "url('../images/wallpaper.svg')",
-        'black-gradient': 'linear-gradient(90deg, #292929 2.11%, #000000 104.85%)'
+        'black-gradient': 'linear-gradient(90deg, #292929 2.11%, #000000 104.85%)',
+        glass: 'rgba( 0, 0, 0, 0.60 )'
       }),
       colors: {
         transparent: 'transparent',
+        white: {
+          DEFAULT: '#FFFFFF',
+          500: '#FFFFFFF'
+        },
         purple: {
           DEFAULT: '#6633FF',
           50: '#CDBDFF',
@@ -101,7 +104,7 @@ module.exports = {
           400: '#527DFF',
           500: '#3366FF',
           600: '#1F57FF',
-          700: '#0A47FF',
+          700: '#171040',
           800: '#003DF5',
           900: '#0038E0'
         },
